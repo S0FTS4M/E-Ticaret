@@ -1,0 +1,60 @@
+
+.customNavbar {
+    height: 50px;
+}
+
+.carousel-inner {
+	height: 400px;
+}
+.carousel-inner img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.row{
+    width: 100%;
+}
+
+.dropdown{
+	float:right;
+	padding-right: 10px;
+}
+
+.btn{
+	border:0px;
+    box-shadow:none !important; 
+    margin-top : 23px;
+}
+/*kategori bölümlerinin resimleri */
+.navbarimg {
+    height: 10px;
+    width: 30px;
+}
+
+
+.mainNavDropDown:hover > .dropdown-menu {
+    display: block;
+}
+
+.mainNavDropDown .dropdown-menu {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgp0F1Ng10hGBj1-5dFy7wERvpHILrD2uqNqbBEXz34AASKncdGw");
+    background-repeat: no-repeat;
+    background-position: right;
+    top: 30px !important;
+    width: 900px !important;
+    height: 300px;
+    left: 0px !important;
+    box-shadow: 0px 5px 30px black;
+}
+
+/*Kadın bölümünü sol taraftan uzaklaştırmak için */
+.left-nav-link {
+    margin-left: 50px;
+}
+
+footer {
+    text-align: center;
+}
+/**/
