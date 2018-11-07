@@ -12,20 +12,25 @@ namespace ETicaret
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        EditText txtMail, txtPassword;
+        EditText txtUserName, txtPassword;
 
-
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            ImageView image = FindViewById<ImageView>(Resource.Id.imgShoppingBasket);
+            image.SetImageResource(Resource.Drawable.shoppingBasket);
+
             Button btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
             btnLogin.Click += BtnLogin_Click;
-            txtMail = FindViewById<EditText>(Resource.Id.txtMail);
+            txtUserName = FindViewById<EditText>(Resource.Id.txtUserName);
             txtPassword = FindViewById<EditText>(Resource.Id.txtPwd);
             #region Enter Key pressed in edit texts
-            txtMail.KeyPress += (sender, e) => {
+
+            txtUserName.KeyPress += (sender, e) =>
+            {
                 e.Handled = false;
                 if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
                 {
@@ -34,7 +39,8 @@ namespace ETicaret
                     e.Handled = true;
                 }
             };
-            txtPassword.KeyPress += (sender, e) => {
+            txtPassword.KeyPress += (sender, e) =>
+            {
                 e.Handled = false;
                 if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
                 {
@@ -51,7 +57,7 @@ namespace ETicaret
         private void BtnLogin_Click(object sender, System.EventArgs e)
         {
             //Make validations and connect to database and check is this user is exists and infos are correct
-            if (ValidEMail(txtMail.Text)&&ValidPassWord(txtPassword.Text))
+            if (ValidUserName(txtUserName.Text) && ValidPassWord(txtPassword.Text))
             {
                 //this is a test validation
                 //email is valid
@@ -72,7 +78,7 @@ namespace ETicaret
             return text.Length >= 8;
         }
 
-        private bool ValidEMail(string text)
+        private bool ValidUserName(string text)
         {
             return text.Contains("@");
         }

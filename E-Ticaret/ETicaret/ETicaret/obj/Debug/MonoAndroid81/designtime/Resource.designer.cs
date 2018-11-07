@@ -1277,6 +1277,9 @@ namespace ETicaret
 			// aapt resource value: 0x7F06001E
 			public const int background_material_light = 2131099678;
 			
+			// aapt resource value: 0x7F050007
+			public const int blueforui = 2131034119;
+			
 			// aapt resource value: 0x7F06001F
 			public const int bright_foreground_disabled_material_dark = 2131099679;
 			
@@ -1364,14 +1367,17 @@ namespace ETicaret
 			// aapt resource value: 0x7F060038
 			public const int foreground_material_light = 2131099704;
 			
+			// aapt resource value: 0x7F050008
+			public const int greenforshopcart = 2131034120;
+			
 			// aapt resource value: 0x7F060039
 			public const int highlighted_text_material_dark = 2131099705;
 			
 			// aapt resource value: 0x7F06003A
 			public const int highlighted_text_material_light = 2131099706;
 			
-			// aapt resource value: 0x7F050007
-			public const int ic_launcher_background = 2131034119;
+			// aapt resource value: 0x7F050009
+			public const int ic_launcher_background = 2131034121;
 			
 			// aapt resource value: 0x7F06003B
 			public const int material_blue_grey_800 = 2131099707;
@@ -2300,7 +2306,13 @@ namespace ETicaret
 			public const int shapemail = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int shapesignup = 2130771972;
+			public const int shapeShoppingCircle = 2130771972;
+			
+			// aapt resource value: 0x7F010005
+			public const int shapesignup = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int shoppingBasket = 2130771974;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2399,11 +2411,11 @@ namespace ETicaret
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F020005
-			public const int btnLogin = 2130837509;
-			
 			// aapt resource value: 0x7F020006
-			public const int btnSignUp = 2130837510;
+			public const int btnLogin = 2130837510;
+			
+			// aapt resource value: 0x7F020007
+			public const int btnSignUp = 2130837511;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2494,6 +2506,9 @@ namespace ETicaret
 			
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
+			
+			// aapt resource value: 0x7F020002
+			public const int imgShoppingBasket = 2130837506;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -2744,14 +2759,14 @@ namespace ETicaret
 			// aapt resource value: 0x7F0C008B
 			public const int transition_transform = 2131493003;
 			
-			// aapt resource value: 0x7F020004
-			public const int txtForgetPwdLink = 2130837508;
+			// aapt resource value: 0x7F020005
+			public const int txtForgetPwdLink = 2130837509;
 			
-			// aapt resource value: 0x7F020002
-			public const int txtMail = 2130837506;
+			// aapt resource value: 0x7F020004
+			public const int txtPwd = 2130837508;
 			
 			// aapt resource value: 0x7F020003
-			public const int txtPwd = 2130837507;
+			public const int txtUserName = 2130837507;
 			
 			// aapt resource value: 0x7F0C008C
 			public const int uniform = 2131493004;
@@ -3028,6 +3043,9 @@ namespace ETicaret
 			
 			// aapt resource value: 0x7F040003
 			public const int ic_launcher_round = 2130968579;
+			
+			// aapt resource value: 0x7F040005
+			public const int shopping-basket = 2130968581;
 			
 			static Mipmap()
 			{
