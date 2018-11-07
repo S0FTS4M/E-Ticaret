@@ -1,0 +1,134 @@
+﻿body {
+    padding-top : 10px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.customNavbar {
+    height: 50px;
+}
+
+.blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: 30px;
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    bottom:-70px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.blog .carousel-indicators .active {
+    background: #707070;
+}
+
+main-carousel-inner {
+    height: 400px;
+}
+
+.main-carousel-inner > .main-carousel-item > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    position: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.dropdown {
+    float: right;
+    padding-right: 10px;
+}
+
+.btn {
+    box-shadow: none !important;
+    
+}
+
+/* images from categories section */
+.navbarimg {
+    height: 10px;
+    width: 30px;
+}
+
+
+.mainNavDropDown:hover > .dropdown-menu {
+    display: block;
+}
+
+.mainNavDropDown .dropdown-menu {
+    background-image: url("http://placehold.it/120x80");
+    background-repeat: no-repeat;
+    background-position: right;
+    top: 30px !important;
+    width: 900px !important;
+    height: 300px;
+    left: 0px !important;
+    box-shadow: 0px 5px 30px black;
+}
+
+.left-nav-link {
+    margin-left: 50px;
+}
+
+
+.img-wrapper {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 50%;
+}
+
+footer {
+    margin-top:2rem;
+    text-align:center;
+}
+
+
+/* contact page css */
+.form-group {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
