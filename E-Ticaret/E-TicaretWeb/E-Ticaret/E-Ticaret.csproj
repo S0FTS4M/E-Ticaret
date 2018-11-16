@@ -317,6 +317,7 @@
     <Content Include="Views\Home\Shopping_Cart.cshtml" />
     <Content Include="Views\Home\Sign_In.cshtml" />
     <Content Include="Views\Home\Purchase.cshtml" />
+    <Content Include="Views\Home\ViewProduct.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
