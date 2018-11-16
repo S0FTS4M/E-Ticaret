@@ -56,9 +56,14 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerAccount.cs" />
+    <Compile Include="DataBase.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.cs" />
+    <Compile Include="StringLiterals.cs" />
+    <Compile Include="Validator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -113,10 +118,15 @@
     <Folder Include="Resources\Icons\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\shoppingBasket.xml" />
+    <AndroidResource Include="Resources\drawable\shoppingBasketIcon.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\shapeShoppingCircle.xml">
+    <AndroidResource Include="Resources\layout\SignUp.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\addUserIcon.xml">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>

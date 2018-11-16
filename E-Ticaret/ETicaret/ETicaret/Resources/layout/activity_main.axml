@@ -11,15 +11,12 @@
 	android:background="#FFF">
 	<ImageView
 		android:src="@android:drawable/ic_menu_report_image"
-		
 		android:id="@+id/imgShoppingBasket"
-		
-		
-		  android:layout_width="wrap_content"
-            android:scaleType="center"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+        android:scaleType="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
 		 />
 
 	<EditText
@@ -35,23 +32,43 @@
 		android:textColorHint="#000"
 		android:singleLine="true"
 		android:imeOptions="actionSend"
-		android:textColorHighlight="@color/white"/>
-	<EditText
-		android:id="@+id/txtPwd"
-		android:hint="Password"
+		android:textColorHighlight="@color/blueforui"/>
+	<LinearLayout
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_margin="10dp"
-		android:padding="15dp"
-		android:singleLine="true"
-		android:background="@drawable/shapemail"
-		android:drawablePadding="10dp"
-		android:inputType="textPassword"
-		android:textColor="#000"
-		android:textColorHint="#000"
-		android:textColorHighlight="@color/white"
-		android:imeOptions="actionSend"
+		android:orientation="horizontal"
+		android:layout_marginTop="15dp"
+		android:layout_height="50dp"
+		android:gravity="left"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="5dp"
+		android:background="#FFF"
+		>
+		<EditText
+			android:id="@+id/txtPwd"
+			android:hint="Password"
+			android:layout_height="wrap_content"
+			android:layout_width="214.7dp"
+			android:padding="12dp"
+			android:layout_marginLeft="0.0dp"
+			android:layout_marginRight="0dp"
+			android:singleLine="true"
+			android:background="@drawable/shapemail"
+			android:drawablePadding="10dp"
+			android:inputType="textPassword"
+			android:textColor="#000"
+			android:textColorHint="#000"
+			android:textColorHighlight="@color/blueforui"
+			android:imeOptions="actionSend"
 	/>
+		<CheckBox
+			android:text="Show"
+			android:textColor="@android:color/black"
+			android:button="@drawable/abc_btn_radio_material"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/chcbShowLogin"
+			android:checked="false" />
+	</LinearLayout>
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"

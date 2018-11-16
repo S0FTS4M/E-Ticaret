@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>devnew</SelectedDevice>
     <DefaultDevice>devnew</DefaultDevice>
-    <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 5</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>
