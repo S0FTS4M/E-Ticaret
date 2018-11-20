@@ -1,0 +1,1 @@
+<GridLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:columnCount="2" android:padding="30dp" android:id="@+id/gridContent" xmlns:android="http://schemas.android.com/apk/res/android"></GridLayout>
