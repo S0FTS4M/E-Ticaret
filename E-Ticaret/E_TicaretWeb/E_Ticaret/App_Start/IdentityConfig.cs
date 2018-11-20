@@ -86,6 +86,7 @@ namespace E_Ticaret
             }
             return manager;
         }
+
     }
 
     // Uygulamada kullanılan uygulama oturum açma yöneticisini yapılandırın.

@@ -82,6 +82,7 @@ namespace E_Ticaret.Models
         [Display(Name ="PHone Number")]
         [StringLength(11,ErrorMessage ="Phone number's length should be 11.")]
         public string PhoneNumber { get; set; }
+
     }
 
     public class ResetPasswordViewModel
