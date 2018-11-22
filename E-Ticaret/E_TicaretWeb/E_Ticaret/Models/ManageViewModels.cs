@@ -12,6 +12,7 @@ namespace E_Ticaret.Models
         public string PhoneNumber { get; set; }
         public bool TwoFactor { get; set; }
         public bool BrowserRemembered { get; set; }
+    
     }
 
     public class ManageLoginsViewModel
@@ -43,20 +44,32 @@ namespace E_Ticaret.Models
     {
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Mevcut parola")]
+        [Display(Name = "Old Password")]
         public string OldPassword { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "{0}, en az {2} karakter uzunluğunda olmalıdır.", MinimumLength = 6)]
+        // CHANGE THE ERROR MESSAGE
+        [StringLength(100, ErrorMessage = "Password has to be minimum 6 length", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Yeni parola")]
+        [Display(Name = "New Password")]
         public string NewPassword { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Yeni parolayı onaylayın")]
-        [Compare("NewPassword", ErrorMessage = "Yeni parola ve onay parolası eşleşmiyor.")]
+        [Display(Name = "New Password")]
+        [Compare("NewPassword", ErrorMessage = "New passwords are different.")]
         public string ConfirmPassword { get; set; }
     }
+    public class ChangeInfoViewModel
+    {
+        [Phone(ErrorMessage ="A phone number can not contain letter or special character")]
+        [StringLength(11,ErrorMessage ="A Phone number should be 11 digit",MinimumLength =11)]
+        [Display(Name = "Phone Number")]
+        public string Number { get; set; }
+
+        [Display(Name="Address")]
+        public string Address { get; set; }
+    }
+
 
     public class AddPhoneNumberViewModel
     {

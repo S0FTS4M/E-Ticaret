@@ -2,6 +2,9 @@
     padding-top: 10px;
     padding-bottom: 20px;
 }
+.container {
+    margin-top:30px;
+}
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -77,7 +80,6 @@ main-carousel-inner {
     width: 30px;
 }
 
-
 .mainNavDropDown:hover > .dropdown-menu {
     display: block;
 }
@@ -124,7 +126,6 @@ footer {
     margin-top: 2rem;
     text-align: center;
 }
-
 
 /* contact page css */
 .form-group {

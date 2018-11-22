@@ -99,6 +99,7 @@ namespace E_Ticaret.Controllers
             return RedirectToAction("ManageLogins", new { Message = message });
         }
 
+
         //
         // GET: /Manage/AddPhoneNumber
         public ActionResult AddPhoneNumber()
@@ -212,11 +213,45 @@ namespace E_Ticaret.Controllers
             }
             return RedirectToAction("Index", new { Message = ManageMessageId.RemovePhoneSuccess });
         }
+        // GET: /Manage/ChangeInfo
+        public ActionResult ChangeInfo()
+        {
+            return View();
+        }
+
+        // POST: /Manage/ChangeInfo
+        [HttpPost]
+        public ActionResult ChangeInfo(ChangeInfoViewModel model)
+        {
+            if (ModelState.IsValid)
+            {   
+                // find user
+                var user = UserManager.FindById(User.Identity.GetUserId());
+
+                // update informations
+                if (model.Number != null)
+                    user.PhoneNumber = model.Number;
+
+                if (model.Address != null)
+                    user.Addres = model.Address;
+
+
+                UserManager.Update(user);
+
+                // print message
+                ViewBag.Message = "Changed";
+                return View();
+            }
+          
+            
+            return View();
+        }
 
         //
         // GET: /Manage/ChangePassword
         public ActionResult ChangePassword()
         {
+        
             return View();
         }
 
