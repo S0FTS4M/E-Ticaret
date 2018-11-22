@@ -26,6 +26,1252 @@ namespace ETicaretAndroidAPP
 		
 		public static void UpdateIdValues()
 		{
+			global::com.refractored.Resource.Animation.abc_fade_in = global::ETicaretAndroidAPP.Resource.Animation.abc_fade_in;
+			global::com.refractored.Resource.Animation.abc_fade_out = global::ETicaretAndroidAPP.Resource.Animation.abc_fade_out;
+			global::com.refractored.Resource.Animation.abc_grow_fade_in_from_bottom = global::ETicaretAndroidAPP.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::com.refractored.Resource.Animation.abc_popup_enter = global::ETicaretAndroidAPP.Resource.Animation.abc_popup_enter;
+			global::com.refractored.Resource.Animation.abc_popup_exit = global::ETicaretAndroidAPP.Resource.Animation.abc_popup_exit;
+			global::com.refractored.Resource.Animation.abc_shrink_fade_out_from_bottom = global::ETicaretAndroidAPP.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::com.refractored.Resource.Animation.abc_slide_in_bottom = global::ETicaretAndroidAPP.Resource.Animation.abc_slide_in_bottom;
+			global::com.refractored.Resource.Animation.abc_slide_in_top = global::ETicaretAndroidAPP.Resource.Animation.abc_slide_in_top;
+			global::com.refractored.Resource.Animation.abc_slide_out_bottom = global::ETicaretAndroidAPP.Resource.Animation.abc_slide_out_bottom;
+			global::com.refractored.Resource.Animation.abc_slide_out_top = global::ETicaretAndroidAPP.Resource.Animation.abc_slide_out_top;
+			global::com.refractored.Resource.Attribute.actionBarDivider = global::ETicaretAndroidAPP.Resource.Attribute.actionBarDivider;
+			global::com.refractored.Resource.Attribute.actionBarItemBackground = global::ETicaretAndroidAPP.Resource.Attribute.actionBarItemBackground;
+			global::com.refractored.Resource.Attribute.actionBarPopupTheme = global::ETicaretAndroidAPP.Resource.Attribute.actionBarPopupTheme;
+			global::com.refractored.Resource.Attribute.actionBarSize = global::ETicaretAndroidAPP.Resource.Attribute.actionBarSize;
+			global::com.refractored.Resource.Attribute.actionBarSplitStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionBarSplitStyle;
+			global::com.refractored.Resource.Attribute.actionBarStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionBarStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabBarStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionBarTabBarStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionBarTabStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabTextStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionBarTabTextStyle;
+			global::com.refractored.Resource.Attribute.actionBarTheme = global::ETicaretAndroidAPP.Resource.Attribute.actionBarTheme;
+			global::com.refractored.Resource.Attribute.actionBarWidgetTheme = global::ETicaretAndroidAPP.Resource.Attribute.actionBarWidgetTheme;
+			global::com.refractored.Resource.Attribute.actionButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionButtonStyle;
+			global::com.refractored.Resource.Attribute.actionDropDownStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionDropDownStyle;
+			global::com.refractored.Resource.Attribute.actionLayout = global::ETicaretAndroidAPP.Resource.Attribute.actionLayout;
+			global::com.refractored.Resource.Attribute.actionMenuTextAppearance = global::ETicaretAndroidAPP.Resource.Attribute.actionMenuTextAppearance;
+			global::com.refractored.Resource.Attribute.actionMenuTextColor = global::ETicaretAndroidAPP.Resource.Attribute.actionMenuTextColor;
+			global::com.refractored.Resource.Attribute.actionModeBackground = global::ETicaretAndroidAPP.Resource.Attribute.actionModeBackground;
+			global::com.refractored.Resource.Attribute.actionModeCloseButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionModeCloseButtonStyle;
+			global::com.refractored.Resource.Attribute.actionModeCloseDrawable = global::ETicaretAndroidAPP.Resource.Attribute.actionModeCloseDrawable;
+			global::com.refractored.Resource.Attribute.actionModeCopyDrawable = global::ETicaretAndroidAPP.Resource.Attribute.actionModeCopyDrawable;
+			global::com.refractored.Resource.Attribute.actionModeCutDrawable = global::ETicaretAndroidAPP.Resource.Attribute.actionModeCutDrawable;
+			global::com.refractored.Resource.Attribute.actionModeFindDrawable = global::ETicaretAndroidAPP.Resource.Attribute.actionModeFindDrawable;
+			global::com.refractored.Resource.Attribute.actionModePasteDrawable = global::ETicaretAndroidAPP.Resource.Attribute.actionModePasteDrawable;
+			global::com.refractored.Resource.Attribute.actionModePopupWindowStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionModePopupWindowStyle;
+			global::com.refractored.Resource.Attribute.actionModeSelectAllDrawable = global::ETicaretAndroidAPP.Resource.Attribute.actionModeSelectAllDrawable;
+			global::com.refractored.Resource.Attribute.actionModeShareDrawable = global::ETicaretAndroidAPP.Resource.Attribute.actionModeShareDrawable;
+			global::com.refractored.Resource.Attribute.actionModeSplitBackground = global::ETicaretAndroidAPP.Resource.Attribute.actionModeSplitBackground;
+			global::com.refractored.Resource.Attribute.actionModeStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionModeStyle;
+			global::com.refractored.Resource.Attribute.actionModeWebSearchDrawable = global::ETicaretAndroidAPP.Resource.Attribute.actionModeWebSearchDrawable;
+			global::com.refractored.Resource.Attribute.actionOverflowButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionOverflowButtonStyle;
+			global::com.refractored.Resource.Attribute.actionOverflowMenuStyle = global::ETicaretAndroidAPP.Resource.Attribute.actionOverflowMenuStyle;
+			global::com.refractored.Resource.Attribute.actionProviderClass = global::ETicaretAndroidAPP.Resource.Attribute.actionProviderClass;
+			global::com.refractored.Resource.Attribute.actionViewClass = global::ETicaretAndroidAPP.Resource.Attribute.actionViewClass;
+			global::com.refractored.Resource.Attribute.activityChooserViewStyle = global::ETicaretAndroidAPP.Resource.Attribute.activityChooserViewStyle;
+			global::com.refractored.Resource.Attribute.alertDialogButtonGroupStyle = global::ETicaretAndroidAPP.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::com.refractored.Resource.Attribute.alertDialogCenterButtons = global::ETicaretAndroidAPP.Resource.Attribute.alertDialogCenterButtons;
+			global::com.refractored.Resource.Attribute.alertDialogStyle = global::ETicaretAndroidAPP.Resource.Attribute.alertDialogStyle;
+			global::com.refractored.Resource.Attribute.alertDialogTheme = global::ETicaretAndroidAPP.Resource.Attribute.alertDialogTheme;
+			global::com.refractored.Resource.Attribute.allowStacking = global::ETicaretAndroidAPP.Resource.Attribute.allowStacking;
+			global::com.refractored.Resource.Attribute.arrowHeadLength = global::ETicaretAndroidAPP.Resource.Attribute.arrowHeadLength;
+			global::com.refractored.Resource.Attribute.arrowShaftLength = global::ETicaretAndroidAPP.Resource.Attribute.arrowShaftLength;
+			global::com.refractored.Resource.Attribute.autoCompleteTextViewStyle = global::ETicaretAndroidAPP.Resource.Attribute.autoCompleteTextViewStyle;
+			global::com.refractored.Resource.Attribute.background = global::ETicaretAndroidAPP.Resource.Attribute.background;
+			global::com.refractored.Resource.Attribute.backgroundSplit = global::ETicaretAndroidAPP.Resource.Attribute.backgroundSplit;
+			global::com.refractored.Resource.Attribute.backgroundStacked = global::ETicaretAndroidAPP.Resource.Attribute.backgroundStacked;
+			global::com.refractored.Resource.Attribute.backgroundTint = global::ETicaretAndroidAPP.Resource.Attribute.backgroundTint;
+			global::com.refractored.Resource.Attribute.backgroundTintMode = global::ETicaretAndroidAPP.Resource.Attribute.backgroundTintMode;
+			global::com.refractored.Resource.Attribute.barLength = global::ETicaretAndroidAPP.Resource.Attribute.barLength;
+			global::com.refractored.Resource.Attribute.borderlessButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.borderlessButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.buttonBarButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarNegativeButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarNeutralButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarPositiveButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarStyle = global::ETicaretAndroidAPP.Resource.Attribute.buttonBarStyle;
+			global::com.refractored.Resource.Attribute.buttonPanelSideLayout = global::ETicaretAndroidAPP.Resource.Attribute.buttonPanelSideLayout;
+			global::com.refractored.Resource.Attribute.buttonStyle = global::ETicaretAndroidAPP.Resource.Attribute.buttonStyle;
+			global::com.refractored.Resource.Attribute.buttonStyleSmall = global::ETicaretAndroidAPP.Resource.Attribute.buttonStyleSmall;
+			global::com.refractored.Resource.Attribute.buttonTint = global::ETicaretAndroidAPP.Resource.Attribute.buttonTint;
+			global::com.refractored.Resource.Attribute.buttonTintMode = global::ETicaretAndroidAPP.Resource.Attribute.buttonTintMode;
+			global::com.refractored.Resource.Attribute.checkboxStyle = global::ETicaretAndroidAPP.Resource.Attribute.checkboxStyle;
+			global::com.refractored.Resource.Attribute.checkedTextViewStyle = global::ETicaretAndroidAPP.Resource.Attribute.checkedTextViewStyle;
+			global::com.refractored.Resource.Attribute.closeIcon = global::ETicaretAndroidAPP.Resource.Attribute.closeIcon;
+			global::com.refractored.Resource.Attribute.closeItemLayout = global::ETicaretAndroidAPP.Resource.Attribute.closeItemLayout;
+			global::com.refractored.Resource.Attribute.collapseContentDescription = global::ETicaretAndroidAPP.Resource.Attribute.collapseContentDescription;
+			global::com.refractored.Resource.Attribute.collapseIcon = global::ETicaretAndroidAPP.Resource.Attribute.collapseIcon;
+			global::com.refractored.Resource.Attribute.color = global::ETicaretAndroidAPP.Resource.Attribute.color;
+			global::com.refractored.Resource.Attribute.colorAccent = global::ETicaretAndroidAPP.Resource.Attribute.colorAccent;
+			global::com.refractored.Resource.Attribute.colorButtonNormal = global::ETicaretAndroidAPP.Resource.Attribute.colorButtonNormal;
+			global::com.refractored.Resource.Attribute.colorControlActivated = global::ETicaretAndroidAPP.Resource.Attribute.colorControlActivated;
+			global::com.refractored.Resource.Attribute.colorControlHighlight = global::ETicaretAndroidAPP.Resource.Attribute.colorControlHighlight;
+			global::com.refractored.Resource.Attribute.colorControlNormal = global::ETicaretAndroidAPP.Resource.Attribute.colorControlNormal;
+			global::com.refractored.Resource.Attribute.colorPrimary = global::ETicaretAndroidAPP.Resource.Attribute.colorPrimary;
+			global::com.refractored.Resource.Attribute.colorPrimaryDark = global::ETicaretAndroidAPP.Resource.Attribute.colorPrimaryDark;
+			global::com.refractored.Resource.Attribute.colorSwitchThumbNormal = global::ETicaretAndroidAPP.Resource.Attribute.colorSwitchThumbNormal;
+			global::com.refractored.Resource.Attribute.commitIcon = global::ETicaretAndroidAPP.Resource.Attribute.commitIcon;
+			global::com.refractored.Resource.Attribute.contentInsetEnd = global::ETicaretAndroidAPP.Resource.Attribute.contentInsetEnd;
+			global::com.refractored.Resource.Attribute.contentInsetLeft = global::ETicaretAndroidAPP.Resource.Attribute.contentInsetLeft;
+			global::com.refractored.Resource.Attribute.contentInsetRight = global::ETicaretAndroidAPP.Resource.Attribute.contentInsetRight;
+			global::com.refractored.Resource.Attribute.contentInsetStart = global::ETicaretAndroidAPP.Resource.Attribute.contentInsetStart;
+			global::com.refractored.Resource.Attribute.controlBackground = global::ETicaretAndroidAPP.Resource.Attribute.controlBackground;
+			global::com.refractored.Resource.Attribute.customNavigationLayout = global::ETicaretAndroidAPP.Resource.Attribute.customNavigationLayout;
+			global::com.refractored.Resource.Attribute.defaultQueryHint = global::ETicaretAndroidAPP.Resource.Attribute.defaultQueryHint;
+			global::com.refractored.Resource.Attribute.dialogPreferredPadding = global::ETicaretAndroidAPP.Resource.Attribute.dialogPreferredPadding;
+			global::com.refractored.Resource.Attribute.dialogTheme = global::ETicaretAndroidAPP.Resource.Attribute.dialogTheme;
+			global::com.refractored.Resource.Attribute.displayOptions = global::ETicaretAndroidAPP.Resource.Attribute.displayOptions;
+			global::com.refractored.Resource.Attribute.divider = global::ETicaretAndroidAPP.Resource.Attribute.divider;
+			global::com.refractored.Resource.Attribute.dividerHorizontal = global::ETicaretAndroidAPP.Resource.Attribute.dividerHorizontal;
+			global::com.refractored.Resource.Attribute.dividerPadding = global::ETicaretAndroidAPP.Resource.Attribute.dividerPadding;
+			global::com.refractored.Resource.Attribute.dividerVertical = global::ETicaretAndroidAPP.Resource.Attribute.dividerVertical;
+			global::com.refractored.Resource.Attribute.drawableSize = global::ETicaretAndroidAPP.Resource.Attribute.drawableSize;
+			global::com.refractored.Resource.Attribute.drawerArrowStyle = global::ETicaretAndroidAPP.Resource.Attribute.drawerArrowStyle;
+			global::com.refractored.Resource.Attribute.dropDownListViewStyle = global::ETicaretAndroidAPP.Resource.Attribute.dropDownListViewStyle;
+			global::com.refractored.Resource.Attribute.dropdownListPreferredItemHeight = global::ETicaretAndroidAPP.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::com.refractored.Resource.Attribute.editTextBackground = global::ETicaretAndroidAPP.Resource.Attribute.editTextBackground;
+			global::com.refractored.Resource.Attribute.editTextColor = global::ETicaretAndroidAPP.Resource.Attribute.editTextColor;
+			global::com.refractored.Resource.Attribute.editTextStyle = global::ETicaretAndroidAPP.Resource.Attribute.editTextStyle;
+			global::com.refractored.Resource.Attribute.elevation = global::ETicaretAndroidAPP.Resource.Attribute.elevation;
+			global::com.refractored.Resource.Attribute.expandActivityOverflowButtonDrawable = global::ETicaretAndroidAPP.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::com.refractored.Resource.Attribute.gapBetweenBars = global::ETicaretAndroidAPP.Resource.Attribute.gapBetweenBars;
+			global::com.refractored.Resource.Attribute.goIcon = global::ETicaretAndroidAPP.Resource.Attribute.goIcon;
+			global::com.refractored.Resource.Attribute.height = global::ETicaretAndroidAPP.Resource.Attribute.height;
+			global::com.refractored.Resource.Attribute.hideOnContentScroll = global::ETicaretAndroidAPP.Resource.Attribute.hideOnContentScroll;
+			global::com.refractored.Resource.Attribute.homeAsUpIndicator = global::ETicaretAndroidAPP.Resource.Attribute.homeAsUpIndicator;
+			global::com.refractored.Resource.Attribute.homeLayout = global::ETicaretAndroidAPP.Resource.Attribute.homeLayout;
+			global::com.refractored.Resource.Attribute.icon = global::ETicaretAndroidAPP.Resource.Attribute.icon;
+			global::com.refractored.Resource.Attribute.iconifiedByDefault = global::ETicaretAndroidAPP.Resource.Attribute.iconifiedByDefault;
+			global::com.refractored.Resource.Attribute.imageButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.imageButtonStyle;
+			global::com.refractored.Resource.Attribute.indeterminateProgressStyle = global::ETicaretAndroidAPP.Resource.Attribute.indeterminateProgressStyle;
+			global::com.refractored.Resource.Attribute.initialActivityCount = global::ETicaretAndroidAPP.Resource.Attribute.initialActivityCount;
+			global::com.refractored.Resource.Attribute.isLightTheme = global::ETicaretAndroidAPP.Resource.Attribute.isLightTheme;
+			global::com.refractored.Resource.Attribute.itemPadding = global::ETicaretAndroidAPP.Resource.Attribute.itemPadding;
+			global::com.refractored.Resource.Attribute.layout = global::ETicaretAndroidAPP.Resource.Attribute.layout;
+			global::com.refractored.Resource.Attribute.listChoiceBackgroundIndicator = global::ETicaretAndroidAPP.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::com.refractored.Resource.Attribute.listDividerAlertDialog = global::ETicaretAndroidAPP.Resource.Attribute.listDividerAlertDialog;
+			global::com.refractored.Resource.Attribute.listItemLayout = global::ETicaretAndroidAPP.Resource.Attribute.listItemLayout;
+			global::com.refractored.Resource.Attribute.listLayout = global::ETicaretAndroidAPP.Resource.Attribute.listLayout;
+			global::com.refractored.Resource.Attribute.listPopupWindowStyle = global::ETicaretAndroidAPP.Resource.Attribute.listPopupWindowStyle;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeight = global::ETicaretAndroidAPP.Resource.Attribute.listPreferredItemHeight;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeightLarge = global::ETicaretAndroidAPP.Resource.Attribute.listPreferredItemHeightLarge;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeightSmall = global::ETicaretAndroidAPP.Resource.Attribute.listPreferredItemHeightSmall;
+			global::com.refractored.Resource.Attribute.listPreferredItemPaddingLeft = global::ETicaretAndroidAPP.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::com.refractored.Resource.Attribute.listPreferredItemPaddingRight = global::ETicaretAndroidAPP.Resource.Attribute.listPreferredItemPaddingRight;
+			global::com.refractored.Resource.Attribute.logo = global::ETicaretAndroidAPP.Resource.Attribute.logo;
+			global::com.refractored.Resource.Attribute.logoDescription = global::ETicaretAndroidAPP.Resource.Attribute.logoDescription;
+			global::com.refractored.Resource.Attribute.maxButtonHeight = global::ETicaretAndroidAPP.Resource.Attribute.maxButtonHeight;
+			global::com.refractored.Resource.Attribute.measureWithLargestChild = global::ETicaretAndroidAPP.Resource.Attribute.measureWithLargestChild;
+			global::com.refractored.Resource.Attribute.multiChoiceItemLayout = global::ETicaretAndroidAPP.Resource.Attribute.multiChoiceItemLayout;
+			global::com.refractored.Resource.Attribute.navigationContentDescription = global::ETicaretAndroidAPP.Resource.Attribute.navigationContentDescription;
+			global::com.refractored.Resource.Attribute.navigationIcon = global::ETicaretAndroidAPP.Resource.Attribute.navigationIcon;
+			global::com.refractored.Resource.Attribute.navigationMode = global::ETicaretAndroidAPP.Resource.Attribute.navigationMode;
+			global::com.refractored.Resource.Attribute.overlapAnchor = global::ETicaretAndroidAPP.Resource.Attribute.overlapAnchor;
+			global::com.refractored.Resource.Attribute.paddingEnd = global::ETicaretAndroidAPP.Resource.Attribute.paddingEnd;
+			global::com.refractored.Resource.Attribute.paddingStart = global::ETicaretAndroidAPP.Resource.Attribute.paddingStart;
+			global::com.refractored.Resource.Attribute.panelBackground = global::ETicaretAndroidAPP.Resource.Attribute.panelBackground;
+			global::com.refractored.Resource.Attribute.panelMenuListTheme = global::ETicaretAndroidAPP.Resource.Attribute.panelMenuListTheme;
+			global::com.refractored.Resource.Attribute.panelMenuListWidth = global::ETicaretAndroidAPP.Resource.Attribute.panelMenuListWidth;
+			global::com.refractored.Resource.Attribute.popupMenuStyle = global::ETicaretAndroidAPP.Resource.Attribute.popupMenuStyle;
+			global::com.refractored.Resource.Attribute.popupTheme = global::ETicaretAndroidAPP.Resource.Attribute.popupTheme;
+			global::com.refractored.Resource.Attribute.popupWindowStyle = global::ETicaretAndroidAPP.Resource.Attribute.popupWindowStyle;
+			global::com.refractored.Resource.Attribute.preserveIconSpacing = global::ETicaretAndroidAPP.Resource.Attribute.preserveIconSpacing;
+			global::com.refractored.Resource.Attribute.progressBarPadding = global::ETicaretAndroidAPP.Resource.Attribute.progressBarPadding;
+			global::com.refractored.Resource.Attribute.progressBarStyle = global::ETicaretAndroidAPP.Resource.Attribute.progressBarStyle;
+			global::com.refractored.Resource.Attribute.pstsDividerColor = global::ETicaretAndroidAPP.Resource.Attribute.pstsDividerColor;
+			global::com.refractored.Resource.Attribute.pstsDividerPadding = global::ETicaretAndroidAPP.Resource.Attribute.pstsDividerPadding;
+			global::com.refractored.Resource.Attribute.pstsDividerWidth = global::ETicaretAndroidAPP.Resource.Attribute.pstsDividerWidth;
+			global::com.refractored.Resource.Attribute.pstsIndicatorColor = global::ETicaretAndroidAPP.Resource.Attribute.pstsIndicatorColor;
+			global::com.refractored.Resource.Attribute.pstsIndicatorHeight = global::ETicaretAndroidAPP.Resource.Attribute.pstsIndicatorHeight;
+			global::com.refractored.Resource.Attribute.pstsPaddingMiddle = global::ETicaretAndroidAPP.Resource.Attribute.pstsPaddingMiddle;
+			global::com.refractored.Resource.Attribute.pstsScrollOffset = global::ETicaretAndroidAPP.Resource.Attribute.pstsScrollOffset;
+			global::com.refractored.Resource.Attribute.pstsShouldExpand = global::ETicaretAndroidAPP.Resource.Attribute.pstsShouldExpand;
+			global::com.refractored.Resource.Attribute.pstsTabBackground = global::ETicaretAndroidAPP.Resource.Attribute.pstsTabBackground;
+			global::com.refractored.Resource.Attribute.pstsTabPaddingLeftRight = global::ETicaretAndroidAPP.Resource.Attribute.pstsTabPaddingLeftRight;
+			global::com.refractored.Resource.Attribute.pstsTextAllCaps = global::ETicaretAndroidAPP.Resource.Attribute.pstsTextAllCaps;
+			global::com.refractored.Resource.Attribute.pstsTextAlpha = global::ETicaretAndroidAPP.Resource.Attribute.pstsTextAlpha;
+			global::com.refractored.Resource.Attribute.pstsTextColorSelected = global::ETicaretAndroidAPP.Resource.Attribute.pstsTextColorSelected;
+			global::com.refractored.Resource.Attribute.pstsTextSelectedStyle = global::ETicaretAndroidAPP.Resource.Attribute.pstsTextSelectedStyle;
+			global::com.refractored.Resource.Attribute.pstsTextStyle = global::ETicaretAndroidAPP.Resource.Attribute.pstsTextStyle;
+			global::com.refractored.Resource.Attribute.pstsUnderlineColor = global::ETicaretAndroidAPP.Resource.Attribute.pstsUnderlineColor;
+			global::com.refractored.Resource.Attribute.pstsUnderlineHeight = global::ETicaretAndroidAPP.Resource.Attribute.pstsUnderlineHeight;
+			global::com.refractored.Resource.Attribute.queryBackground = global::ETicaretAndroidAPP.Resource.Attribute.queryBackground;
+			global::com.refractored.Resource.Attribute.queryHint = global::ETicaretAndroidAPP.Resource.Attribute.queryHint;
+			global::com.refractored.Resource.Attribute.radioButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.radioButtonStyle;
+			global::com.refractored.Resource.Attribute.ratingBarStyle = global::ETicaretAndroidAPP.Resource.Attribute.ratingBarStyle;
+			global::com.refractored.Resource.Attribute.ratingBarStyleIndicator = global::ETicaretAndroidAPP.Resource.Attribute.ratingBarStyleIndicator;
+			global::com.refractored.Resource.Attribute.ratingBarStyleSmall = global::ETicaretAndroidAPP.Resource.Attribute.ratingBarStyleSmall;
+			global::com.refractored.Resource.Attribute.searchHintIcon = global::ETicaretAndroidAPP.Resource.Attribute.searchHintIcon;
+			global::com.refractored.Resource.Attribute.searchIcon = global::ETicaretAndroidAPP.Resource.Attribute.searchIcon;
+			global::com.refractored.Resource.Attribute.searchViewStyle = global::ETicaretAndroidAPP.Resource.Attribute.searchViewStyle;
+			global::com.refractored.Resource.Attribute.seekBarStyle = global::ETicaretAndroidAPP.Resource.Attribute.seekBarStyle;
+			global::com.refractored.Resource.Attribute.selectableItemBackground = global::ETicaretAndroidAPP.Resource.Attribute.selectableItemBackground;
+			global::com.refractored.Resource.Attribute.selectableItemBackgroundBorderless = global::ETicaretAndroidAPP.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::com.refractored.Resource.Attribute.showAsAction = global::ETicaretAndroidAPP.Resource.Attribute.showAsAction;
+			global::com.refractored.Resource.Attribute.showDividers = global::ETicaretAndroidAPP.Resource.Attribute.showDividers;
+			global::com.refractored.Resource.Attribute.showText = global::ETicaretAndroidAPP.Resource.Attribute.showText;
+			global::com.refractored.Resource.Attribute.singleChoiceItemLayout = global::ETicaretAndroidAPP.Resource.Attribute.singleChoiceItemLayout;
+			global::com.refractored.Resource.Attribute.spinBars = global::ETicaretAndroidAPP.Resource.Attribute.spinBars;
+			global::com.refractored.Resource.Attribute.spinnerDropDownItemStyle = global::ETicaretAndroidAPP.Resource.Attribute.spinnerDropDownItemStyle;
+			global::com.refractored.Resource.Attribute.spinnerStyle = global::ETicaretAndroidAPP.Resource.Attribute.spinnerStyle;
+			global::com.refractored.Resource.Attribute.splitTrack = global::ETicaretAndroidAPP.Resource.Attribute.splitTrack;
+			global::com.refractored.Resource.Attribute.srcCompat = global::ETicaretAndroidAPP.Resource.Attribute.srcCompat;
+			global::com.refractored.Resource.Attribute.state_above_anchor = global::ETicaretAndroidAPP.Resource.Attribute.state_above_anchor;
+			global::com.refractored.Resource.Attribute.submitBackground = global::ETicaretAndroidAPP.Resource.Attribute.submitBackground;
+			global::com.refractored.Resource.Attribute.subtitle = global::ETicaretAndroidAPP.Resource.Attribute.subtitle;
+			global::com.refractored.Resource.Attribute.subtitleTextAppearance = global::ETicaretAndroidAPP.Resource.Attribute.subtitleTextAppearance;
+			global::com.refractored.Resource.Attribute.subtitleTextColor = global::ETicaretAndroidAPP.Resource.Attribute.subtitleTextColor;
+			global::com.refractored.Resource.Attribute.subtitleTextStyle = global::ETicaretAndroidAPP.Resource.Attribute.subtitleTextStyle;
+			global::com.refractored.Resource.Attribute.suggestionRowLayout = global::ETicaretAndroidAPP.Resource.Attribute.suggestionRowLayout;
+			global::com.refractored.Resource.Attribute.switchMinWidth = global::ETicaretAndroidAPP.Resource.Attribute.switchMinWidth;
+			global::com.refractored.Resource.Attribute.switchPadding = global::ETicaretAndroidAPP.Resource.Attribute.switchPadding;
+			global::com.refractored.Resource.Attribute.switchStyle = global::ETicaretAndroidAPP.Resource.Attribute.switchStyle;
+			global::com.refractored.Resource.Attribute.switchTextAppearance = global::ETicaretAndroidAPP.Resource.Attribute.switchTextAppearance;
+			global::com.refractored.Resource.Attribute.textAllCaps = global::ETicaretAndroidAPP.Resource.Attribute.textAllCaps;
+			global::com.refractored.Resource.Attribute.textAppearanceLargePopupMenu = global::ETicaretAndroidAPP.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::com.refractored.Resource.Attribute.textAppearanceListItem = global::ETicaretAndroidAPP.Resource.Attribute.textAppearanceListItem;
+			global::com.refractored.Resource.Attribute.textAppearanceListItemSmall = global::ETicaretAndroidAPP.Resource.Attribute.textAppearanceListItemSmall;
+			global::com.refractored.Resource.Attribute.textAppearanceSearchResultSubtitle = global::ETicaretAndroidAPP.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::com.refractored.Resource.Attribute.textAppearanceSearchResultTitle = global::ETicaretAndroidAPP.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::com.refractored.Resource.Attribute.textAppearanceSmallPopupMenu = global::ETicaretAndroidAPP.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::com.refractored.Resource.Attribute.textColorAlertDialogListItem = global::ETicaretAndroidAPP.Resource.Attribute.textColorAlertDialogListItem;
+			global::com.refractored.Resource.Attribute.textColorSearchUrl = global::ETicaretAndroidAPP.Resource.Attribute.textColorSearchUrl;
+			global::com.refractored.Resource.Attribute.theme = global::ETicaretAndroidAPP.Resource.Attribute.theme;
+			global::com.refractored.Resource.Attribute.thickness = global::ETicaretAndroidAPP.Resource.Attribute.thickness;
+			global::com.refractored.Resource.Attribute.thumbTextPadding = global::ETicaretAndroidAPP.Resource.Attribute.thumbTextPadding;
+			global::com.refractored.Resource.Attribute.title = global::ETicaretAndroidAPP.Resource.Attribute.title;
+			global::com.refractored.Resource.Attribute.titleMarginBottom = global::ETicaretAndroidAPP.Resource.Attribute.titleMarginBottom;
+			global::com.refractored.Resource.Attribute.titleMarginEnd = global::ETicaretAndroidAPP.Resource.Attribute.titleMarginEnd;
+			global::com.refractored.Resource.Attribute.titleMarginStart = global::ETicaretAndroidAPP.Resource.Attribute.titleMarginStart;
+			global::com.refractored.Resource.Attribute.titleMarginTop = global::ETicaretAndroidAPP.Resource.Attribute.titleMarginTop;
+			global::com.refractored.Resource.Attribute.titleMargins = global::ETicaretAndroidAPP.Resource.Attribute.titleMargins;
+			global::com.refractored.Resource.Attribute.titleTextAppearance = global::ETicaretAndroidAPP.Resource.Attribute.titleTextAppearance;
+			global::com.refractored.Resource.Attribute.titleTextColor = global::ETicaretAndroidAPP.Resource.Attribute.titleTextColor;
+			global::com.refractored.Resource.Attribute.titleTextStyle = global::ETicaretAndroidAPP.Resource.Attribute.titleTextStyle;
+			global::com.refractored.Resource.Attribute.toolbarNavigationButtonStyle = global::ETicaretAndroidAPP.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::com.refractored.Resource.Attribute.toolbarStyle = global::ETicaretAndroidAPP.Resource.Attribute.toolbarStyle;
+			global::com.refractored.Resource.Attribute.track = global::ETicaretAndroidAPP.Resource.Attribute.track;
+			global::com.refractored.Resource.Attribute.voiceIcon = global::ETicaretAndroidAPP.Resource.Attribute.voiceIcon;
+			global::com.refractored.Resource.Attribute.windowActionBar = global::ETicaretAndroidAPP.Resource.Attribute.windowActionBar;
+			global::com.refractored.Resource.Attribute.windowActionBarOverlay = global::ETicaretAndroidAPP.Resource.Attribute.windowActionBarOverlay;
+			global::com.refractored.Resource.Attribute.windowActionModeOverlay = global::ETicaretAndroidAPP.Resource.Attribute.windowActionModeOverlay;
+			global::com.refractored.Resource.Attribute.windowFixedHeightMajor = global::ETicaretAndroidAPP.Resource.Attribute.windowFixedHeightMajor;
+			global::com.refractored.Resource.Attribute.windowFixedHeightMinor = global::ETicaretAndroidAPP.Resource.Attribute.windowFixedHeightMinor;
+			global::com.refractored.Resource.Attribute.windowFixedWidthMajor = global::ETicaretAndroidAPP.Resource.Attribute.windowFixedWidthMajor;
+			global::com.refractored.Resource.Attribute.windowFixedWidthMinor = global::ETicaretAndroidAPP.Resource.Attribute.windowFixedWidthMinor;
+			global::com.refractored.Resource.Attribute.windowMinWidthMajor = global::ETicaretAndroidAPP.Resource.Attribute.windowMinWidthMajor;
+			global::com.refractored.Resource.Attribute.windowMinWidthMinor = global::ETicaretAndroidAPP.Resource.Attribute.windowMinWidthMinor;
+			global::com.refractored.Resource.Attribute.windowNoTitle = global::ETicaretAndroidAPP.Resource.Attribute.windowNoTitle;
+			global::com.refractored.Resource.Boolean.abc_action_bar_embed_tabs = global::ETicaretAndroidAPP.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::com.refractored.Resource.Boolean.abc_allow_stacked_button_bar = global::ETicaretAndroidAPP.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::com.refractored.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::ETicaretAndroidAPP.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::com.refractored.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::ETicaretAndroidAPP.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::com.refractored.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::ETicaretAndroidAPP.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::com.refractored.Resource.Color.abc_background_cache_hint_selector_material_dark = global::ETicaretAndroidAPP.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::com.refractored.Resource.Color.abc_background_cache_hint_selector_material_light = global::ETicaretAndroidAPP.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::com.refractored.Resource.Color.abc_color_highlight_material = global::ETicaretAndroidAPP.Resource.Color.abc_color_highlight_material;
+			global::com.refractored.Resource.Color.abc_input_method_navigation_guard = global::ETicaretAndroidAPP.Resource.Color.abc_input_method_navigation_guard;
+			global::com.refractored.Resource.Color.abc_primary_text_disable_only_material_dark = global::ETicaretAndroidAPP.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::com.refractored.Resource.Color.abc_primary_text_disable_only_material_light = global::ETicaretAndroidAPP.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::com.refractored.Resource.Color.abc_primary_text_material_dark = global::ETicaretAndroidAPP.Resource.Color.abc_primary_text_material_dark;
+			global::com.refractored.Resource.Color.abc_primary_text_material_light = global::ETicaretAndroidAPP.Resource.Color.abc_primary_text_material_light;
+			global::com.refractored.Resource.Color.abc_search_url_text = global::ETicaretAndroidAPP.Resource.Color.abc_search_url_text;
+			global::com.refractored.Resource.Color.abc_search_url_text_normal = global::ETicaretAndroidAPP.Resource.Color.abc_search_url_text_normal;
+			global::com.refractored.Resource.Color.abc_search_url_text_pressed = global::ETicaretAndroidAPP.Resource.Color.abc_search_url_text_pressed;
+			global::com.refractored.Resource.Color.abc_search_url_text_selected = global::ETicaretAndroidAPP.Resource.Color.abc_search_url_text_selected;
+			global::com.refractored.Resource.Color.abc_secondary_text_material_dark = global::ETicaretAndroidAPP.Resource.Color.abc_secondary_text_material_dark;
+			global::com.refractored.Resource.Color.abc_secondary_text_material_light = global::ETicaretAndroidAPP.Resource.Color.abc_secondary_text_material_light;
+			global::com.refractored.Resource.Color.accent_material_dark = global::ETicaretAndroidAPP.Resource.Color.accent_material_dark;
+			global::com.refractored.Resource.Color.accent_material_light = global::ETicaretAndroidAPP.Resource.Color.accent_material_light;
+			global::com.refractored.Resource.Color.background_floating_material_dark = global::ETicaretAndroidAPP.Resource.Color.background_floating_material_dark;
+			global::com.refractored.Resource.Color.background_floating_material_light = global::ETicaretAndroidAPP.Resource.Color.background_floating_material_light;
+			global::com.refractored.Resource.Color.background_material_dark = global::ETicaretAndroidAPP.Resource.Color.background_material_dark;
+			global::com.refractored.Resource.Color.background_material_light = global::ETicaretAndroidAPP.Resource.Color.background_material_light;
+			global::com.refractored.Resource.Color.bright_foreground_disabled_material_dark = global::ETicaretAndroidAPP.Resource.Color.bright_foreground_disabled_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_disabled_material_light = global::ETicaretAndroidAPP.Resource.Color.bright_foreground_disabled_material_light;
+			global::com.refractored.Resource.Color.bright_foreground_inverse_material_dark = global::ETicaretAndroidAPP.Resource.Color.bright_foreground_inverse_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_inverse_material_light = global::ETicaretAndroidAPP.Resource.Color.bright_foreground_inverse_material_light;
+			global::com.refractored.Resource.Color.bright_foreground_material_dark = global::ETicaretAndroidAPP.Resource.Color.bright_foreground_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_material_light = global::ETicaretAndroidAPP.Resource.Color.bright_foreground_material_light;
+			global::com.refractored.Resource.Color.button_material_dark = global::ETicaretAndroidAPP.Resource.Color.button_material_dark;
+			global::com.refractored.Resource.Color.button_material_light = global::ETicaretAndroidAPP.Resource.Color.button_material_light;
+			global::com.refractored.Resource.Color.dim_foreground_disabled_material_dark = global::ETicaretAndroidAPP.Resource.Color.dim_foreground_disabled_material_dark;
+			global::com.refractored.Resource.Color.dim_foreground_disabled_material_light = global::ETicaretAndroidAPP.Resource.Color.dim_foreground_disabled_material_light;
+			global::com.refractored.Resource.Color.dim_foreground_material_dark = global::ETicaretAndroidAPP.Resource.Color.dim_foreground_material_dark;
+			global::com.refractored.Resource.Color.dim_foreground_material_light = global::ETicaretAndroidAPP.Resource.Color.dim_foreground_material_light;
+			global::com.refractored.Resource.Color.foreground_material_dark = global::ETicaretAndroidAPP.Resource.Color.foreground_material_dark;
+			global::com.refractored.Resource.Color.foreground_material_light = global::ETicaretAndroidAPP.Resource.Color.foreground_material_light;
+			global::com.refractored.Resource.Color.highlighted_text_material_dark = global::ETicaretAndroidAPP.Resource.Color.highlighted_text_material_dark;
+			global::com.refractored.Resource.Color.highlighted_text_material_light = global::ETicaretAndroidAPP.Resource.Color.highlighted_text_material_light;
+			global::com.refractored.Resource.Color.material_blue_grey_800 = global::ETicaretAndroidAPP.Resource.Color.material_blue_grey_800;
+			global::com.refractored.Resource.Color.material_blue_grey_900 = global::ETicaretAndroidAPP.Resource.Color.material_blue_grey_900;
+			global::com.refractored.Resource.Color.material_blue_grey_950 = global::ETicaretAndroidAPP.Resource.Color.material_blue_grey_950;
+			global::com.refractored.Resource.Color.material_deep_teal_200 = global::ETicaretAndroidAPP.Resource.Color.material_deep_teal_200;
+			global::com.refractored.Resource.Color.material_deep_teal_500 = global::ETicaretAndroidAPP.Resource.Color.material_deep_teal_500;
+			global::com.refractored.Resource.Color.material_grey_100 = global::ETicaretAndroidAPP.Resource.Color.material_grey_100;
+			global::com.refractored.Resource.Color.material_grey_300 = global::ETicaretAndroidAPP.Resource.Color.material_grey_300;
+			global::com.refractored.Resource.Color.material_grey_50 = global::ETicaretAndroidAPP.Resource.Color.material_grey_50;
+			global::com.refractored.Resource.Color.material_grey_600 = global::ETicaretAndroidAPP.Resource.Color.material_grey_600;
+			global::com.refractored.Resource.Color.material_grey_800 = global::ETicaretAndroidAPP.Resource.Color.material_grey_800;
+			global::com.refractored.Resource.Color.material_grey_850 = global::ETicaretAndroidAPP.Resource.Color.material_grey_850;
+			global::com.refractored.Resource.Color.material_grey_900 = global::ETicaretAndroidAPP.Resource.Color.material_grey_900;
+			global::com.refractored.Resource.Color.primary_dark_material_dark = global::ETicaretAndroidAPP.Resource.Color.primary_dark_material_dark;
+			global::com.refractored.Resource.Color.primary_dark_material_light = global::ETicaretAndroidAPP.Resource.Color.primary_dark_material_light;
+			global::com.refractored.Resource.Color.primary_material_dark = global::ETicaretAndroidAPP.Resource.Color.primary_material_dark;
+			global::com.refractored.Resource.Color.primary_material_light = global::ETicaretAndroidAPP.Resource.Color.primary_material_light;
+			global::com.refractored.Resource.Color.primary_text_default_material_dark = global::ETicaretAndroidAPP.Resource.Color.primary_text_default_material_dark;
+			global::com.refractored.Resource.Color.primary_text_default_material_light = global::ETicaretAndroidAPP.Resource.Color.primary_text_default_material_light;
+			global::com.refractored.Resource.Color.primary_text_disabled_material_dark = global::ETicaretAndroidAPP.Resource.Color.primary_text_disabled_material_dark;
+			global::com.refractored.Resource.Color.primary_text_disabled_material_light = global::ETicaretAndroidAPP.Resource.Color.primary_text_disabled_material_light;
+			global::com.refractored.Resource.Color.psts_background_tab_pressed = global::ETicaretAndroidAPP.Resource.Color.psts_background_tab_pressed;
+			global::com.refractored.Resource.Color.ripple_material_dark = global::ETicaretAndroidAPP.Resource.Color.ripple_material_dark;
+			global::com.refractored.Resource.Color.ripple_material_light = global::ETicaretAndroidAPP.Resource.Color.ripple_material_light;
+			global::com.refractored.Resource.Color.secondary_text_default_material_dark = global::ETicaretAndroidAPP.Resource.Color.secondary_text_default_material_dark;
+			global::com.refractored.Resource.Color.secondary_text_default_material_light = global::ETicaretAndroidAPP.Resource.Color.secondary_text_default_material_light;
+			global::com.refractored.Resource.Color.secondary_text_disabled_material_dark = global::ETicaretAndroidAPP.Resource.Color.secondary_text_disabled_material_dark;
+			global::com.refractored.Resource.Color.secondary_text_disabled_material_light = global::ETicaretAndroidAPP.Resource.Color.secondary_text_disabled_material_light;
+			global::com.refractored.Resource.Color.switch_thumb_disabled_material_dark = global::ETicaretAndroidAPP.Resource.Color.switch_thumb_disabled_material_dark;
+			global::com.refractored.Resource.Color.switch_thumb_disabled_material_light = global::ETicaretAndroidAPP.Resource.Color.switch_thumb_disabled_material_light;
+			global::com.refractored.Resource.Color.switch_thumb_material_dark = global::ETicaretAndroidAPP.Resource.Color.switch_thumb_material_dark;
+			global::com.refractored.Resource.Color.switch_thumb_material_light = global::ETicaretAndroidAPP.Resource.Color.switch_thumb_material_light;
+			global::com.refractored.Resource.Color.switch_thumb_normal_material_dark = global::ETicaretAndroidAPP.Resource.Color.switch_thumb_normal_material_dark;
+			global::com.refractored.Resource.Color.switch_thumb_normal_material_light = global::ETicaretAndroidAPP.Resource.Color.switch_thumb_normal_material_light;
+			global::com.refractored.Resource.Dimension.abc_action_bar_content_inset_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_default_height_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_default_height_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_default_padding_end_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_default_padding_start_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_progress_bar_size = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::com.refractored.Resource.Dimension.abc_action_bar_stacked_max_height = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::com.refractored.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::com.refractored.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_height_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_button_min_height_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_width_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_button_min_width_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_width_overflow_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::com.refractored.Resource.Dimension.abc_alert_dialog_button_bar_height = global::ETicaretAndroidAPP.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::com.refractored.Resource.Dimension.abc_button_inset_horizontal_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::com.refractored.Resource.Dimension.abc_button_inset_vertical_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_button_inset_vertical_material;
+			global::com.refractored.Resource.Dimension.abc_button_padding_horizontal_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::com.refractored.Resource.Dimension.abc_button_padding_vertical_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_button_padding_vertical_material;
+			global::com.refractored.Resource.Dimension.abc_config_prefDialogWidth = global::ETicaretAndroidAPP.Resource.Dimension.abc_config_prefDialogWidth;
+			global::com.refractored.Resource.Dimension.abc_control_corner_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_control_corner_material;
+			global::com.refractored.Resource.Dimension.abc_control_inset_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_control_inset_material;
+			global::com.refractored.Resource.Dimension.abc_control_padding_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_control_padding_material;
+			global::com.refractored.Resource.Dimension.abc_dialog_fixed_height_major = global::ETicaretAndroidAPP.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::com.refractored.Resource.Dimension.abc_dialog_fixed_height_minor = global::ETicaretAndroidAPP.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::com.refractored.Resource.Dimension.abc_dialog_fixed_width_major = global::ETicaretAndroidAPP.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::com.refractored.Resource.Dimension.abc_dialog_fixed_width_minor = global::ETicaretAndroidAPP.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::com.refractored.Resource.Dimension.abc_dialog_min_width_major = global::ETicaretAndroidAPP.Resource.Dimension.abc_dialog_min_width_major;
+			global::com.refractored.Resource.Dimension.abc_dialog_min_width_minor = global::ETicaretAndroidAPP.Resource.Dimension.abc_dialog_min_width_minor;
+			global::com.refractored.Resource.Dimension.abc_dialog_padding_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_dialog_padding_material;
+			global::com.refractored.Resource.Dimension.abc_dialog_padding_top_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_dialog_padding_top_material;
+			global::com.refractored.Resource.Dimension.abc_disabled_alpha_material_dark = global::ETicaretAndroidAPP.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::com.refractored.Resource.Dimension.abc_disabled_alpha_material_light = global::ETicaretAndroidAPP.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_icon_width = global::ETicaretAndroidAPP.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_text_padding_left = global::ETicaretAndroidAPP.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_text_padding_right = global::ETicaretAndroidAPP.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::com.refractored.Resource.Dimension.abc_edit_text_inset_bottom_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::com.refractored.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::com.refractored.Resource.Dimension.abc_edit_text_inset_top_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::com.refractored.Resource.Dimension.abc_floating_window_z = global::ETicaretAndroidAPP.Resource.Dimension.abc_floating_window_z;
+			global::com.refractored.Resource.Dimension.abc_list_item_padding_horizontal_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::com.refractored.Resource.Dimension.abc_panel_menu_list_width = global::ETicaretAndroidAPP.Resource.Dimension.abc_panel_menu_list_width;
+			global::com.refractored.Resource.Dimension.abc_search_view_preferred_width = global::ETicaretAndroidAPP.Resource.Dimension.abc_search_view_preferred_width;
+			global::com.refractored.Resource.Dimension.abc_seekbar_track_background_height_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::com.refractored.Resource.Dimension.abc_seekbar_track_progress_height_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::com.refractored.Resource.Dimension.abc_select_dialog_padding_start_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::com.refractored.Resource.Dimension.abc_switch_padding = global::ETicaretAndroidAPP.Resource.Dimension.abc_switch_padding;
+			global::com.refractored.Resource.Dimension.abc_text_size_body_1_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_body_1_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_body_2_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_body_2_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_button_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_button_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_caption_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_caption_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_1_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_display_1_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_2_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_display_2_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_3_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_display_3_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_4_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_display_4_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_headline_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_headline_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_large_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_large_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_medium_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_medium_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_menu_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_menu_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_small_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_small_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_subhead_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_subhead_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::com.refractored.Resource.Dimension.abc_text_size_title_material = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_title_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_title_material_toolbar = global::ETicaretAndroidAPP.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::com.refractored.Resource.Dimension.disabled_alpha_material_dark = global::ETicaretAndroidAPP.Resource.Dimension.disabled_alpha_material_dark;
+			global::com.refractored.Resource.Dimension.disabled_alpha_material_light = global::ETicaretAndroidAPP.Resource.Dimension.disabled_alpha_material_light;
+			global::com.refractored.Resource.Dimension.highlight_alpha_material_colored = global::ETicaretAndroidAPP.Resource.Dimension.highlight_alpha_material_colored;
+			global::com.refractored.Resource.Dimension.highlight_alpha_material_dark = global::ETicaretAndroidAPP.Resource.Dimension.highlight_alpha_material_dark;
+			global::com.refractored.Resource.Dimension.highlight_alpha_material_light = global::ETicaretAndroidAPP.Resource.Dimension.highlight_alpha_material_light;
+			global::com.refractored.Resource.Dimension.notification_large_icon_height = global::ETicaretAndroidAPP.Resource.Dimension.notification_large_icon_height;
+			global::com.refractored.Resource.Dimension.notification_large_icon_width = global::ETicaretAndroidAPP.Resource.Dimension.notification_large_icon_width;
+			global::com.refractored.Resource.Dimension.notification_subtext_size = global::ETicaretAndroidAPP.Resource.Dimension.notification_subtext_size;
+			global::com.refractored.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_action_bar_item_background_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_action_bar_item_background_material;
+			global::com.refractored.Resource.Drawable.abc_btn_borderless_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_borderless_material;
+			global::com.refractored.Resource.Drawable.abc_btn_check_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_check_material;
+			global::com.refractored.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::com.refractored.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::com.refractored.Resource.Drawable.abc_btn_colored_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_colored_material;
+			global::com.refractored.Resource.Drawable.abc_btn_default_mtrl_shape = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_radio_material;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::com.refractored.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::com.refractored.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::ETicaretAndroidAPP.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::com.refractored.Resource.Drawable.abc_cab_background_internal_bg = global::ETicaretAndroidAPP.Resource.Drawable.abc_cab_background_internal_bg;
+			global::com.refractored.Resource.Drawable.abc_cab_background_top_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_cab_background_top_material;
+			global::com.refractored.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_control_background_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_control_background_material;
+			global::com.refractored.Resource.Drawable.abc_edit_text_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_edit_text_material;
+			global::com.refractored.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_star_black_16dp = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_star_black_16dp;
+			global::com.refractored.Resource.Drawable.abc_ic_star_black_36dp = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_star_black_36dp;
+			global::com.refractored.Resource.Drawable.abc_ic_star_half_black_16dp = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::com.refractored.Resource.Drawable.abc_ic_star_half_black_36dp = global::ETicaretAndroidAPP.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::com.refractored.Resource.Drawable.abc_item_background_holo_dark = global::ETicaretAndroidAPP.Resource.Drawable.abc_item_background_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_item_background_holo_light = global::ETicaretAndroidAPP.Resource.Drawable.abc_item_background_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_divider_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_list_focused_holo = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_focused_holo;
+			global::com.refractored.Resource.Drawable.abc_list_longpressed_holo = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_longpressed_holo;
+			global::com.refractored.Resource.Drawable.abc_list_pressed_holo_dark = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_pressed_holo_light = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_pressed_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_disabled_holo_light = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_holo_dark = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_selector_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_holo_light = global::ETicaretAndroidAPP.Resource.Drawable.abc_list_selector_holo_light;
+			global::com.refractored.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::ETicaretAndroidAPP.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::com.refractored.Resource.Drawable.abc_popup_background_mtrl_mult = global::ETicaretAndroidAPP.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::com.refractored.Resource.Drawable.abc_ratingbar_indicator_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::com.refractored.Resource.Drawable.abc_ratingbar_small_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_ratingbar_small_material;
+			global::com.refractored.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::ETicaretAndroidAPP.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::com.refractored.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::ETicaretAndroidAPP.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::com.refractored.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_seekbar_thumb_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_seekbar_thumb_material;
+			global::com.refractored.Resource.Drawable.abc_seekbar_track_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_seekbar_track_material;
+			global::com.refractored.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_spinner_textfield_background_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::com.refractored.Resource.Drawable.abc_switch_thumb_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_switch_thumb_material;
+			global::com.refractored.Resource.Drawable.abc_switch_track_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_tab_indicator_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_tab_indicator_material;
+			global::com.refractored.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_text_cursor_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_text_cursor_material;
+			global::com.refractored.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::ETicaretAndroidAPP.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_material = global::ETicaretAndroidAPP.Resource.Drawable.abc_textfield_search_material;
+			global::com.refractored.Resource.Drawable.notification_template_icon_bg = global::ETicaretAndroidAPP.Resource.Drawable.notification_template_icon_bg;
+			global::com.refractored.Resource.Drawable.psts_background_tab = global::ETicaretAndroidAPP.Resource.Drawable.psts_background_tab;
+			global::com.refractored.Resource.Id.action0 = global::ETicaretAndroidAPP.Resource.Id.action0;
+			global::com.refractored.Resource.Id.action_bar = global::ETicaretAndroidAPP.Resource.Id.action_bar;
+			global::com.refractored.Resource.Id.action_bar_activity_content = global::ETicaretAndroidAPP.Resource.Id.action_bar_activity_content;
+			global::com.refractored.Resource.Id.action_bar_container = global::ETicaretAndroidAPP.Resource.Id.action_bar_container;
+			global::com.refractored.Resource.Id.action_bar_root = global::ETicaretAndroidAPP.Resource.Id.action_bar_root;
+			global::com.refractored.Resource.Id.action_bar_spinner = global::ETicaretAndroidAPP.Resource.Id.action_bar_spinner;
+			global::com.refractored.Resource.Id.action_bar_subtitle = global::ETicaretAndroidAPP.Resource.Id.action_bar_subtitle;
+			global::com.refractored.Resource.Id.action_bar_title = global::ETicaretAndroidAPP.Resource.Id.action_bar_title;
+			global::com.refractored.Resource.Id.action_context_bar = global::ETicaretAndroidAPP.Resource.Id.action_context_bar;
+			global::com.refractored.Resource.Id.action_divider = global::ETicaretAndroidAPP.Resource.Id.action_divider;
+			global::com.refractored.Resource.Id.action_menu_divider = global::ETicaretAndroidAPP.Resource.Id.action_menu_divider;
+			global::com.refractored.Resource.Id.action_menu_presenter = global::ETicaretAndroidAPP.Resource.Id.action_menu_presenter;
+			global::com.refractored.Resource.Id.action_mode_bar = global::ETicaretAndroidAPP.Resource.Id.action_mode_bar;
+			global::com.refractored.Resource.Id.action_mode_bar_stub = global::ETicaretAndroidAPP.Resource.Id.action_mode_bar_stub;
+			global::com.refractored.Resource.Id.action_mode_close_button = global::ETicaretAndroidAPP.Resource.Id.action_mode_close_button;
+			global::com.refractored.Resource.Id.activity_chooser_view_content = global::ETicaretAndroidAPP.Resource.Id.activity_chooser_view_content;
+			global::com.refractored.Resource.Id.alertTitle = global::ETicaretAndroidAPP.Resource.Id.alertTitle;
+			global::com.refractored.Resource.Id.bold = global::ETicaretAndroidAPP.Resource.Id.bold;
+			global::com.refractored.Resource.Id.buttonPanel = global::ETicaretAndroidAPP.Resource.Id.buttonPanel;
+			global::com.refractored.Resource.Id.cancel_action = global::ETicaretAndroidAPP.Resource.Id.cancel_action;
+			global::com.refractored.Resource.Id.checkbox = global::ETicaretAndroidAPP.Resource.Id.checkbox;
+			global::com.refractored.Resource.Id.chronometer = global::ETicaretAndroidAPP.Resource.Id.chronometer;
+			global::com.refractored.Resource.Id.contentPanel = global::ETicaretAndroidAPP.Resource.Id.contentPanel;
+			global::com.refractored.Resource.Id.custom = global::ETicaretAndroidAPP.Resource.Id.custom;
+			global::com.refractored.Resource.Id.customPanel = global::ETicaretAndroidAPP.Resource.Id.customPanel;
+			global::com.refractored.Resource.Id.decor_content_parent = global::ETicaretAndroidAPP.Resource.Id.decor_content_parent;
+			global::com.refractored.Resource.Id.default_activity_button = global::ETicaretAndroidAPP.Resource.Id.default_activity_button;
+			global::com.refractored.Resource.Id.edit_query = global::ETicaretAndroidAPP.Resource.Id.edit_query;
+			global::com.refractored.Resource.Id.end = global::ETicaretAndroidAPP.Resource.Id.end;
+			global::com.refractored.Resource.Id.end_padder = global::ETicaretAndroidAPP.Resource.Id.end_padder;
+			global::com.refractored.Resource.Id.expand_activities_button = global::ETicaretAndroidAPP.Resource.Id.expand_activities_button;
+			global::com.refractored.Resource.Id.expanded_menu = global::ETicaretAndroidAPP.Resource.Id.expanded_menu;
+			global::com.refractored.Resource.Id.home = global::ETicaretAndroidAPP.Resource.Id.home;
+			global::com.refractored.Resource.Id.icon = global::ETicaretAndroidAPP.Resource.Id.icon;
+			global::com.refractored.Resource.Id.image = global::ETicaretAndroidAPP.Resource.Id.image;
+			global::com.refractored.Resource.Id.info = global::ETicaretAndroidAPP.Resource.Id.info;
+			global::com.refractored.Resource.Id.italic = global::ETicaretAndroidAPP.Resource.Id.italic;
+			global::com.refractored.Resource.Id.line1 = global::ETicaretAndroidAPP.Resource.Id.line1;
+			global::com.refractored.Resource.Id.line3 = global::ETicaretAndroidAPP.Resource.Id.line3;
+			global::com.refractored.Resource.Id.listMode = global::ETicaretAndroidAPP.Resource.Id.listMode;
+			global::com.refractored.Resource.Id.list_item = global::ETicaretAndroidAPP.Resource.Id.list_item;
+			global::com.refractored.Resource.Id.media_actions = global::ETicaretAndroidAPP.Resource.Id.media_actions;
+			global::com.refractored.Resource.Id.multiply = global::ETicaretAndroidAPP.Resource.Id.multiply;
+			global::com.refractored.Resource.Id.none = global::ETicaretAndroidAPP.Resource.Id.none;
+			global::com.refractored.Resource.Id.normal = global::ETicaretAndroidAPP.Resource.Id.normal;
+			global::com.refractored.Resource.Id.parentPanel = global::ETicaretAndroidAPP.Resource.Id.parentPanel;
+			global::com.refractored.Resource.Id.progress_circular = global::ETicaretAndroidAPP.Resource.Id.progress_circular;
+			global::com.refractored.Resource.Id.progress_horizontal = global::ETicaretAndroidAPP.Resource.Id.progress_horizontal;
+			global::com.refractored.Resource.Id.psts_tab_title = global::ETicaretAndroidAPP.Resource.Id.psts_tab_title;
+			global::com.refractored.Resource.Id.radio = global::ETicaretAndroidAPP.Resource.Id.radio;
+			global::com.refractored.Resource.Id.screen = global::ETicaretAndroidAPP.Resource.Id.screen;
+			global::com.refractored.Resource.Id.scrollIndicatorDown = global::ETicaretAndroidAPP.Resource.Id.scrollIndicatorDown;
+			global::com.refractored.Resource.Id.scrollIndicatorUp = global::ETicaretAndroidAPP.Resource.Id.scrollIndicatorUp;
+			global::com.refractored.Resource.Id.scrollView = global::ETicaretAndroidAPP.Resource.Id.scrollView;
+			global::com.refractored.Resource.Id.search_badge = global::ETicaretAndroidAPP.Resource.Id.search_badge;
+			global::com.refractored.Resource.Id.search_bar = global::ETicaretAndroidAPP.Resource.Id.search_bar;
+			global::com.refractored.Resource.Id.search_button = global::ETicaretAndroidAPP.Resource.Id.search_button;
+			global::com.refractored.Resource.Id.search_close_btn = global::ETicaretAndroidAPP.Resource.Id.search_close_btn;
+			global::com.refractored.Resource.Id.search_edit_frame = global::ETicaretAndroidAPP.Resource.Id.search_edit_frame;
+			global::com.refractored.Resource.Id.search_go_btn = global::ETicaretAndroidAPP.Resource.Id.search_go_btn;
+			global::com.refractored.Resource.Id.search_mag_icon = global::ETicaretAndroidAPP.Resource.Id.search_mag_icon;
+			global::com.refractored.Resource.Id.search_plate = global::ETicaretAndroidAPP.Resource.Id.search_plate;
+			global::com.refractored.Resource.Id.search_src_text = global::ETicaretAndroidAPP.Resource.Id.search_src_text;
+			global::com.refractored.Resource.Id.search_voice_btn = global::ETicaretAndroidAPP.Resource.Id.search_voice_btn;
+			global::com.refractored.Resource.Id.select_dialog_listview = global::ETicaretAndroidAPP.Resource.Id.select_dialog_listview;
+			global::com.refractored.Resource.Id.shortcut = global::ETicaretAndroidAPP.Resource.Id.shortcut;
+			global::com.refractored.Resource.Id.spacer = global::ETicaretAndroidAPP.Resource.Id.spacer;
+			global::com.refractored.Resource.Id.split_action_bar = global::ETicaretAndroidAPP.Resource.Id.split_action_bar;
+			global::com.refractored.Resource.Id.src_atop = global::ETicaretAndroidAPP.Resource.Id.src_atop;
+			global::com.refractored.Resource.Id.src_in = global::ETicaretAndroidAPP.Resource.Id.src_in;
+			global::com.refractored.Resource.Id.src_over = global::ETicaretAndroidAPP.Resource.Id.src_over;
+			global::com.refractored.Resource.Id.status_bar_latest_event_content = global::ETicaretAndroidAPP.Resource.Id.status_bar_latest_event_content;
+			global::com.refractored.Resource.Id.submit_area = global::ETicaretAndroidAPP.Resource.Id.submit_area;
+			global::com.refractored.Resource.Id.tabMode = global::ETicaretAndroidAPP.Resource.Id.tabMode;
+			global::com.refractored.Resource.Id.text = global::ETicaretAndroidAPP.Resource.Id.text;
+			global::com.refractored.Resource.Id.text2 = global::ETicaretAndroidAPP.Resource.Id.text2;
+			global::com.refractored.Resource.Id.textSpacerNoButtons = global::ETicaretAndroidAPP.Resource.Id.textSpacerNoButtons;
+			global::com.refractored.Resource.Id.time = global::ETicaretAndroidAPP.Resource.Id.time;
+			global::com.refractored.Resource.Id.title = global::ETicaretAndroidAPP.Resource.Id.title;
+			global::com.refractored.Resource.Id.title_template = global::ETicaretAndroidAPP.Resource.Id.title_template;
+			global::com.refractored.Resource.Id.topPanel = global::ETicaretAndroidAPP.Resource.Id.topPanel;
+			global::com.refractored.Resource.Id.up = global::ETicaretAndroidAPP.Resource.Id.up;
+			global::com.refractored.Resource.Id.wrap_content = global::ETicaretAndroidAPP.Resource.Id.wrap_content;
+			global::com.refractored.Resource.Integer.abc_config_activityDefaultDur = global::ETicaretAndroidAPP.Resource.Integer.abc_config_activityDefaultDur;
+			global::com.refractored.Resource.Integer.abc_config_activityShortDur = global::ETicaretAndroidAPP.Resource.Integer.abc_config_activityShortDur;
+			global::com.refractored.Resource.Integer.cancel_button_image_alpha = global::ETicaretAndroidAPP.Resource.Integer.cancel_button_image_alpha;
+			global::com.refractored.Resource.Integer.status_bar_notification_info_maxnum = global::ETicaretAndroidAPP.Resource.Integer.status_bar_notification_info_maxnum;
+			global::com.refractored.Resource.Layout.abc_action_bar_title_item = global::ETicaretAndroidAPP.Resource.Layout.abc_action_bar_title_item;
+			global::com.refractored.Resource.Layout.abc_action_bar_up_container = global::ETicaretAndroidAPP.Resource.Layout.abc_action_bar_up_container;
+			global::com.refractored.Resource.Layout.abc_action_menu_item_layout = global::ETicaretAndroidAPP.Resource.Layout.abc_action_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_action_menu_layout = global::ETicaretAndroidAPP.Resource.Layout.abc_action_menu_layout;
+			global::com.refractored.Resource.Layout.abc_action_mode_bar = global::ETicaretAndroidAPP.Resource.Layout.abc_action_mode_bar;
+			global::com.refractored.Resource.Layout.abc_action_mode_close_item_material = global::ETicaretAndroidAPP.Resource.Layout.abc_action_mode_close_item_material;
+			global::com.refractored.Resource.Layout.abc_activity_chooser_view = global::ETicaretAndroidAPP.Resource.Layout.abc_activity_chooser_view;
+			global::com.refractored.Resource.Layout.abc_activity_chooser_view_list_item = global::ETicaretAndroidAPP.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::com.refractored.Resource.Layout.abc_alert_dialog_button_bar_material = global::ETicaretAndroidAPP.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::com.refractored.Resource.Layout.abc_alert_dialog_material = global::ETicaretAndroidAPP.Resource.Layout.abc_alert_dialog_material;
+			global::com.refractored.Resource.Layout.abc_dialog_title_material = global::ETicaretAndroidAPP.Resource.Layout.abc_dialog_title_material;
+			global::com.refractored.Resource.Layout.abc_expanded_menu_layout = global::ETicaretAndroidAPP.Resource.Layout.abc_expanded_menu_layout;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_checkbox = global::ETicaretAndroidAPP.Resource.Layout.abc_list_menu_item_checkbox;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_icon = global::ETicaretAndroidAPP.Resource.Layout.abc_list_menu_item_icon;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_layout = global::ETicaretAndroidAPP.Resource.Layout.abc_list_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_radio = global::ETicaretAndroidAPP.Resource.Layout.abc_list_menu_item_radio;
+			global::com.refractored.Resource.Layout.abc_popup_menu_item_layout = global::ETicaretAndroidAPP.Resource.Layout.abc_popup_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_screen_content_include = global::ETicaretAndroidAPP.Resource.Layout.abc_screen_content_include;
+			global::com.refractored.Resource.Layout.abc_screen_simple = global::ETicaretAndroidAPP.Resource.Layout.abc_screen_simple;
+			global::com.refractored.Resource.Layout.abc_screen_simple_overlay_action_mode = global::ETicaretAndroidAPP.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::com.refractored.Resource.Layout.abc_screen_toolbar = global::ETicaretAndroidAPP.Resource.Layout.abc_screen_toolbar;
+			global::com.refractored.Resource.Layout.abc_search_dropdown_item_icons_2line = global::ETicaretAndroidAPP.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::com.refractored.Resource.Layout.abc_search_view = global::ETicaretAndroidAPP.Resource.Layout.abc_search_view;
+			global::com.refractored.Resource.Layout.abc_select_dialog_material = global::ETicaretAndroidAPP.Resource.Layout.abc_select_dialog_material;
+			global::com.refractored.Resource.Layout.notification_media_action = global::ETicaretAndroidAPP.Resource.Layout.notification_media_action;
+			global::com.refractored.Resource.Layout.notification_media_cancel_action = global::ETicaretAndroidAPP.Resource.Layout.notification_media_cancel_action;
+			global::com.refractored.Resource.Layout.notification_template_big_media = global::ETicaretAndroidAPP.Resource.Layout.notification_template_big_media;
+			global::com.refractored.Resource.Layout.notification_template_big_media_narrow = global::ETicaretAndroidAPP.Resource.Layout.notification_template_big_media_narrow;
+			global::com.refractored.Resource.Layout.notification_template_media = global::ETicaretAndroidAPP.Resource.Layout.notification_template_media;
+			global::com.refractored.Resource.Layout.notification_template_part_chronometer = global::ETicaretAndroidAPP.Resource.Layout.notification_template_part_chronometer;
+			global::com.refractored.Resource.Layout.notification_template_part_time = global::ETicaretAndroidAPP.Resource.Layout.notification_template_part_time;
+			global::com.refractored.Resource.Layout.psts_tab = global::ETicaretAndroidAPP.Resource.Layout.psts_tab;
+			global::com.refractored.Resource.Layout.select_dialog_item_material = global::ETicaretAndroidAPP.Resource.Layout.select_dialog_item_material;
+			global::com.refractored.Resource.Layout.select_dialog_multichoice_material = global::ETicaretAndroidAPP.Resource.Layout.select_dialog_multichoice_material;
+			global::com.refractored.Resource.Layout.select_dialog_singlechoice_material = global::ETicaretAndroidAPP.Resource.Layout.select_dialog_singlechoice_material;
+			global::com.refractored.Resource.Layout.support_simple_spinner_dropdown_item = global::ETicaretAndroidAPP.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::com.refractored.Resource.String.abc_action_bar_home_description = global::ETicaretAndroidAPP.Resource.String.abc_action_bar_home_description;
+			global::com.refractored.Resource.String.abc_action_bar_up_description = global::ETicaretAndroidAPP.Resource.String.abc_action_bar_up_description;
+			global::com.refractored.Resource.String.abc_action_menu_overflow_description = global::ETicaretAndroidAPP.Resource.String.abc_action_menu_overflow_description;
+			global::com.refractored.Resource.String.abc_action_mode_done = global::ETicaretAndroidAPP.Resource.String.abc_action_mode_done;
+			global::com.refractored.Resource.String.abc_activity_chooser_view_see_all = global::ETicaretAndroidAPP.Resource.String.abc_activity_chooser_view_see_all;
+			global::com.refractored.Resource.String.abc_activitychooserview_choose_application = global::ETicaretAndroidAPP.Resource.String.abc_activitychooserview_choose_application;
+			global::com.refractored.Resource.String.abc_capital_off = global::ETicaretAndroidAPP.Resource.String.abc_capital_off;
+			global::com.refractored.Resource.String.abc_capital_on = global::ETicaretAndroidAPP.Resource.String.abc_capital_on;
+			global::com.refractored.Resource.String.abc_search_hint = global::ETicaretAndroidAPP.Resource.String.abc_search_hint;
+			global::com.refractored.Resource.String.abc_searchview_description_clear = global::ETicaretAndroidAPP.Resource.String.abc_searchview_description_clear;
+			global::com.refractored.Resource.String.abc_searchview_description_query = global::ETicaretAndroidAPP.Resource.String.abc_searchview_description_query;
+			global::com.refractored.Resource.String.abc_searchview_description_search = global::ETicaretAndroidAPP.Resource.String.abc_searchview_description_search;
+			global::com.refractored.Resource.String.abc_searchview_description_submit = global::ETicaretAndroidAPP.Resource.String.abc_searchview_description_submit;
+			global::com.refractored.Resource.String.abc_searchview_description_voice = global::ETicaretAndroidAPP.Resource.String.abc_searchview_description_voice;
+			global::com.refractored.Resource.String.abc_shareactionprovider_share_with = global::ETicaretAndroidAPP.Resource.String.abc_shareactionprovider_share_with;
+			global::com.refractored.Resource.String.abc_shareactionprovider_share_with_application = global::ETicaretAndroidAPP.Resource.String.abc_shareactionprovider_share_with_application;
+			global::com.refractored.Resource.String.abc_toolbar_collapse_description = global::ETicaretAndroidAPP.Resource.String.abc_toolbar_collapse_description;
+			global::com.refractored.Resource.String.status_bar_notification_info_overflow = global::ETicaretAndroidAPP.Resource.String.status_bar_notification_info_overflow;
+			global::com.refractored.Resource.Style.AlertDialog_AppCompat = global::ETicaretAndroidAPP.Resource.Style.AlertDialog_AppCompat;
+			global::com.refractored.Resource.Style.AlertDialog_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.AlertDialog_AppCompat_Light;
+			global::com.refractored.Resource.Style.Animation_AppCompat_Dialog = global::ETicaretAndroidAPP.Resource.Style.Animation_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Animation_AppCompat_DropDownUp = global::ETicaretAndroidAPP.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::com.refractored.Resource.Style.Base_AlertDialog_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_AlertDialog_AppCompat;
+			global::com.refractored.Resource.Style.Base_AlertDialog_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_Animation_AppCompat_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::ETicaretAndroidAPP.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::com.refractored.Resource.Style.Base_DialogWindowTitle_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::com.refractored.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Button = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Large = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Small = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Title = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::ETicaretAndroidAPP.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::ETicaretAndroidAPP.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::ETicaretAndroidAPP.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::ETicaretAndroidAPP.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::ETicaretAndroidAPP.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_V21_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V22_Theme_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_V22_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V22_Theme_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V23_Theme_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_V23_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V23_Theme_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Base_V7_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::ETicaretAndroidAPP.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::ETicaretAndroidAPP.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::ETicaretAndroidAPP.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionMode = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Button;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_Small = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_EditText = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ImageButton = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListView = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_RatingBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_SearchView = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_SeekBar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Spinner = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Toolbar = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::ETicaretAndroidAPP.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::com.refractored.Resource.Style.Platform_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Platform_AppCompat;
+			global::com.refractored.Resource.Style.Platform_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Platform_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_ThemeOverlay_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::com.refractored.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::ETicaretAndroidAPP.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::com.refractored.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_V11_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Platform_V11_AppCompat;
+			global::com.refractored.Resource.Style.Platform_V11_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Platform_V11_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_V14_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Platform_V14_AppCompat;
+			global::com.refractored.Resource.Style.Platform_V14_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Platform_V14_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_Widget_AppCompat_Spinner = global::ETicaretAndroidAPP.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::com.refractored.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::ETicaretAndroidAPP.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::com.refractored.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::ETicaretAndroidAPP.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::com.refractored.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::ETicaretAndroidAPP.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Body1 = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Body2 = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Button = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Button;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Caption = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display1 = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display2 = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display3 = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display4 = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Headline = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Large = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Medium = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Menu = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Small = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Subhead = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Title = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::ETicaretAndroidAPP.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::com.refractored.Resource.Style.Theme_AppCompat = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat;
+			global::com.refractored.Resource.Style.Theme_AppCompat_CompactMenu = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_DayNight;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Dialog = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Dialog_Alert = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_Dialog = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_NoActionBar = global::ETicaretAndroidAPP.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat = global::ETicaretAndroidAPP.Resource.Style.ThemeOverlay_AppCompat;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::ETicaretAndroidAPP.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Dark = global::ETicaretAndroidAPP.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::ETicaretAndroidAPP.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Light = global::ETicaretAndroidAPP.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionMode = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActionMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActivityChooserView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Button;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_Borderless = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_Colored = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_Small = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Button_Small;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ButtonBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::com.refractored.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::com.refractored.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::com.refractored.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::com.refractored.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_EditText = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ImageButton = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ImageButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_SearchView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListPopupWindow = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ListView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListView_DropDown = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListView_Menu = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupMenu = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupWindow = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ProgressBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::com.refractored.Resource.Style.Widget_AppCompat_RatingBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_RatingBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::com.refractored.Resource.Style.Widget_AppCompat_RatingBar_Small = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::com.refractored.Resource.Style.Widget_AppCompat_SearchView = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_SearchView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_SeekBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_SeekBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::com.refractored.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Toolbar = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Toolbar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::ETicaretAndroidAPP.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::com.refractored.Resource.Styleable.ActionBar = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar;
+			global::com.refractored.Resource.Styleable.ActionBar_background = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_background;
+			global::com.refractored.Resource.Styleable.ActionBar_backgroundSplit = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_backgroundSplit;
+			global::com.refractored.Resource.Styleable.ActionBar_backgroundStacked = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_backgroundStacked;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetEnd = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetLeft = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetRight = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_contentInsetRight;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetStart = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_contentInsetStart;
+			global::com.refractored.Resource.Styleable.ActionBar_customNavigationLayout = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::com.refractored.Resource.Styleable.ActionBar_displayOptions = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_displayOptions;
+			global::com.refractored.Resource.Styleable.ActionBar_divider = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_divider;
+			global::com.refractored.Resource.Styleable.ActionBar_elevation = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_elevation;
+			global::com.refractored.Resource.Styleable.ActionBar_height = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_height;
+			global::com.refractored.Resource.Styleable.ActionBar_hideOnContentScroll = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::com.refractored.Resource.Styleable.ActionBar_homeAsUpIndicator = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::com.refractored.Resource.Styleable.ActionBar_homeLayout = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_homeLayout;
+			global::com.refractored.Resource.Styleable.ActionBar_icon = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_icon;
+			global::com.refractored.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_itemPadding = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_itemPadding;
+			global::com.refractored.Resource.Styleable.ActionBar_logo = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_logo;
+			global::com.refractored.Resource.Styleable.ActionBar_navigationMode = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_navigationMode;
+			global::com.refractored.Resource.Styleable.ActionBar_popupTheme = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_popupTheme;
+			global::com.refractored.Resource.Styleable.ActionBar_progressBarPadding = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_progressBarPadding;
+			global::com.refractored.Resource.Styleable.ActionBar_progressBarStyle = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_progressBarStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_subtitle = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_subtitle;
+			global::com.refractored.Resource.Styleable.ActionBar_subtitleTextStyle = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_title = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_title;
+			global::com.refractored.Resource.Styleable.ActionBar_titleTextStyle = global::ETicaretAndroidAPP.Resource.Styleable.ActionBar_titleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionBarLayout = global::ETicaretAndroidAPP.Resource.Styleable.ActionBarLayout;
+			global::com.refractored.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::ETicaretAndroidAPP.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::com.refractored.Resource.Styleable.ActionMenuItemView = global::ETicaretAndroidAPP.Resource.Styleable.ActionMenuItemView;
+			global::com.refractored.Resource.Styleable.ActionMenuItemView_android_minWidth = global::ETicaretAndroidAPP.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::com.refractored.Resource.Styleable.ActionMode = global::ETicaretAndroidAPP.Resource.Styleable.ActionMode;
+			global::com.refractored.Resource.Styleable.ActionMode_background = global::ETicaretAndroidAPP.Resource.Styleable.ActionMode_background;
+			global::com.refractored.Resource.Styleable.ActionMode_backgroundSplit = global::ETicaretAndroidAPP.Resource.Styleable.ActionMode_backgroundSplit;
+			global::com.refractored.Resource.Styleable.ActionMode_closeItemLayout = global::ETicaretAndroidAPP.Resource.Styleable.ActionMode_closeItemLayout;
+			global::com.refractored.Resource.Styleable.ActionMode_height = global::ETicaretAndroidAPP.Resource.Styleable.ActionMode_height;
+			global::com.refractored.Resource.Styleable.ActionMode_subtitleTextStyle = global::ETicaretAndroidAPP.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionMode_titleTextStyle = global::ETicaretAndroidAPP.Resource.Styleable.ActionMode_titleTextStyle;
+			global::com.refractored.Resource.Styleable.ActivityChooserView = global::ETicaretAndroidAPP.Resource.Styleable.ActivityChooserView;
+			global::com.refractored.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::ETicaretAndroidAPP.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::com.refractored.Resource.Styleable.ActivityChooserView_initialActivityCount = global::ETicaretAndroidAPP.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::com.refractored.Resource.Styleable.AlertDialog = global::ETicaretAndroidAPP.Resource.Styleable.AlertDialog;
+			global::com.refractored.Resource.Styleable.AlertDialog_android_layout = global::ETicaretAndroidAPP.Resource.Styleable.AlertDialog_android_layout;
+			global::com.refractored.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::ETicaretAndroidAPP.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::com.refractored.Resource.Styleable.AlertDialog_listItemLayout = global::ETicaretAndroidAPP.Resource.Styleable.AlertDialog_listItemLayout;
+			global::com.refractored.Resource.Styleable.AlertDialog_listLayout = global::ETicaretAndroidAPP.Resource.Styleable.AlertDialog_listLayout;
+			global::com.refractored.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::ETicaretAndroidAPP.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::com.refractored.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::ETicaretAndroidAPP.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::com.refractored.Resource.Styleable.AppCompatImageView = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatImageView;
+			global::com.refractored.Resource.Styleable.AppCompatImageView_android_src = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatImageView_android_src;
+			global::com.refractored.Resource.Styleable.AppCompatImageView_srcCompat = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::com.refractored.Resource.Styleable.AppCompatTextView = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTextView;
+			global::com.refractored.Resource.Styleable.AppCompatTextView_android_textAppearance = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::com.refractored.Resource.Styleable.AppCompatTextView_textAllCaps = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::com.refractored.Resource.Styleable.AppCompatTheme = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarDivider = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarSize = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarTheme = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeBackground = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_checkboxStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorAccent = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorControlActivated = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorControlNormal = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorPrimary = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_controlBackground = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dialogTheme = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dividerVertical = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_editTextBackground = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_editTextColor = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_editTextStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_panelBackground = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_searchViewStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_seekBarStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_spinnerStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_switchStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_toolbarStyle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowActionBar = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowNoTitle = global::ETicaretAndroidAPP.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::com.refractored.Resource.Styleable.ButtonBarLayout = global::ETicaretAndroidAPP.Resource.Styleable.ButtonBarLayout;
+			global::com.refractored.Resource.Styleable.ButtonBarLayout_allowStacking = global::ETicaretAndroidAPP.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::com.refractored.Resource.Styleable.CompoundButton = global::ETicaretAndroidAPP.Resource.Styleable.CompoundButton;
+			global::com.refractored.Resource.Styleable.CompoundButton_android_button = global::ETicaretAndroidAPP.Resource.Styleable.CompoundButton_android_button;
+			global::com.refractored.Resource.Styleable.CompoundButton_buttonTint = global::ETicaretAndroidAPP.Resource.Styleable.CompoundButton_buttonTint;
+			global::com.refractored.Resource.Styleable.CompoundButton_buttonTintMode = global::ETicaretAndroidAPP.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_barLength = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_color = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle_color;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_drawableSize = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_spinBars = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_thickness = global::ETicaretAndroidAPP.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_gravity = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_orientation = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_divider = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_divider;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_showDividers = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::ETicaretAndroidAPP.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::com.refractored.Resource.Styleable.ListPopupWindow = global::ETicaretAndroidAPP.Resource.Styleable.ListPopupWindow;
+			global::com.refractored.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::ETicaretAndroidAPP.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::com.refractored.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::ETicaretAndroidAPP.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::com.refractored.Resource.Styleable.MenuGroup = global::ETicaretAndroidAPP.Resource.Styleable.MenuGroup;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_checkableBehavior = global::ETicaretAndroidAPP.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_enabled = global::ETicaretAndroidAPP.Resource.Styleable.MenuGroup_android_enabled;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_id = global::ETicaretAndroidAPP.Resource.Styleable.MenuGroup_android_id;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_menuCategory = global::ETicaretAndroidAPP.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_orderInCategory = global::ETicaretAndroidAPP.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_visible = global::ETicaretAndroidAPP.Resource.Styleable.MenuGroup_android_visible;
+			global::com.refractored.Resource.Styleable.MenuItem = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem;
+			global::com.refractored.Resource.Styleable.MenuItem_actionLayout = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_actionLayout;
+			global::com.refractored.Resource.Styleable.MenuItem_actionProviderClass = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_actionProviderClass;
+			global::com.refractored.Resource.Styleable.MenuItem_actionViewClass = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_actionViewClass;
+			global::com.refractored.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::com.refractored.Resource.Styleable.MenuItem_android_checkable = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_checkable;
+			global::com.refractored.Resource.Styleable.MenuItem_android_checked = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_checked;
+			global::com.refractored.Resource.Styleable.MenuItem_android_enabled = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_enabled;
+			global::com.refractored.Resource.Styleable.MenuItem_android_icon = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_icon;
+			global::com.refractored.Resource.Styleable.MenuItem_android_id = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_id;
+			global::com.refractored.Resource.Styleable.MenuItem_android_menuCategory = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_menuCategory;
+			global::com.refractored.Resource.Styleable.MenuItem_android_numericShortcut = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::com.refractored.Resource.Styleable.MenuItem_android_onClick = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_onClick;
+			global::com.refractored.Resource.Styleable.MenuItem_android_orderInCategory = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::com.refractored.Resource.Styleable.MenuItem_android_title = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_title;
+			global::com.refractored.Resource.Styleable.MenuItem_android_titleCondensed = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::com.refractored.Resource.Styleable.MenuItem_android_visible = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_android_visible;
+			global::com.refractored.Resource.Styleable.MenuItem_showAsAction = global::ETicaretAndroidAPP.Resource.Styleable.MenuItem_showAsAction;
+			global::com.refractored.Resource.Styleable.MenuView = global::ETicaretAndroidAPP.Resource.Styleable.MenuView;
+			global::com.refractored.Resource.Styleable.MenuView_android_headerBackground = global::ETicaretAndroidAPP.Resource.Styleable.MenuView_android_headerBackground;
+			global::com.refractored.Resource.Styleable.MenuView_android_horizontalDivider = global::ETicaretAndroidAPP.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemBackground = global::ETicaretAndroidAPP.Resource.Styleable.MenuView_android_itemBackground;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::ETicaretAndroidAPP.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemTextAppearance = global::ETicaretAndroidAPP.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::com.refractored.Resource.Styleable.MenuView_android_verticalDivider = global::ETicaretAndroidAPP.Resource.Styleable.MenuView_android_verticalDivider;
+			global::com.refractored.Resource.Styleable.MenuView_android_windowAnimationStyle = global::ETicaretAndroidAPP.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::com.refractored.Resource.Styleable.MenuView_preserveIconSpacing = global::ETicaretAndroidAPP.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerColor = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsDividerColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerPadding = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsDividerPadding;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerWidth = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsDividerWidth;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorColor = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorHeight = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorHeight;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsPaddingMiddle = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsPaddingMiddle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsScrollOffset = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsScrollOffset;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsShouldExpand = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsShouldExpand;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTabBackground = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsTabBackground;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTabPaddingLeftRight = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsTabPaddingLeftRight;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextAllCaps = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsTextAllCaps;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextAlpha = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsTextAlpha;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextColorSelected = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsTextColorSelected;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextSelectedStyle = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsTextSelectedStyle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextStyle = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsTextStyle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineColor = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineHeight = global::ETicaretAndroidAPP.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineHeight;
+			global::com.refractored.Resource.Styleable.PopupWindow = global::ETicaretAndroidAPP.Resource.Styleable.PopupWindow;
+			global::com.refractored.Resource.Styleable.PopupWindow_android_popupBackground = global::ETicaretAndroidAPP.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::com.refractored.Resource.Styleable.PopupWindow_overlapAnchor = global::ETicaretAndroidAPP.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::com.refractored.Resource.Styleable.PopupWindowBackgroundState = global::ETicaretAndroidAPP.Resource.Styleable.PopupWindowBackgroundState;
+			global::com.refractored.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::ETicaretAndroidAPP.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::com.refractored.Resource.Styleable.SearchView = global::ETicaretAndroidAPP.Resource.Styleable.SearchView;
+			global::com.refractored.Resource.Styleable.SearchView_android_focusable = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_android_focusable;
+			global::com.refractored.Resource.Styleable.SearchView_android_imeOptions = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_android_imeOptions;
+			global::com.refractored.Resource.Styleable.SearchView_android_inputType = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_android_inputType;
+			global::com.refractored.Resource.Styleable.SearchView_android_maxWidth = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_android_maxWidth;
+			global::com.refractored.Resource.Styleable.SearchView_closeIcon = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_closeIcon;
+			global::com.refractored.Resource.Styleable.SearchView_commitIcon = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_commitIcon;
+			global::com.refractored.Resource.Styleable.SearchView_defaultQueryHint = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_defaultQueryHint;
+			global::com.refractored.Resource.Styleable.SearchView_goIcon = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_goIcon;
+			global::com.refractored.Resource.Styleable.SearchView_iconifiedByDefault = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::com.refractored.Resource.Styleable.SearchView_layout = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_layout;
+			global::com.refractored.Resource.Styleable.SearchView_queryBackground = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_queryBackground;
+			global::com.refractored.Resource.Styleable.SearchView_queryHint = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_queryHint;
+			global::com.refractored.Resource.Styleable.SearchView_searchHintIcon = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_searchHintIcon;
+			global::com.refractored.Resource.Styleable.SearchView_searchIcon = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_searchIcon;
+			global::com.refractored.Resource.Styleable.SearchView_submitBackground = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_submitBackground;
+			global::com.refractored.Resource.Styleable.SearchView_suggestionRowLayout = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::com.refractored.Resource.Styleable.SearchView_voiceIcon = global::ETicaretAndroidAPP.Resource.Styleable.SearchView_voiceIcon;
+			global::com.refractored.Resource.Styleable.Spinner = global::ETicaretAndroidAPP.Resource.Styleable.Spinner;
+			global::com.refractored.Resource.Styleable.Spinner_android_dropDownWidth = global::ETicaretAndroidAPP.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::com.refractored.Resource.Styleable.Spinner_android_entries = global::ETicaretAndroidAPP.Resource.Styleable.Spinner_android_entries;
+			global::com.refractored.Resource.Styleable.Spinner_android_popupBackground = global::ETicaretAndroidAPP.Resource.Styleable.Spinner_android_popupBackground;
+			global::com.refractored.Resource.Styleable.Spinner_android_prompt = global::ETicaretAndroidAPP.Resource.Styleable.Spinner_android_prompt;
+			global::com.refractored.Resource.Styleable.Spinner_popupTheme = global::ETicaretAndroidAPP.Resource.Styleable.Spinner_popupTheme;
+			global::com.refractored.Resource.Styleable.SwitchCompat = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_textOff = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_android_textOff;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_textOn = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_android_textOn;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_thumb = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_android_thumb;
+			global::com.refractored.Resource.Styleable.SwitchCompat_showText = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_showText;
+			global::com.refractored.Resource.Styleable.SwitchCompat_splitTrack = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_splitTrack;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchMinWidth = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchPadding = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_switchPadding;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchTextAppearance = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::com.refractored.Resource.Styleable.SwitchCompat_thumbTextPadding = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::com.refractored.Resource.Styleable.SwitchCompat_track = global::ETicaretAndroidAPP.Resource.Styleable.SwitchCompat_track;
+			global::com.refractored.Resource.Styleable.TextAppearance = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_shadowColor = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_shadowDx = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_shadowDy = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_shadowRadius = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_textColor = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_android_textColor;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_textSize = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_android_textSize;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_textStyle = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_android_textStyle;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_typeface = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_android_typeface;
+			global::com.refractored.Resource.Styleable.TextAppearance_textAllCaps = global::ETicaretAndroidAPP.Resource.Styleable.TextAppearance_textAllCaps;
+			global::com.refractored.Resource.Styleable.Toolbar = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar;
+			global::com.refractored.Resource.Styleable.Toolbar_android_gravity = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_android_gravity;
+			global::com.refractored.Resource.Styleable.Toolbar_android_minHeight = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_android_minHeight;
+			global::com.refractored.Resource.Styleable.Toolbar_collapseContentDescription = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::com.refractored.Resource.Styleable.Toolbar_collapseIcon = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_collapseIcon;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetEnd = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetLeft = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetRight = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_contentInsetRight;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetStart = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_contentInsetStart;
+			global::com.refractored.Resource.Styleable.Toolbar_logo = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_logo;
+			global::com.refractored.Resource.Styleable.Toolbar_logoDescription = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_logoDescription;
+			global::com.refractored.Resource.Styleable.Toolbar_maxButtonHeight = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::com.refractored.Resource.Styleable.Toolbar_navigationContentDescription = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::com.refractored.Resource.Styleable.Toolbar_navigationIcon = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_navigationIcon;
+			global::com.refractored.Resource.Styleable.Toolbar_popupTheme = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_popupTheme;
+			global::com.refractored.Resource.Styleable.Toolbar_subtitle = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_subtitle;
+			global::com.refractored.Resource.Styleable.Toolbar_subtitleTextAppearance = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::com.refractored.Resource.Styleable.Toolbar_subtitleTextColor = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::com.refractored.Resource.Styleable.Toolbar_title = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_title;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginBottom = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginEnd = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginStart = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_titleMarginStart;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginTop = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_titleMarginTop;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMargins = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_titleMargins;
+			global::com.refractored.Resource.Styleable.Toolbar_titleTextAppearance = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::com.refractored.Resource.Styleable.Toolbar_titleTextColor = global::ETicaretAndroidAPP.Resource.Styleable.Toolbar_titleTextColor;
+			global::com.refractored.Resource.Styleable.View = global::ETicaretAndroidAPP.Resource.Styleable.View;
+			global::com.refractored.Resource.Styleable.View_android_focusable = global::ETicaretAndroidAPP.Resource.Styleable.View_android_focusable;
+			global::com.refractored.Resource.Styleable.View_android_theme = global::ETicaretAndroidAPP.Resource.Styleable.View_android_theme;
+			global::com.refractored.Resource.Styleable.View_paddingEnd = global::ETicaretAndroidAPP.Resource.Styleable.View_paddingEnd;
+			global::com.refractored.Resource.Styleable.View_paddingStart = global::ETicaretAndroidAPP.Resource.Styleable.View_paddingStart;
+			global::com.refractored.Resource.Styleable.View_theme = global::ETicaretAndroidAPP.Resource.Styleable.View_theme;
+			global::com.refractored.Resource.Styleable.ViewBackgroundHelper = global::ETicaretAndroidAPP.Resource.Styleable.ViewBackgroundHelper;
+			global::com.refractored.Resource.Styleable.ViewBackgroundHelper_android_background = global::ETicaretAndroidAPP.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::com.refractored.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::ETicaretAndroidAPP.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::com.refractored.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::ETicaretAndroidAPP.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::com.refractored.Resource.Styleable.ViewStubCompat = global::ETicaretAndroidAPP.Resource.Styleable.ViewStubCompat;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_id = global::ETicaretAndroidAPP.Resource.Styleable.ViewStubCompat_android_id;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ETicaretAndroidAPP.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_layout = global::ETicaretAndroidAPP.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -804,6 +2050,57 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0400E8
 			public const int progressBarStyle = 2130968808;
 			
+			// aapt resource value: 0x7F110004
+			public const int pstsDividerColor = 2131820548;
+			
+			// aapt resource value: 0x7F110008
+			public const int pstsDividerPadding = 2131820552;
+			
+			// aapt resource value: 0x7F110005
+			public const int pstsDividerWidth = 2131820549;
+			
+			// aapt resource value: 0x7F110002
+			public const int pstsIndicatorColor = 2131820546;
+			
+			// aapt resource value: 0x7F110006
+			public const int pstsIndicatorHeight = 2131820550;
+			
+			// aapt resource value: 0x7F110014
+			public const int pstsPaddingMiddle = 2131820564;
+			
+			// aapt resource value: 0x7F110010
+			public const int pstsScrollOffset = 2131820560;
+			
+			// aapt resource value: 0x7F110012
+			public const int pstsShouldExpand = 2131820562;
+			
+			// aapt resource value: 0x7F110011
+			public const int pstsTabBackground = 2131820561;
+			
+			// aapt resource value: 0x7F110009
+			public const int pstsTabPaddingLeftRight = 2131820553;
+			
+			// aapt resource value: 0x7F110013
+			public const int pstsTextAllCaps = 2131820563;
+			
+			// aapt resource value: 0x7F110016
+			public const int pstsTextAlpha = 2131820566;
+			
+			// aapt resource value: 0x7F110015
+			public const int pstsTextColorSelected = 2131820565;
+			
+			// aapt resource value: 0x7F110018
+			public const int pstsTextSelectedStyle = 2131820568;
+			
+			// aapt resource value: 0x7F110017
+			public const int pstsTextStyle = 2131820567;
+			
+			// aapt resource value: 0x7F110003
+			public const int pstsUnderlineColor = 2131820547;
+			
+			// aapt resource value: 0x7F110007
+			public const int pstsUnderlineHeight = 2131820551;
+			
 			// aapt resource value: 0x7F0400E9
 			public const int queryBackground = 2130968809;
 			
@@ -1456,6 +2753,9 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7F060051
 			public const int primary_text_disabled_material_light = 2131099729;
+			
+			// aapt resource value: 0x7F060014
+			public const int psts_background_tab_pressed = 2131099668;
 			
 			// aapt resource value: 0x7F060009
 			public const int redfornotvalid = 2131099657;
@@ -2374,6 +3674,9 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
+			// aapt resource value: 0x7F010025
+			public const int psts_background_tab = 2130772005;
+			
 			// aapt resource value: 0x7F010022
 			public const int search = 2130772002;
 			
@@ -2468,8 +3771,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F020043
-			public const int action_settings = 2130837571;
+			// aapt resource value: 0x7F020057
+			public const int action_settings = 2130837591;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -2483,8 +3786,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0016
 			public const int alertTitle = 2131492886;
 			
-			// aapt resource value: 0x7F020003
-			public const int appBarMain = 2130837507;
+			// aapt resource value: 0x7F020014
+			public const int appBarMain = 2130837524;
 			
 			// aapt resource value: 0x7F0C0006
 			public const int async = 2131492870;
@@ -2492,23 +3795,29 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0018
 			public const int auto = 2131492888;
 			
-			// aapt resource value: 0x7F020009
-			public const int basicCart = 2130837513;
+			// aapt resource value: 0x7F020019
+			public const int basicCart = 2130837529;
 			
 			// aapt resource value: 0x7F0C0007
 			public const int blocking = 2131492871;
 			
+			// aapt resource value: 0x7F020060
+			public const int bold = 2130837600;
+			
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F020022
-			public const int btnLogin = 2130837538;
+			// aapt resource value: 0x7F020036
+			public const int btnLogin = 2130837558;
 			
-			// aapt resource value: 0x7F020030
-			public const int btnSave = 2130837552;
+			// aapt resource value: 0x7F020044
+			public const int btnSave = 2130837572;
 			
-			// aapt resource value: 0x7F020023
-			public const int btnSignUp = 2130837539;
+			// aapt resource value: 0x7F020037
+			public const int btnSignUp = 2130837559;
+			
+			// aapt resource value: 0x7F020012
+			public const int button1 = 2130837522;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2516,20 +3825,20 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C001C
 			public const int cancel_action = 2131492892;
 			
-			// aapt resource value: 0x7F020010
-			public const int cartImage = 2130837520;
+			// aapt resource value: 0x7F020020
+			public const int cartImage = 2130837536;
 			
 			// aapt resource value: 0x7F0C001D
 			public const int center = 2131492893;
 			
-			// aapt resource value: 0x7F020027
-			public const int chcbConfirmShow = 2130837543;
+			// aapt resource value: 0x7F020041
+			public const int chcbConfirmShow = 2130837569;
 			
-			// aapt resource value: 0x7F020025
-			public const int chcbShow = 2130837541;
+			// aapt resource value: 0x7F020039
+			public const int chcbShow = 2130837561;
 			
-			// aapt resource value: 0x7F020020
-			public const int chcbShowLogin = 2130837536;
+			// aapt resource value: 0x7F020034
+			public const int chcbShowLogin = 2130837556;
 			
 			// aapt resource value: 0x7F0C001E
 			public const int checkbox = 2131492894;
@@ -2540,8 +3849,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
 			
-			// aapt resource value: 0x7F020007
-			public const int contentMain = 2130837511;
+			// aapt resource value: 0x7F020017
+			public const int contentMain = 2130837527;
 			
 			// aapt resource value: 0x7F0C0021
 			public const int contentPanel = 2131492897;
@@ -2554,6 +3863,9 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7F0C0024
 			public const int customPanel = 2131492900;
+			
+			// aapt resource value: 0x7F020029
+			public const int datePicker1 = 2130837545;
 			
 			// aapt resource value: 0x7F0C0025
 			public const int decor_content_parent = 2131492901;
@@ -2576,8 +3888,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C002B
 			public const int design_navigation_view = 2131492907;
 			
-			// aapt resource value: 0x7F020002
-			public const int drawer_layout = 2130837506;
+			// aapt resource value: 0x7F020013
+			public const int drawer_layout = 2130837523;
 			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
@@ -2594,8 +3906,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C002F
 			public const int expand_activities_button = 2131492911;
 			
-			// aapt resource value: 0x7F020008
-			public const int fab = 2130837512;
+			// aapt resource value: 0x7F020018
+			public const int fab = 2130837528;
 			
 			// aapt resource value: 0x7F0C0031
 			public const int fill = 2131492913;
@@ -2609,11 +3921,11 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0034
 			public const int ghost_view = 2131492916;
 			
-			// aapt resource value: 0x7F020012
-			public const int gridContent = 2130837522;
+			// aapt resource value: 0x7F020022
+			public const int gridContent = 2130837538;
 			
-			// aapt resource value: 0x7F020013
-			public const int gridContentInc = 2130837523;
+			// aapt resource value: 0x7F020023
+			public const int gridContentInc = 2130837539;
 			
 			// aapt resource value: 0x7F0C0035
 			public const int home = 2131492917;
@@ -2627,20 +3939,20 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020014
-			public const int imageView = 2130837524;
-			
 			// aapt resource value: 0x7F020024
-			public const int imgAddUser = 2130837540;
+			public const int imageView = 2130837540;
 			
-			// aapt resource value: 0x7F020017
-			public const int imgShoppingBasket = 2130837527;
+			// aapt resource value: 0x7F020038
+			public const int imgAddUser = 2130837560;
+			
+			// aapt resource value: 0x7F020031
+			public const int imgShoppingBasket = 2130837553;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
 			
-			// aapt resource value: 0x7F0C000D
-			public const int italic = 2131492877;
+			// aapt resource value: 0x7F020061
+			public const int italic = 2130837601;
 			
 			// aapt resource value: 0x7F0C003B
 			public const int item_touch_helper_previous_elevation = 2131492923;
@@ -2648,11 +3960,11 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C003C
 			public const int largeLabel = 2131492924;
 			
-			// aapt resource value: 0x7F020016
-			public const int lblUserEmail = 2130837526;
+			// aapt resource value: 0x7F020026
+			public const int lblUserEmail = 2130837542;
 			
-			// aapt resource value: 0x7F020015
-			public const int lblUserName = 2130837525;
+			// aapt resource value: 0x7F020025
+			public const int lblUserName = 2130837541;
 			
 			// aapt resource value: 0x7F0C003D
 			public const int left = 2131492925;
@@ -2662,6 +3974,9 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7F0C000F
 			public const int line3 = 2131492879;
+			
+			// aapt resource value: 0x7F020002
+			public const int linearAccountLayout = 2130837506;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
@@ -2687,50 +4002,50 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
-			// aapt resource value: 0x7F020041
-			public const int nav_account = 2130837569;
+			// aapt resource value: 0x7F020055
+			public const int nav_account = 2130837589;
 			
-			// aapt resource value: 0x7F020031
-			public const int nav_home = 2130837553;
+			// aapt resource value: 0x7F020045
+			public const int nav_home = 2130837573;
 			
-			// aapt resource value: 0x7F020038
-			public const int nav_kidsatlethic = 2130837560;
+			// aapt resource value: 0x7F020052
+			public const int nav_kidsatlethic = 2130837586;
 			
-			// aapt resource value: 0x7F020039
-			public const int nav_kidscasual = 2130837561;
+			// aapt resource value: 0x7F020053
+			public const int nav_kidscasual = 2130837587;
 			
-			// aapt resource value: 0x7F020040
-			public const int nav_kidswinterboots = 2130837568;
+			// aapt resource value: 0x7F020054
+			public const int nav_kidswinterboots = 2130837588;
 			
-			// aapt resource value: 0x7F020042
-			public const int nav_manage = 2130837570;
+			// aapt resource value: 0x7F020056
+			public const int nav_manage = 2130837590;
 			
-			// aapt resource value: 0x7F020032
-			public const int nav_menatlethic = 2130837554;
+			// aapt resource value: 0x7F020046
+			public const int nav_menatlethic = 2130837574;
 			
-			// aapt resource value: 0x7F020033
-			public const int nav_mencasual = 2130837555;
+			// aapt resource value: 0x7F020047
+			public const int nav_mencasual = 2130837575;
 			
-			// aapt resource value: 0x7F020034
-			public const int nav_menwinterboots = 2130837556;
+			// aapt resource value: 0x7F020048
+			public const int nav_menwinterboots = 2130837576;
 			
-			// aapt resource value: 0x7F020005
-			public const int nav_view = 2130837509;
+			// aapt resource value: 0x7F020015
+			public const int nav_view = 2130837525;
 			
-			// aapt resource value: 0x7F020037
-			public const int nav_winterboots = 2130837559;
+			// aapt resource value: 0x7F020051
+			public const int nav_winterboots = 2130837585;
 			
-			// aapt resource value: 0x7F020035
-			public const int nav_womenatlethic = 2130837557;
+			// aapt resource value: 0x7F020049
+			public const int nav_womenatlethic = 2130837577;
 			
-			// aapt resource value: 0x7F020036
-			public const int nav_womencasual = 2130837558;
+			// aapt resource value: 0x7F020050
+			public const int nav_womencasual = 2130837584;
 			
 			// aapt resource value: 0x7F0C0048
 			public const int none = 2131492936;
 			
-			// aapt resource value: 0x7F0C0010
-			public const int normal = 2131492880;
+			// aapt resource value: 0x7F020059
+			public const int normal = 2130837593;
 			
 			// aapt resource value: 0x7F0C0011
 			public const int notification_background = 2131492881;
@@ -2740,6 +4055,9 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7F0C0013
 			public const int notification_main_column_container = 2131492883;
+			
+			// aapt resource value: 0x7F020004
+			public const int pager = 2130837508;
 			
 			// aapt resource value: 0x7F0C004D
 			public const int parallax = 2131492941;
@@ -2758,6 +4076,9 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7F0C0052
 			public const int progress_horizontal = 2131492946;
+			
+			// aapt resource value: 0x7F020058
+			public const int psts_tab_title = 2130837592;
 			
 			// aapt resource value: 0x7F0C0053
 			public const int radio = 2131492947;
@@ -2831,8 +4152,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C006A
 			public const int shortcut = 2131492970;
 			
-			// aapt resource value: 0x7F020011
-			public const int showButton = 2130837521;
+			// aapt resource value: 0x7F020021
+			public const int showButton = 2130837537;
 			
 			// aapt resource value: 0x7F0C006B
 			public const int smallLabel = 2131492971;
@@ -2873,6 +4194,9 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0077
 			public const int tabMode = 2131492983;
 			
+			// aapt resource value: 0x7F020003
+			public const int tabs = 2130837507;
+			
 			// aapt resource value: 0x7F0C0016
 			public const int tag_transition_group = 2131492886;
 			
@@ -2881,9 +4205,6 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7F0C0018
 			public const int text2 = 2131492888;
-			
-			// aapt resource value: 0x7F020004
-			public const int textButton = 2130837508;
 			
 			// aapt resource value: 0x7F0C007E
 			public const int textinput_counter = 2131492990;
@@ -2896,6 +4217,9 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
+			
+			// aapt resource value: 0x7F020005
+			public const int textView1 = 2130837509;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
@@ -2912,8 +4236,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C0083
 			public const int title_template = 2131492995;
 			
-			// aapt resource value: 0x7F020006
-			public const int toolbar = 2130837510;
+			// aapt resource value: 0x7F020016
+			public const int toolbar = 2130837526;
 			
 			// aapt resource value: 0x7F0C0084
 			public const int top = 2131492996;
@@ -2939,23 +4263,50 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0C008B
 			public const int transition_transform = 2131493003;
 			
-			// aapt resource value: 0x7F020026
-			public const int txtConfirmPwd = 2130837542;
+			// aapt resource value: 0x7F020010
+			public const int txtaccEmail = 2130837520;
 			
-			// aapt resource value: 0x7F020029
-			public const int txtemail = 2130837545;
+			// aapt resource value: 0x7F020007
+			public const int txtaccOldPwd = 2130837511;
 			
-			// aapt resource value: 0x7F020021
-			public const int txtForgetPwdLink = 2130837537;
+			// aapt resource value: 0x7F020011
+			public const int txtaccPhone = 2130837521;
+			
+			// aapt resource value: 0x7F020008
+			public const int txtaccPwd = 2130837512;
+			
+			// aapt resource value: 0x7F020009
+			public const int txtaccPwdConfirm = 2130837513;
+			
+			// aapt resource value: 0x7F020006
+			public const int txtaccUserName = 2130837510;
+			
+			// aapt resource value: 0x7F020040
+			public const int txtConfirmPwd = 2130837568;
+			
+			// aapt resource value: 0x7F020043
+			public const int txtemail = 2130837571;
+			
+			// aapt resource value: 0x7F020035
+			public const int txtForgetPwdLink = 2130837557;
+			
+			// aapt resource value: 0x7F020030
+			public const int txtpersAddress = 2130837552;
+			
+			// aapt resource value: 0x7F020027
+			public const int txtpersName = 2130837543;
 			
 			// aapt resource value: 0x7F020028
-			public const int txtPhone = 2130837544;
+			public const int txtpersSurname = 2130837544;
 			
-			// aapt resource value: 0x7F020019
-			public const int txtPwd = 2130837529;
+			// aapt resource value: 0x7F020042
+			public const int txtPhone = 2130837570;
 			
-			// aapt resource value: 0x7F020018
-			public const int txtUserName = 2130837528;
+			// aapt resource value: 0x7F020033
+			public const int txtPwd = 2130837555;
+			
+			// aapt resource value: 0x7F020032
+			public const int txtUserName = 2130837554;
 			
 			// aapt resource value: 0x7F0C008C
 			public const int uniform = 2131493004;
@@ -3107,19 +4458,25 @@ namespace ETicaretAndroidAPP
 			public const int abc_select_dialog_material = 2131689498;
 			
 			// aapt resource value: 0x7F030002
-			public const int activity_main = 2130903042;
+			public const int account = 2130903042;
 			
 			// aapt resource value: 0x7F030003
-			public const int app_bar_main = 2130903043;
+			public const int accountInfo = 2130903043;
 			
 			// aapt resource value: 0x7F030004
-			public const int basicCart = 2130903044;
+			public const int activity_main = 2130903044;
 			
 			// aapt resource value: 0x7F030005
-			public const int content = 2130903045;
+			public const int app_bar_main = 2130903045;
 			
 			// aapt resource value: 0x7F030006
-			public const int content_main = 2130903046;
+			public const int basicCart = 2130903046;
+			
+			// aapt resource value: 0x7F030007
+			public const int content = 2130903047;
+			
+			// aapt resource value: 0x7F030008
+			public const int content_main = 2130903048;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
@@ -3163,8 +4520,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
-			// aapt resource value: 0x7F030007
-			public const int nav_header_main = 2130903047;
+			// aapt resource value: 0x7F030009
+			public const int nav_header_main = 2130903049;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
@@ -3211,6 +4568,12 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
+			// aapt resource value: 0x7F030010
+			public const int personalInfo = 2130903056;
+			
+			// aapt resource value: 0x7F030013
+			public const int psts_tab = 2130903059;
+			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;
 			
@@ -3220,11 +4583,11 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F0F003A
 			public const int select_dialog_singlechoice_material = 2131689530;
 			
-			// aapt resource value: 0x7F030008
-			public const int SignIn = 2130903048;
+			// aapt resource value: 0x7F030011
+			public const int SignIn = 2130903057;
 			
-			// aapt resource value: 0x7F030009
-			public const int SignUp = 2130903049;
+			// aapt resource value: 0x7F030012
+			public const int SignUp = 2130903058;
 			
 			// aapt resource value: 0x7F0F003B
 			public const int support_simple_spinner_dropdown_item = 2131689531;
@@ -3374,7 +4737,10 @@ namespace ETicaretAndroidAPP
 			public const int abc_toolbar_collapse_description = 2132082717;
 			
 			// aapt resource value: 0x7F080005
-			public const int action_settings = 2131230725;
+			public const int accountInfo = 2131230725;
+			
+			// aapt resource value: 0x7F080007
+			public const int action_settings = 2131230727;
 			
 			// aapt resource value: 0x7F15001E
 			public const int appbar_scrolling_view_behavior = 2132082718;
@@ -3408,6 +4774,9 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7F150025
 			public const int path_password_strike_through = 2132082725;
+			
+			// aapt resource value: 0x7F080006
+			public const int personalInfo = 2131230726;
 			
 			// aapt resource value: 0x7F150026
 			public const int search_menu_title = 2132082726;
@@ -3449,14 +4818,20 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7F090002
 			public const int AppTheme = 2131296258;
 			
-			// aapt resource value: 0x7F090004
-			public const int AppTheme_AppBarOverlay = 2131296260;
+			// aapt resource value: 0x7F090006
+			public const int AppTheme_AppBarOverlay = 2131296262;
 			
 			// aapt resource value: 0x7F090003
-			public const int AppTheme_NoActionBar = 2131296259;
+			public const int AppTheme_Ligt_NoActionBar = 2131296259;
+			
+			// aapt resource value: 0x7F090004
+			public const int AppTheme_NoActionBar = 2131296260;
+			
+			// aapt resource value: 0x7F090007
+			public const int AppTheme_PopupOverlay = 2131296263;
 			
 			// aapt resource value: 0x7F090005
-			public const int AppTheme_PopupOverlay = 2131296261;
+			public const int AppTheme_WithActionBar = 2131296261;
 			
 			// aapt resource value: 0x7F160007
 			public const int Base_AlertDialog_AppCompat = 2132148231;
@@ -4639,11 +6014,11 @@ namespace ETicaretAndroidAPP
 			public static int[] ActionBarLayout = new int[] {
 					16842931};
 			
-			// aapt resource value: 0x7F100047
-			public const int ActionBarLayout_android_layout_gravity = 2131755079;
+			// aapt resource value: 0x7F100065
+			public const int ActionBarLayout_android_layout_gravity = 2131755109;
 			
-			// aapt resource value: 0x7F100017
-			public const int ActionBar_background = 2131755031;
+			// aapt resource value: 0x7F100035
+			public const int ActionBar_background = 2131755061;
 			
 			// aapt resource value: 0x1
 			public const int ActionBar_backgroundSplit = 1;
@@ -4732,8 +6107,8 @@ namespace ETicaretAndroidAPP
 			public static int[] ActionMenuItemView = new int[] {
 					16843071};
 			
-			// aapt resource value: 0x7F100049
-			public const int ActionMenuItemView_android_minWidth = 2131755081;
+			// aapt resource value: 0x7F100067
+			public const int ActionMenuItemView_android_minWidth = 2131755111;
 			
 			public static int[] ActionMode = new int[] {
 					2130968626,
@@ -4743,8 +6118,8 @@ namespace ETicaretAndroidAPP
 					2130968847,
 					2130968901};
 			
-			// aapt resource value: 0x7F100051
-			public const int ActionMode_background = 2131755089;
+			// aapt resource value: 0x7F100069
+			public const int ActionMode_background = 2131755113;
 			
 			// aapt resource value: 0x1
 			public const int ActionMode_backgroundSplit = 1;
@@ -4765,8 +6140,8 @@ namespace ETicaretAndroidAPP
 					2130968704,
 					2130968746};
 			
-			// aapt resource value: 0x7F100058
-			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131755096;
+			// aapt resource value: 0x7F100076
+			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131755126;
 			
 			// aapt resource value: 0x1
 			public const int ActivityChooserView_initialActivityCount = 1;
@@ -4780,8 +6155,8 @@ namespace ETicaretAndroidAPP
 					2130968828,
 					2130968829};
 			
-			// aapt resource value: 0x7F100061
-			public const int AlertDialog_android_layout = 2131755105;
+			// aapt resource value: 0x7F100079
+			public const int AlertDialog_android_layout = 2131755129;
 			
 			// aapt resource value: 0x1
 			public const int AlertDialog_buttonPanelSideLayout = 1;
@@ -4812,14 +6187,14 @@ namespace ETicaretAndroidAPP
 					2130968838,
 					2130968839};
 			
-			// aapt resource value: 0x7F100075
-			public const int AppBarLayoutStates_state_collapsed = 2131755125;
+			// aapt resource value: 0x7F100093
+			public const int AppBarLayoutStates_state_collapsed = 2131755155;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayoutStates_state_collapsible = 1;
 			
-			// aapt resource value: 0x7F100069
-			public const int AppBarLayout_android_background = 2131755113;
+			// aapt resource value: 0x7F100087
+			public const int AppBarLayout_android_background = 2131755143;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_android_keyboardNavigationCluster = 1;
@@ -4837,8 +6212,8 @@ namespace ETicaretAndroidAPP
 					2130968765,
 					2130968766};
 			
-			// aapt resource value: 0x7F100078
-			public const int AppBarLayout_Layout_layout_scrollFlags = 2131755128;
+			// aapt resource value: 0x7F100096
+			public const int AppBarLayout_Layout_layout_scrollFlags = 2131755158;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
@@ -4849,8 +6224,8 @@ namespace ETicaretAndroidAPP
 					2130968889,
 					2130968890};
 			
-			// aapt resource value: 0x7F100081
-			public const int AppCompatImageView_android_src = 2131755137;
+			// aapt resource value: 0x7F100099
+			public const int AppCompatImageView_android_src = 2131755161;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatImageView_srcCompat = 1;
@@ -4867,8 +6242,8 @@ namespace ETicaretAndroidAPP
 					2130968887,
 					2130968888};
 			
-			// aapt resource value: 0x7F100086
-			public const int AppCompatSeekBar_android_thumb = 2131755142;
+			// aapt resource value: 0x7F100104
+			public const int AppCompatSeekBar_android_thumb = 2131755268;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatSeekBar_tickMark = 1;
@@ -4888,8 +6263,8 @@ namespace ETicaretAndroidAPP
 					16843117,
 					16842804};
 			
-			// aapt resource value: 0x7F100091
-			public const int AppCompatTextHelper_android_drawableBottom = 2131755153;
+			// aapt resource value: 0x7F100109
+			public const int AppCompatTextHelper_android_drawableBottom = 2131755273;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextHelper_android_drawableEnd = 1;
@@ -4919,8 +6294,8 @@ namespace ETicaretAndroidAPP
 					2130968720,
 					2130968869};
 			
-			// aapt resource value: 0x7F100099
-			public const int AppCompatTextView_android_textAppearance = 2131755161;
+			// aapt resource value: 0x7F100117
+			public const int AppCompatTextView_android_textAppearance = 2131755287;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextView_autoSizeMaxTextSize = 1;
@@ -5064,8 +6439,8 @@ namespace ETicaretAndroidAPP
 					2130968921,
 					2130968922};
 			
-			// aapt resource value: 0x7F100108
-			public const int AppCompatTheme_actionBarDivider = 2131755272;
+			// aapt resource value: 0x7F100126
+			public const int AppCompatTheme_actionBarDivider = 2131755302;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTheme_actionBarItemBackground = 1;
@@ -5428,8 +6803,8 @@ namespace ETicaretAndroidAPP
 					2130968753,
 					2130968783};
 			
-			// aapt resource value: 0x7F100228
-			public const int BottomNavigationView_elevation = 2131755560;
+			// aapt resource value: 0x7F100246
+			public const int BottomNavigationView_elevation = 2131755590;
 			
 			// aapt resource value: 0x1
 			public const int BottomNavigationView_itemBackground = 1;
@@ -5448,8 +6823,8 @@ namespace ETicaretAndroidAPP
 					2130968635,
 					2130968636};
 			
-			// aapt resource value: 0x7F100234
-			public const int BottomSheetBehavior_Layout_behavior_hideable = 2131755572;
+			// aapt resource value: 0x7F100252
+			public const int BottomSheetBehavior_Layout_behavior_hideable = 2131755602;
 			
 			// aapt resource value: 0x1
 			public const int BottomSheetBehavior_Layout_behavior_peekHeight = 1;
@@ -5460,8 +6835,8 @@ namespace ETicaretAndroidAPP
 			public static int[] ButtonBarLayout = new int[] {
 					2130968615};
 			
-			// aapt resource value: 0x7F100238
-			public const int ButtonBarLayout_allowStacking = 2131755576;
+			// aapt resource value: 0x7F100256
+			public const int ButtonBarLayout_allowStacking = 2131755606;
 			
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130968658,
@@ -5481,8 +6856,8 @@ namespace ETicaretAndroidAPP
 					2130968892,
 					2130968902};
 			
-			// aapt resource value: 0x7F100240
-			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131755584;
+			// aapt resource value: 0x7F100258
+			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131755608;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_collapsedTitleTextAppearance = 1;
@@ -5515,8 +6890,8 @@ namespace ETicaretAndroidAPP
 					2130968760,
 					2130968761};
 			
-			// aapt resource value: 0x7F100257
-			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131755607;
+			// aapt resource value: 0x7F100275
+			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131755637;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
@@ -5544,8 +6919,8 @@ namespace ETicaretAndroidAPP
 					16843551,
 					16843173};
 			
-			// aapt resource value: 0x7F100260
-			public const int ColorStateListItem_alpha = 2131755616;
+			// aapt resource value: 0x7F100278
+			public const int ColorStateListItem_alpha = 2131755640;
 			
 			// aapt resource value: 0x1
 			public const int ColorStateListItem_android_alpha = 1;
@@ -5558,8 +6933,8 @@ namespace ETicaretAndroidAPP
 					2130968650,
 					2130968651};
 			
-			// aapt resource value: 0x7F100264
-			public const int CompoundButton_android_button = 2131755620;
+			// aapt resource value: 0x7F100282
+			public const int CompoundButton_android_button = 2131755650;
 			
 			// aapt resource value: 0x1
 			public const int CompoundButton_buttonTint = 1;
@@ -5571,8 +6946,8 @@ namespace ETicaretAndroidAPP
 					2130968754,
 					2130968840};
 			
-			// aapt resource value: 0x7F100268
-			public const int CoordinatorLayout_keylines = 2131755624;
+			// aapt resource value: 0x7F100286
+			public const int CoordinatorLayout_keylines = 2131755654;
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
@@ -5583,8 +6958,8 @@ namespace ETicaretAndroidAPP
 					2130968763,
 					2130968764};
 			
-			// aapt resource value: 0x7F100271
-			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131755633;
+			// aapt resource value: 0x7F100289
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131755657;
 			
 			// aapt resource value: 0x1
 			public const int CoordinatorLayout_Layout_layout_anchor = 1;
@@ -5612,8 +6987,8 @@ namespace ETicaretAndroidAPP
 					2130968640,
 					2130968879};
 			
-			// aapt resource value: 0x7F100279
-			public const int DesignTheme_bottomSheetDialogTheme = 2131755641;
+			// aapt resource value: 0x7F100297
+			public const int DesignTheme_bottomSheetDialogTheme = 2131755671;
 			
 			// aapt resource value: 0x1
 			public const int DesignTheme_bottomSheetStyle = 1;
@@ -5631,8 +7006,8 @@ namespace ETicaretAndroidAPP
 					2130968831,
 					2130968882};
 			
-			// aapt resource value: 0x7F100283
-			public const int DrawerArrowToggle_arrowHeadLength = 2131755651;
+			// aapt resource value: 0x7F100301
+			public const int DrawerArrowToggle_arrowHeadLength = 2131755777;
 			
 			// aapt resource value: 0x1
 			public const int DrawerArrowToggle_arrowShaftLength = 1;
@@ -5665,8 +7040,8 @@ namespace ETicaretAndroidAPP
 					2130968816,
 					2130968911};
 			
-			// aapt resource value: 0x7F100292
-			public const int FloatingActionButton_backgroundTint = 2131755666;
+			// aapt resource value: 0x7F100310
+			public const int FloatingActionButton_backgroundTint = 2131755792;
 			
 			// aapt resource value: 0x1
 			public const int FloatingActionButton_backgroundTintMode = 1;
@@ -5674,8 +7049,8 @@ namespace ETicaretAndroidAPP
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
 					2130968632};
 			
-			// aapt resource value: 0x7F100301
-			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131755777;
+			// aapt resource value: 0x7F100319
+			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131755801;
 			
 			// aapt resource value: 0x2
 			public const int FloatingActionButton_borderWidth = 2;
@@ -5711,8 +7086,8 @@ namespace ETicaretAndroidAPP
 					2130968584,
 					2130968585};
 			
-			// aapt resource value: 0x7F100010
-			public const int FontFamilyFont_android_font = 2131755024;
+			// aapt resource value: 0x7F100028
+			public const int FontFamilyFont_android_font = 2131755048;
 			
 			// aapt resource value: 0x1
 			public const int FontFamilyFont_android_fontStyle = 1;
@@ -5729,8 +7104,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x5
 			public const int FontFamilyFont_fontWeight = 5;
 			
-			// aapt resource value: 0x7F100003
-			public const int FontFamily_fontProviderAuthority = 2131755011;
+			// aapt resource value: 0x7F100021
+			public const int FontFamily_fontProviderAuthority = 2131755041;
 			
 			// aapt resource value: 0x1
 			public const int FontFamily_fontProviderCerts = 1;
@@ -5752,8 +7127,8 @@ namespace ETicaretAndroidAPP
 					16843264,
 					2130968729};
 			
-			// aapt resource value: 0x7F100303
-			public const int ForegroundLinearLayout_android_foreground = 2131755779;
+			// aapt resource value: 0x7F100321
+			public const int ForegroundLinearLayout_android_foreground = 2131755809;
 			
 			// aapt resource value: 0x1
 			public const int ForegroundLinearLayout_android_foregroundGravity = 1;
@@ -5772,8 +7147,8 @@ namespace ETicaretAndroidAPP
 					2130968782,
 					2130968826};
 			
-			// aapt resource value: 0x7F100307
-			public const int LinearLayoutCompat_android_baselineAligned = 2131755783;
+			// aapt resource value: 0x7F100325
+			public const int LinearLayoutCompat_android_baselineAligned = 2131755813;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_android_baselineAlignedChildIndex = 1;
@@ -5799,8 +7174,8 @@ namespace ETicaretAndroidAPP
 					16843137,
 					16842996};
 			
-			// aapt resource value: 0x7F100317
-			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131755799;
+			// aapt resource value: 0x7F100335
+			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131755829;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_Layout_android_layout_height = 1;
@@ -5821,8 +7196,8 @@ namespace ETicaretAndroidAPP
 					16843436,
 					16843437};
 			
-			// aapt resource value: 0x7F100322
-			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131755810;
+			// aapt resource value: 0x7F100340
+			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131755840;
 			
 			// aapt resource value: 0x1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
@@ -5835,8 +7210,8 @@ namespace ETicaretAndroidAPP
 					16843231,
 					16843156};
 			
-			// aapt resource value: 0x7F100325
-			public const int MenuGroup_android_checkableBehavior = 2131755813;
+			// aapt resource value: 0x7F100343
+			public const int MenuGroup_android_checkableBehavior = 2131755843;
 			
 			// aapt resource value: 0x1
 			public const int MenuGroup_android_enabled = 1;
@@ -5878,8 +7253,8 @@ namespace ETicaretAndroidAPP
 					2130968825,
 					2130968907};
 			
-			// aapt resource value: 0x7F100332
-			public const int MenuItem_actionLayout = 2131755826;
+			// aapt resource value: 0x7F100350
+			public const int MenuItem_actionLayout = 2131755856;
 			
 			// aapt resource value: 0x1
 			public const int MenuItem_actionProviderClass = 1;
@@ -5958,8 +7333,8 @@ namespace ETicaretAndroidAPP
 					2130968805,
 					2130968842};
 			
-			// aapt resource value: 0x7F100356
-			public const int MenuView_android_headerBackground = 2131755862;
+			// aapt resource value: 0x7F100374
+			public const int MenuView_android_headerBackground = 2131755892;
 			
 			// aapt resource value: 0x1
 			public const int MenuView_android_horizontalDivider = 1;
@@ -5997,8 +7372,8 @@ namespace ETicaretAndroidAPP
 					2130968753,
 					2130968783};
 			
-			// aapt resource value: 0x7F100366
-			public const int NavigationView_android_background = 2131755878;
+			// aapt resource value: 0x7F100384
+			public const int NavigationView_android_background = 2131755908;
 			
 			// aapt resource value: 0x1
 			public const int NavigationView_android_fitsSystemWindows = 1;
@@ -6027,6 +7402,76 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x9
 			public const int NavigationView_menu = 9;
 			
+			public static int[] PagerSlidingTabStrip = new int[] {
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0};
+			
+			// aapt resource value: 0x7F100004
+			public const int PagerSlidingTabStrip_pstsDividerColor = 2131755012;
+			
+			// aapt resource value: 0x7F100008
+			public const int PagerSlidingTabStrip_pstsDividerPadding = 2131755016;
+			
+			// aapt resource value: 0x7F100005
+			public const int PagerSlidingTabStrip_pstsDividerWidth = 2131755013;
+			
+			// aapt resource value: 0x7F100002
+			public const int PagerSlidingTabStrip_pstsIndicatorColor = 2131755010;
+			
+			// aapt resource value: 0x7F100006
+			public const int PagerSlidingTabStrip_pstsIndicatorHeight = 2131755014;
+			
+			// aapt resource value: 0x7F100014
+			public const int PagerSlidingTabStrip_pstsPaddingMiddle = 2131755028;
+			
+			// aapt resource value: 0x7F100010
+			public const int PagerSlidingTabStrip_pstsScrollOffset = 2131755024;
+			
+			// aapt resource value: 0x7F100012
+			public const int PagerSlidingTabStrip_pstsShouldExpand = 2131755026;
+			
+			// aapt resource value: 0x7F100011
+			public const int PagerSlidingTabStrip_pstsTabBackground = 2131755025;
+			
+			// aapt resource value: 0x7F100009
+			public const int PagerSlidingTabStrip_pstsTabPaddingLeftRight = 2131755017;
+			
+			// aapt resource value: 0x7F100013
+			public const int PagerSlidingTabStrip_pstsTextAllCaps = 2131755027;
+			
+			// aapt resource value: 0x7F100016
+			public const int PagerSlidingTabStrip_pstsTextAlpha = 2131755030;
+			
+			// aapt resource value: 0x7F100015
+			public const int PagerSlidingTabStrip_pstsTextColorSelected = 2131755029;
+			
+			// aapt resource value: 0x7F100018
+			public const int PagerSlidingTabStrip_pstsTextSelectedStyle = 2131755032;
+			
+			// aapt resource value: 0x7F100017
+			public const int PagerSlidingTabStrip_pstsTextStyle = 2131755031;
+			
+			// aapt resource value: 0x7F100003
+			public const int PagerSlidingTabStrip_pstsUnderlineColor = 2131755011;
+			
+			// aapt resource value: 0x7F100007
+			public const int PagerSlidingTabStrip_pstsUnderlineHeight = 2131755015;
+			
 			public static int[] PopupWindow = new int[] {
 					16843465,
 					16843126,
@@ -6035,11 +7480,11 @@ namespace ETicaretAndroidAPP
 			public static int[] PopupWindowBackgroundState = new int[] {
 					2130968837};
 			
-			// aapt resource value: 0x7F100381
-			public const int PopupWindowBackgroundState_state_above_anchor = 2131755905;
+			// aapt resource value: 0x7F100399
+			public const int PopupWindowBackgroundState_state_above_anchor = 2131755929;
 			
-			// aapt resource value: 0x7F100377
-			public const int PopupWindow_android_popupAnimationStyle = 2131755895;
+			// aapt resource value: 0x7F100395
+			public const int PopupWindow_android_popupAnimationStyle = 2131755925;
 			
 			// aapt resource value: 0x1
 			public const int PopupWindow_android_popupBackground = 1;
@@ -6051,8 +7496,8 @@ namespace ETicaretAndroidAPP
 					2130968790,
 					2130968793};
 			
-			// aapt resource value: 0x7F100383
-			public const int RecycleListView_paddingBottomNoButtons = 2131755907;
+			// aapt resource value: 0x7F100401
+			public const int RecycleListView_paddingBottomNoButtons = 2131756033;
 			
 			// aapt resource value: 0x1
 			public const int RecycleListView_paddingTopNoTitle = 1;
@@ -6070,8 +7515,8 @@ namespace ETicaretAndroidAPP
 					2130968830,
 					2130968836};
 			
-			// aapt resource value: 0x7F100386
-			public const int RecyclerView_android_descendantFocusability = 2131755910;
+			// aapt resource value: 0x7F100404
+			public const int RecyclerView_android_descendantFocusability = 2131756036;
 			
 			// aapt resource value: 0x1
 			public const int RecyclerView_android_orientation = 1;
@@ -6106,14 +7551,14 @@ namespace ETicaretAndroidAPP
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130968747};
 			
-			// aapt resource value: 0x7F100398
-			public const int ScrimInsetsFrameLayout_insetForeground = 2131755928;
+			// aapt resource value: 0x7F100416
+			public const int ScrimInsetsFrameLayout_insetForeground = 2131756054;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
 					2130968634};
 			
-			// aapt resource value: 0x7F100400
-			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131756032;
+			// aapt resource value: 0x7F100418
+			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131756056;
 			
 			public static int[] SearchView = new int[] {
 					16842970,
@@ -6134,8 +7579,8 @@ namespace ETicaretAndroidAPP
 					2130968848,
 					2130968912};
 			
-			// aapt resource value: 0x7F100402
-			public const int SearchView_android_focusable = 2131756034;
+			// aapt resource value: 0x7F100420
+			public const int SearchView_android_focusable = 2131756064;
 			
 			// aapt resource value: 0x1
 			public const int SearchView_android_imeOptions = 1;
@@ -6190,8 +7635,8 @@ namespace ETicaretAndroidAPP
 					2130968701,
 					2130968780};
 			
-			// aapt resource value: 0x7F100420
-			public const int SnackbarLayout_android_maxWidth = 2131756064;
+			// aapt resource value: 0x7F100438
+			public const int SnackbarLayout_android_maxWidth = 2131756088;
 			
 			// aapt resource value: 0x1
 			public const int SnackbarLayout_elevation = 1;
@@ -6206,8 +7651,8 @@ namespace ETicaretAndroidAPP
 					16843131,
 					2130968803};
 			
-			// aapt resource value: 0x7F100424
-			public const int Spinner_android_dropDownWidth = 2131756068;
+			// aapt resource value: 0x7F100442
+			public const int Spinner_android_dropDownWidth = 2131756098;
 			
 			// aapt resource value: 0x1
 			public const int Spinner_android_entries = 1;
@@ -6237,8 +7682,8 @@ namespace ETicaretAndroidAPP
 					2130968909,
 					2130968910};
 			
-			// aapt resource value: 0x7F100430
-			public const int SwitchCompat_android_textOff = 2131756080;
+			// aapt resource value: 0x7F100448
+			public const int SwitchCompat_android_textOff = 2131756104;
 			
 			// aapt resource value: 0x1
 			public const int SwitchCompat_android_textOn = 1;
@@ -6284,8 +7729,8 @@ namespace ETicaretAndroidAPP
 					16842994,
 					16843087};
 			
-			// aapt resource value: 0x7F100445
-			public const int TabItem_android_icon = 2131756101;
+			// aapt resource value: 0x7F100463
+			public const int TabItem_android_icon = 2131756131;
 			
 			// aapt resource value: 0x1
 			public const int TabItem_android_layout = 1;
@@ -6311,8 +7756,8 @@ namespace ETicaretAndroidAPP
 					2130968867,
 					2130968868};
 			
-			// aapt resource value: 0x7F100449
-			public const int TabLayout_tabBackground = 2131756105;
+			// aapt resource value: 0x7F100467
+			public const int TabLayout_tabBackground = 2131756135;
 			
 			// aapt resource value: 0x1
 			public const int TabLayout_tabContentStart = 1;
@@ -6374,8 +7819,8 @@ namespace ETicaretAndroidAPP
 					2130968720,
 					2130968869};
 			
-			// aapt resource value: 0x7F100466
-			public const int TextAppearance_android_fontFamily = 2131756134;
+			// aapt resource value: 0x7F100484
+			public const int TextAppearance_android_fontFamily = 2131756164;
 			
 			// aapt resource value: 0x1
 			public const int TextAppearance_android_shadowColor = 1;
@@ -6431,8 +7876,8 @@ namespace ETicaretAndroidAPP
 					2130968800,
 					2130968801};
 			
-			// aapt resource value: 0x7F100480
-			public const int TextInputLayout_android_hint = 2131756160;
+			// aapt resource value: 0x7F100498
+			public const int TextInputLayout_android_hint = 2131756184;
 			
 			// aapt resource value: 0x1
 			public const int TextInputLayout_android_textColorHint = 1;
@@ -6510,8 +7955,8 @@ namespace ETicaretAndroidAPP
 					2130968899,
 					2130968900};
 			
-			// aapt resource value: 0x7F100497
-			public const int Toolbar_android_gravity = 2131756183;
+			// aapt resource value: 0x7F100515
+			public const int Toolbar_android_gravity = 2131756309;
 			
 			// aapt resource value: 0x1
 			public const int Toolbar_android_minHeight = 1;
@@ -6609,8 +8054,8 @@ namespace ETicaretAndroidAPP
 					2130968629,
 					2130968630};
 			
-			// aapt resource value: 0x7F100533
-			public const int ViewBackgroundHelper_android_background = 2131756339;
+			// aapt resource value: 0x7F100551
+			public const int ViewBackgroundHelper_android_background = 2131756369;
 			
 			// aapt resource value: 0x1
 			public const int ViewBackgroundHelper_backgroundTint = 1;
@@ -6623,8 +8068,8 @@ namespace ETicaretAndroidAPP
 					16842995,
 					16842994};
 			
-			// aapt resource value: 0x7F100537
-			public const int ViewStubCompat_android_id = 2131756343;
+			// aapt resource value: 0x7F100555
+			public const int ViewStubCompat_android_id = 2131756373;
 			
 			// aapt resource value: 0x1
 			public const int ViewStubCompat_android_inflatedId = 1;
@@ -6632,8 +8077,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x2
 			public const int ViewStubCompat_android_layout = 2;
 			
-			// aapt resource value: 0x7F100527
-			public const int View_android_focusable = 2131756327;
+			// aapt resource value: 0x7F100545
+			public const int View_android_focusable = 2131756357;
 			
 			// aapt resource value: 0x1
 			public const int View_android_theme = 1;

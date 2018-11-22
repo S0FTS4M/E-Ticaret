@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
+      "Refractored.PagerSlidingTabStrip/1.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v7.AppCompat": "23.4.0"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -253,6 +265,25 @@
           "build/MonoAndroid81/Xamarin.Android.Support.Transition.targets": {}
         }
       },
+      "Xamarin.Android.Support.v4/27.0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.UI": "[27.0.2.1]",
+          "Xamarin.Android.Support.Core.Utils": "[27.0.2.1]",
+          "Xamarin.Android.Support.Fragment": "[27.0.2.1]",
+          "Xamarin.Android.Support.Media.Compat": "[27.0.2.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v4.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/Xamarin.Android.Support.v4.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid81/Xamarin.Android.Support.v4.targets": {}
+        }
+      },
       "Xamarin.Android.Support.v7.AppCompat/27.0.2.1": {
         "type": "package",
         "dependencies": {
@@ -308,6 +339,19 @@
     }
   },
   "libraries": {
+    "Refractored.PagerSlidingTabStrip/1.1.6": {
+      "sha512": "92jhX6xj4KQewT3JvX32TBnHRgqiY1InM2zh9hOxwy3XIhPjmhrsaXq29TRz7Tuz7E1ll3rYJRmhHjc7oj88dg==",
+      "type": "package",
+      "path": "refractored.pagerslidingtabstrip/1.1.6",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.dll",
+        "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.pdb",
+        "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.xml",
+        "refractored.pagerslidingtabstrip.1.1.6.nupkg.sha512",
+        "refractored.pagerslidingtabstrip.nuspec"
+      ]
+    },
     "sqlite-net-pcl/1.5.231": {
       "sha512": "Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
       "type": "package",
@@ -578,6 +622,19 @@
         "xamarin.android.support.transition.nuspec"
       ]
     },
+    "Xamarin.Android.Support.v4/27.0.2.1": {
+      "sha512": "cK4ixeeIPSF1xl371Rb2CiEMrSCXa5kXaehsSkeAFGtgpAQvbt6FbEKk501fzVi/HzNkETzajEtsQ9PMttZi9A==",
+      "type": "package",
+      "path": "xamarin.android.support.v4/27.0.2.1",
+      "files": [
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid81/Xamarin.Android.Support.v4.targets",
+        "lib/MonoAndroid81/Xamarin.Android.Support.v4.dll",
+        "xamarin.android.support.v4.27.0.2.1.nupkg.sha512",
+        "xamarin.android.support.v4.nuspec"
+      ]
+    },
     "Xamarin.Android.Support.v7.AppCompat/27.0.2.1": {
       "sha512": "MumW84Eb14Lt+nXFWzDaDEn2y4MtDJHGDZcSAtXtLwt8QbG5wU0HNX1DGM1qNtanFltIwoyiDNEuqGxYPthhyw==",
       "type": "package",
@@ -622,7 +679,9 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
+      "Refractored.PagerSlidingTabStrip >= 1.1.6",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
+      "Xamarin.Android.Support.v4 >= 27.0.2.1",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
       "sqlite-net-pcl >= 1.5.231"
     ]
@@ -633,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sml_o\\source\\repos\\ETicaretAndroidAPP\\ETicaretAndroidAPP\\ETicaretAndroidAPP.csproj",
+      "projectUniqueName": "C:\\Users\\sml_o\\Documents\\GitHub\\E-Ticaret\\E-Ticaret\\ETicaretAndroidAPP\\ETicaretAndroidAPP\\ETicaretAndroidAPP.csproj",
       "projectName": "ETicaretAndroidAPP",
-      "projectPath": "C:\\Users\\sml_o\\source\\repos\\ETicaretAndroidAPP\\ETicaretAndroidAPP\\ETicaretAndroidAPP.csproj",
+      "projectPath": "C:\\Users\\sml_o\\Documents\\GitHub\\E-Ticaret\\E-Ticaret\\ETicaretAndroidAPP\\ETicaretAndroidAPP\\ETicaretAndroidAPP.csproj",
       "packagesPath": "C:\\Users\\sml_o\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sml_o\\source\\repos\\ETicaretAndroidAPP\\ETicaretAndroidAPP\\obj\\",
+      "outputPath": "C:\\Users\\sml_o\\Documents\\GitHub\\E-Ticaret\\E-Ticaret\\ETicaretAndroidAPP\\ETicaretAndroidAPP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -660,7 +719,15 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "Refractored.PagerSlidingTabStrip": {
+            "target": "Package",
+            "version": "[1.1.6, )"
+          },
           "Xamarin.Android.Support.Design": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.v4": {
             "target": "Package",
             "version": "[27.0.2.1, )"
           },

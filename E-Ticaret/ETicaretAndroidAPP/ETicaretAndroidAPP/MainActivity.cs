@@ -22,7 +22,7 @@ namespace ETicaretAndroidAPP
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
-      
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -63,14 +63,13 @@ namespace ETicaretAndroidAPP
             GridLayout gridLayout = appBarMain.FindViewById<RelativeLayout>(Resource.Id.contentMain).FindViewById<GridLayout>(Resource.Id.gridContentInc);
             LinearLayout template = gridLayout.FindViewById<LinearLayout>(Resource.Id.basicCart);
              CreateItems(gridLayout,template);
-          
-          
+
+            DataBase.CreateItems();
 
         }
          void CreateItems(GridLayout gridLayout,LinearLayout template)
         {
-
-            List<LinearLayout> linearList = new List<LinearLayout>(); 
+                //read the database and get the image and product id and create all
                 for (int i = 0; i < 6; i++)
                 {
                 LinearLayout linearLayout = (LinearLayout)LayoutInflater.Inflate(Resource.Layout.basicCart,null);
@@ -78,47 +77,47 @@ namespace ETicaretAndroidAPP
                 Button button= linearLayout.FindViewById<Button>(Resource.Id.showButton);
                 button.Tag = i;
                 button.Click += Button_Click;
-                    //linearLayout.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
-                    //linearLayout.LayoutParameters.Width = DpToPixel(this, 180);
-                    //linearLayout.LayoutParameters.Height = DpToPixel(this, 150);
+                #region No need for now
+                //linearLayout.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
+                //linearLayout.LayoutParameters.Width = DpToPixel(this, 180);
+                //linearLayout.LayoutParameters.Height = DpToPixel(this, 150);
 
-                    //linearLayout.Orientation = Orientation.Vertical;
-                    //ImageView image = View.Inflate(this,)
-                    //image.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
-                    //image.LayoutParameters.Width = DpToPixel(this, 154);
-                    //image.LayoutParameters.Height = DpToPixel(this, 93);
-                    //image.SetImageResource(Resource.Drawable.sportShoe);
-                    //image.SetForegroundGravity(GravityFlags.Center);
-                    //linearLayout.AddView(image);
-                    //Button button = new Button(this);
-                    //button.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
-                    ////set buttons tag to its product id so when we click the button we can find the product that
-                    ////we are looking for
-                    //button.LayoutParameters.Width = DpToPixel(this, 90);
-                    //button.LayoutParameters.Height = DpToPixel(this, 35);
-                    //button.Text = "VIEW";
-                    //Drawable img = GetDrawable(Resource.Drawable.search);
-                    // //img.Wait();
+                //linearLayout.Orientation = Orientation.Vertical;
+                //ImageView image = View.Inflate(this,)
+                //image.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
+                //image.LayoutParameters.Width = DpToPixel(this, 154);
+                //image.LayoutParameters.Height = DpToPixel(this, 93);
+                //image.SetImageResource(Resource.Drawable.sportShoe);
+                //image.SetForegroundGravity(GravityFlags.Center);
+                //linearLayout.AddView(image);
+                //Button button = new Button(this);
+                //button.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
+                ////set buttons tag to its product id so when we click the button we can find the product that
+                ////we are looking for
+                //button.LayoutParameters.Width = DpToPixel(this, 90);
+                //button.LayoutParameters.Height = DpToPixel(this, 35);
+                //button.Text = "VIEW";
+                //Drawable img = GetDrawable(Resource.Drawable.search);
+                // //img.Wait();
 
-                    //img.SetBounds(0, 0, 100, 80);
-                    //button.SetCompoundDrawables(img, null, null, null);
-                    //button.CompoundDrawableTintList = GetColorStateList(Resource.Color.white);
-                    //button.Gravity = GravityFlags.CenterHorizontal;
-                    //button.SetBackgroundColor(Android.Graphics.Color.ParseColor("#FFAA66CC"));
-                    //button.TextAlignment = TextAlignment.Center;
-                     
-                    //button.SetTextColor(GetColorStateList(Resource.Color.white));
-                    //button.Tag = i;
-                    //button.Click += Button_Click;
-                    //linearLayout.AddView(button);
-                linearList.Add(linearLayout);
-                     //gridLayout.Wait();
-                }
-            foreach (var item in linearList)
-            {
-                gridLayout.AddView(item);
+                //img.SetBounds(0, 0, 100, 80);
+                //button.SetCompoundDrawables(img, null, null, null);
+                //button.CompoundDrawableTintList = GetColorStateList(Resource.Color.white);
+                //button.Gravity = GravityFlags.CenterHorizontal;
+                //button.SetBackgroundColor(Android.Graphics.Color.ParseColor("#FFAA66CC"));
+                //button.TextAlignment = TextAlignment.Center;
 
+                //button.SetTextColor(GetColorStateList(Resource.Color.white));
+                //button.Tag = i;
+                //button.Click += Button_Click;
+                //linearLayout.AddView(button);
+
+
+                //gridLayout.Wait();
+                #endregion
+                gridLayout.AddView(linearLayout);
             }
+       
 
         }
         public int DpToPixel(Context context, float dp)
@@ -127,8 +126,7 @@ namespace ETicaretAndroidAPP
         }
         private void Button_Click(object sender, EventArgs e)
         {
-            TextView textView = FindViewById<TextView>(Resource.Id.textButton);
-            textView.Text = ((Button)sender).Tag.ToString();
+            
         }
 
      
@@ -188,8 +186,12 @@ namespace ETicaretAndroidAPP
                 if (CustomerInfo.UserConnected == false)
                     StartActivity(typeof(SignInActivity));
                 else
+                {
                     //go to account page
                     Toast.MakeText(this, CustomerInfo.customerAccount.UserName + " has logged in!", ToastLength.Short);
+                    //LinearLayout accountLayout = (LinearLayout)LayoutInflater.Inflate(Resource.Layout.account, null);
+                    StartActivity(typeof(AccountActivity));
+                }
             }
             else if (id == Resource.Id.nav_manage)
             {

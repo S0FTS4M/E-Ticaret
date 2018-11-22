@@ -28,5 +28,17 @@ namespace ETicaretAndroidAPP
             }
             return connection;
         }
+        static
+             public void CreateItems()
+        {
+            CheckConnection();
+            CustomerAccount customerAccount = new CustomerAccount();
+            customerAccount.UserName = "softsam";
+            customerAccount.Password = "softsam";
+            customerAccount.EMail = "softsam@softsam.com";
+            customerAccount.PhoneNumber = "54865487966";
+            if (connection.Table<CustomerAccount>().ToList().Count == 0)
+                connection.Insert(customerAccount);
+        }
     }
 }
