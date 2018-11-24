@@ -62,7 +62,10 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Model\CustomerAccount.cs" />
     <Compile Include="Model\CustomerInfo.cs" />
+    <Compile Include="Model\CustomerPersonal.cs" />
     <Compile Include="Model\DataBase.cs" />
+    <Compile Include="Model\Enums.cs" />
+    <Compile Include="Model\Product.cs" />
     <Compile Include="Model\StringLiterals.cs" />
     <Compile Include="Model\Validator.cs" />
     <Compile Include="nav_header_main_Activity.cs" />

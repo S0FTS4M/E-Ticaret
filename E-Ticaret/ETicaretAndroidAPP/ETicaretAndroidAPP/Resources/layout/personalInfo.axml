@@ -7,8 +7,10 @@
 	android:gravity="center_horizontal"
 	android:minWidth="25px"
 	android:minHeight="25px"
+		android:background="#FFFFF9"
 	android:scrollbarAlwaysDrawHorizontalTrack="true"
 	android:scrollbarAlwaysDrawVerticalTrack="true">
+	
 	<TextView
 		android:text="Personal"
 		android:textAlignment="center"
@@ -34,13 +36,31 @@
 		android:hint="Surname"
 		android:layout_margin="5dp"
 		android:padding="10dp"/>
-	<DatePicker
-		android:layout_width="301.5dp"
-		android:layout_height="376.0dp"
-		android:id="@+id/datePicker1"
-		android:visibility="visible"
-	/>
-	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_height="56.0dp"
+		android:layout_width="match_parent"
+		android:layout_marginTop="10dp"
+		android:gravity="center_horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		>
+		<Button
+			android:text="Date"
+			android:background="@drawable/shapelogin"
+			android:backgroundTint="@android:color/holo_orange_light"
+			android:layout_width="81.0dp"
+			android:layout_height="50dp"
+			android:layout_marginRight="10dp"
+			android:id="@+id/btnpersDate" />
+		<android.support.design.widget.TextInputEditText
+			android:layout_width="198.5dp"
+			android:layout_height="42.5dp"
+			android:background="@drawable/shapemail"
+			android:inputType="date"
+			android:hint="Birth Date"
+			android:id="@+id/txtpersBirthDate" />
+	</LinearLayout>
 	<EditText
 		android:layout_width="300dp"
 		android:layout_height="100dp"
@@ -57,5 +77,5 @@
 		android:textColor="@color/white"
 		android:layout_height="wrap_content"
 		android:layout_margin="15dp"
-		android:id="@+id/button1" />
+		android:id="@+id/btnUpdate" />
 </LinearLayout>

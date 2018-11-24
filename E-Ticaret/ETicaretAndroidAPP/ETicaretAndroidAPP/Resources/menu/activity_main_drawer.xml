@@ -39,7 +39,7 @@
               android:icon="@drawable/ic_woman_casual_shoe"
               android:title="Casual Shoes" />
           <item
-              android:id="@+id/nav_winterboots"
+              android:id="@+id/nav_womenwinterboots"
               android:icon="@drawable/ic_winter_boots"
               android:title="Winter Boots" />
         </menu>

@@ -28,6 +28,6 @@
 			android:layout_width="93.5dp"
 			android:layout_height="31.5dp"
 			android:textColor="@color/white"
-			android:id="@+id/showButton" />
+			android:id="@+id/cartShowButton" />
 	</LinearLayout>
 

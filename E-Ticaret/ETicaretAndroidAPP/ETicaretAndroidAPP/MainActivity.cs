@@ -16,18 +16,25 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using ETicaretAndroidAPP.Model;
+using SQLite;
 
 namespace ETicaretAndroidAPP
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
-        
+        GridLayout mainLayout;
+        LinearLayout template;
+        SQLiteConnection connection;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-            
+
+            //FOR TESTING PURPOSES
+            DataBase.CreateItems();
+            CustomerInfo.FillDatas("softsam");
+
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
@@ -39,8 +46,8 @@ namespace ETicaretAndroidAPP
             drawer.AddDrawerListener(toggle);
             toggle.SyncState();
 
-            
-            
+
+
             NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             var header = navigationView.GetHeaderView(0);
             TextView lblName = header.FindViewById<TextView>(Resource.Id.lblUserName);
@@ -57,26 +64,34 @@ namespace ETicaretAndroidAPP
                 lblemail.Text = "No User";
                 Toast.MakeText(this, "User did not connected...", ToastLength.Short);
             }
-            
+
             navigationView.SetNavigationItemSelectedListener(this);
             CoordinatorLayout appBarMain = FindViewById<CoordinatorLayout>(Resource.Id.appBarMain); ;
             GridLayout gridLayout = appBarMain.FindViewById<RelativeLayout>(Resource.Id.contentMain).FindViewById<GridLayout>(Resource.Id.gridContentInc);
-            LinearLayout template = gridLayout.FindViewById<LinearLayout>(Resource.Id.basicCart);
-             CreateItems(gridLayout,template);
+            LinearLayout _template = gridLayout.FindViewById<LinearLayout>(Resource.Id.basicCart);
+            mainLayout = gridLayout;
+            template = _template;
 
-            DataBase.CreateItems();
-
+            connection = DataBase.CheckConnection();
+            var products = connection.Table<Product>();
+            CreateItems(products);
         }
-         void CreateItems(GridLayout gridLayout,LinearLayout template)
+        void CreateItems(TableQuery<Product> products)
         {
-                //read the database and get the image and product id and create all
-                for (int i = 0; i < 6; i++)
-                {
-                LinearLayout linearLayout = (LinearLayout)LayoutInflater.Inflate(Resource.Layout.basicCart,null);
+            //clear all views on the grid layout so I can create what I want to create
+            mainLayout.RemoveAllViews();
+            //read the database and get the image and product id and create all
 
-                Button button= linearLayout.FindViewById<Button>(Resource.Id.showButton);
-                button.Tag = i;
+            for (int i = 0; i < products.Count(); i++)
+            {
+                LinearLayout linearLayout = (LinearLayout)LayoutInflater.Inflate(Resource.Layout.basicCart, null);
+
+                Button button = linearLayout.FindViewById<Button>(Resource.Id.cartShowButton);
+                button.Tag = products.ElementAt(i).ProductID;
                 button.Click += Button_Click;
+                ImageView image = linearLayout.FindViewById<ImageView>(Resource.Id.cartImage);
+                image.SetImageDrawable(GetDrawable(products.ElementAt(i).ProductImage));
+
                 #region No need for now
                 //linearLayout.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.MatchParent);
                 //linearLayout.LayoutParameters.Width = DpToPixel(this, 180);
@@ -115,9 +130,10 @@ namespace ETicaretAndroidAPP
 
                 //gridLayout.Wait();
                 #endregion
-                gridLayout.AddView(linearLayout);
+                mainLayout.AddView(linearLayout);
+
             }
-       
+
 
         }
         public int DpToPixel(Context context, float dp)
@@ -126,10 +142,14 @@ namespace ETicaretAndroidAPP
         }
         private void Button_Click(object sender, EventArgs e)
         {
-            
+            string productID = ((Button)sender).Tag.ToString();
+            SQLiteConnection connection = DataBase.CheckConnection();
+            var products = connection.Table<Product>();
+            Product foundProduct = products.Where((x) => x.ProductID == productID).First();
+            Toast.MakeText(this, foundProduct.ProductName + " : " + foundProduct.ProductCategory + " : " + foundProduct.ProductType, ToastLength.Long).Show();
         }
 
-     
+
         public override void OnBackPressed()
         {
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
@@ -166,25 +186,68 @@ namespace ETicaretAndroidAPP
             Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
-
+        public void SetSelectedCategory(string category, string type)
+        {
+            var products = connection.Table<Product>().Where(x => x.ProductCategory == category && x.ProductType == type);
+            CreateItems(products);
+        }
         public bool OnNavigationItemSelected(IMenuItem item)
         {
             int id = item.ItemId;
 
             if (id == Resource.Id.nav_home)
             {
-                // Handle the camera action
-            
+                var products = connection.Table<Product>();
+                CreateItems(products);
+
             }
             else if (id == Resource.Id.nav_womenatlethic)
             {
+                SetSelectedCategory(ProductCategory.Women.ToString(), ProductType.Sport.ToString());
+            }
 
+            else if (id == Resource.Id.nav_womencasual)
+            {
+                SetSelectedCategory(ProductCategory.Women.ToString(), ProductType.Casual.ToString());
+            }
+            else if (id == Resource.Id.nav_womenwinterboots)
+            {
+                SetSelectedCategory(ProductCategory.Women.ToString(), ProductType.Winter.ToString());
+            }
+            else if (id == Resource.Id.nav_menatlethic)
+            {
+                SetSelectedCategory(ProductCategory.Man.ToString(), ProductType.Sport.ToString());
+            }
+            else if (id == Resource.Id.nav_mencasual)
+            {
+                SetSelectedCategory(ProductCategory.Man.ToString(), ProductType.Casual.ToString());
+            }
+            else if (id == Resource.Id.nav_menwinterboots)
+            {
+                SetSelectedCategory(ProductCategory.Man.ToString(), ProductType.Winter.ToString());
+            }
+            else if (id == Resource.Id.nav_kidsatlethic)
+            {
+                SetSelectedCategory(ProductCategory.Kids.ToString(), ProductType.Sport.ToString());
+            }
+            else if (id == Resource.Id.nav_kidscasual)
+            {
+                SetSelectedCategory(ProductCategory.Kids.ToString(), ProductType.Casual.ToString());
+            }
+            else if (id == Resource.Id.nav_kidswinterboots)
+            {
+                SetSelectedCategory(ProductCategory.Kids.ToString(), ProductType.Winter.ToString());
             }
             else if (id == Resource.Id.nav_account)
             {
                 //sign in if user didnt sign in already
                 if (CustomerInfo.UserConnected == false)
-                    StartActivity(typeof(SignInActivity));
+                {
+                    //ask to user if he/she wants to sign in
+                    Snackbar.Make(FindViewById<DrawerLayout>(Resource.Id.drawer_layout), "You didnt Sign in! Would you like to sign in?", Snackbar.LengthLong)
+                .SetAction("YES", (v) => { StartActivity(typeof(SignInActivity)); }).Show();
+
+                }
                 else
                 {
                     //go to account page
@@ -197,7 +260,7 @@ namespace ETicaretAndroidAPP
             {
 
             }
-           
+
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             drawer.CloseDrawer(GravityCompat.Start);

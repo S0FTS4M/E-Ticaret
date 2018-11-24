@@ -24,6 +24,7 @@ namespace ETicaretAndroidAPP
         MyAdapter myAdapter;
         PagerSlidingTabStrip tabStrip;
         ViewPager pager;
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,28 +37,29 @@ namespace ETicaretAndroidAPP
             tabStrip = FindViewById<PagerSlidingTabStrip>(Resource.Id.tabs);
             pager.Adapter = myAdapter;
             tabStrip.SetViewPager(pager);
-            tabStrip.SetBackgroundColor(Android.Graphics.Color.Argb(255, 0, 149, 164));
+            tabStrip.ShouldExpand = true;
+            tabStrip.SetTabTextColor(Resource.Color.lightGray);
+            tabStrip.TabTextColorSelected = GetColorStateList(Resource.Color.white);
+            tabStrip.SetFitsSystemWindows(true);
+           
+            tabStrip.TabPaddingLeftRight = 240;
+            tabStrip.SetBackgroundColor(Android.Graphics.Color.ParseColor("#075E54"));
             // Create your application here
         }
         public class MyAdapter : FragmentPagerAdapter
         {
             int tabCount = 2;
+            Java.Lang.String[] tabnames = { new Java.Lang.String("Account"), new Java.Lang.String("Personal") };
             public MyAdapter(Android.Support.V4.App.FragmentManager fm) : base(fm)
             {
+                
             }
-
+            
             public override int Count { get { return tabCount; } }
             public override ICharSequence GetPageTitleFormatted(int position)
             {
-                ICharSequence cs;
-                if (position == 0)
-                    cs =new Java.Lang.String("Account");
-                else
-                if (position == 1)
-                    cs = new Java.Lang.String("Personal");
-                else
-                    cs = new Java.Lang.String("NONE");
-                return cs;
+                
+                return tabnames[position];
             }
             public override Android.Support.V4.App.Fragment GetItem(int position)
             {

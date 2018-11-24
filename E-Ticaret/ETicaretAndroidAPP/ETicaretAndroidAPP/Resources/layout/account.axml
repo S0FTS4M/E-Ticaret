@@ -11,8 +11,8 @@
 		android:id="@+id/tabs"	
 		android:layout_width="match_parent"
 		android:layout_height="?attr/actionBarSize"
-		app:pstsPaddingMiddle="true"
-		
+		app:pstsUnderlineColor="@color/white"
+		app:pstsIndicatorColor="@color/lightGray"
 		/>
 	
 

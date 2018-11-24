@@ -16,5 +16,7 @@ namespace ETicaretAndroidAPP
     {
         public static readonly string SpecialChars = "+*-?\\/,<>|!\'^#$%&{([])}=@:";
         public static readonly string TurkishChars = "şİçÇşŞüÜğĞı";
+       
+
     }
 }

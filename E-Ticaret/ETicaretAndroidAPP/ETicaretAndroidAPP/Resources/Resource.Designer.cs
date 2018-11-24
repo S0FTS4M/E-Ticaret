@@ -3815,8 +3815,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f08005d
 			public const int action_mode_close_button = 2131230813;
 			
-			// aapt resource value: 0x7f0800e8
-			public const int action_settings = 2131230952;
+			// aapt resource value: 0x7f0800ea
+			public const int action_settings = 2131230954;
 			
 			// aapt resource value: 0x7f0800b5
 			public const int action_text = 2131230901;
@@ -3863,17 +3863,23 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
-			// aapt resource value: 0x7f0800d0
-			public const int btnLogin = 2131230928;
+			// aapt resource value: 0x7f0800d2
+			public const int btnLogin = 2131230930;
 			
-			// aapt resource value: 0x7f0800d8
-			public const int btnSave = 2131230936;
+			// aapt resource value: 0x7f0800da
+			public const int btnSave = 2131230938;
 			
-			// aapt resource value: 0x7f0800d1
-			public const int btnSignUp = 2131230929;
+			// aapt resource value: 0x7f0800d3
+			public const int btnSignUp = 2131230931;
+			
+			// aapt resource value: 0x7f0800cb
+			public const int btnUpdate = 2131230923;
 			
 			// aapt resource value: 0x7f080096
-			public const int button1 = 2131230870;
+			public const int btnaccUpdate = 2131230870;
+			
+			// aapt resource value: 0x7f0800c8
+			public const int btnpersDate = 2131230920;
 			
 			// aapt resource value: 0x7f080064
 			public const int buttonPanel = 2131230820;
@@ -3884,6 +3890,9 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f08009e
 			public const int cartImage = 2131230878;
 			
+			// aapt resource value: 0x7f08009f
+			public const int cartShowButton = 2131230879;
+			
 			// aapt resource value: 0x7f080045
 			public const int center = 2131230789;
 			
@@ -3893,14 +3902,14 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f080047
 			public const int center_vertical = 2131230791;
 			
+			// aapt resource value: 0x7f0800d7
+			public const int chcbConfirmShow = 2131230935;
+			
 			// aapt resource value: 0x7f0800d5
-			public const int chcbConfirmShow = 2131230933;
+			public const int chcbShow = 2131230933;
 			
-			// aapt resource value: 0x7f0800d3
-			public const int chcbShow = 2131230931;
-			
-			// aapt resource value: 0x7f0800ce
-			public const int chcbShowLogin = 2131230926;
+			// aapt resource value: 0x7f0800d0
+			public const int chcbShowLogin = 2131230928;
 			
 			// aapt resource value: 0x7f080074
 			public const int checkbox = 2131230836;
@@ -3934,9 +3943,6 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7f08006d
 			public const int customPanel = 2131230829;
-			
-			// aapt resource value: 0x7f0800c8
-			public const int datePicker1 = 2131230920;
 			
 			// aapt resource value: 0x7f08007b
 			public const int decor_content_parent = 2131230843;
@@ -4037,11 +4043,11 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f0800b0
 			public const int imageView = 2131230896;
 			
-			// aapt resource value: 0x7f0800d2
-			public const int imgAddUser = 2131230930;
+			// aapt resource value: 0x7f0800d4
+			public const int imgAddUser = 2131230932;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int imgShoppingBasket = 2131230923;
+			// aapt resource value: 0x7f0800cd
+			public const int imgShoppingBasket = 2131230925;
 			
 			// aapt resource value: 0x7f0800c0
 			public const int info = 2131230912;
@@ -4079,14 +4085,14 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f080062
 			public const int list_item = 2131230818;
 			
-			// aapt resource value: 0x7f0800db
-			public const int masked = 2131230939;
+			// aapt resource value: 0x7f0800dd
+			public const int masked = 2131230941;
 			
 			// aapt resource value: 0x7f0800b9
 			public const int media_actions = 2131230905;
 			
-			// aapt resource value: 0x7f0800d9
-			public const int message = 2131230937;
+			// aapt resource value: 0x7f0800db
+			public const int message = 2131230939;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -4097,44 +4103,44 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f0800e6
-			public const int nav_account = 2131230950;
-			
-			// aapt resource value: 0x7f0800dc
-			public const int nav_home = 2131230940;
-			
-			// aapt resource value: 0x7f0800e3
-			public const int nav_kidsatlethic = 2131230947;
-			
-			// aapt resource value: 0x7f0800e4
-			public const int nav_kidscasual = 2131230948;
-			
-			// aapt resource value: 0x7f0800e5
-			public const int nav_kidswinterboots = 2131230949;
-			
-			// aapt resource value: 0x7f0800e7
-			public const int nav_manage = 2131230951;
-			
-			// aapt resource value: 0x7f0800dd
-			public const int nav_menatlethic = 2131230941;
+			// aapt resource value: 0x7f0800e8
+			public const int nav_account = 2131230952;
 			
 			// aapt resource value: 0x7f0800de
-			public const int nav_mencasual = 2131230942;
+			public const int nav_home = 2131230942;
+			
+			// aapt resource value: 0x7f0800e5
+			public const int nav_kidsatlethic = 2131230949;
+			
+			// aapt resource value: 0x7f0800e6
+			public const int nav_kidscasual = 2131230950;
+			
+			// aapt resource value: 0x7f0800e7
+			public const int nav_kidswinterboots = 2131230951;
+			
+			// aapt resource value: 0x7f0800e9
+			public const int nav_manage = 2131230953;
 			
 			// aapt resource value: 0x7f0800df
-			public const int nav_menwinterboots = 2131230943;
+			public const int nav_menatlethic = 2131230943;
+			
+			// aapt resource value: 0x7f0800e0
+			public const int nav_mencasual = 2131230944;
+			
+			// aapt resource value: 0x7f0800e1
+			public const int nav_menwinterboots = 2131230945;
 			
 			// aapt resource value: 0x7f080099
 			public const int nav_view = 2131230873;
 			
 			// aapt resource value: 0x7f0800e2
-			public const int nav_winterboots = 2131230946;
+			public const int nav_womenatlethic = 2131230946;
 			
-			// aapt resource value: 0x7f0800e0
-			public const int nav_womenatlethic = 2131230944;
+			// aapt resource value: 0x7f0800e3
+			public const int nav_womencasual = 2131230947;
 			
-			// aapt resource value: 0x7f0800e1
-			public const int nav_womencasual = 2131230945;
+			// aapt resource value: 0x7f0800e4
+			public const int nav_womenwinterboots = 2131230948;
 			
 			// aapt resource value: 0x7f0800aa
 			public const int navigation_header_container = 2131230890;
@@ -4178,8 +4184,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f080007
 			public const int progress_horizontal = 2131230727;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int psts_tab_title = 2131230922;
+			// aapt resource value: 0x7f0800cc
+			public const int psts_tab_title = 2131230924;
 			
 			// aapt resource value: 0x7f080076
 			public const int radio = 2131230838;
@@ -4255,9 +4261,6 @@ namespace ETicaretAndroidAPP
 			
 			// aapt resource value: 0x7f080075
 			public const int shortcut = 2131230837;
-			
-			// aapt resource value: 0x7f08009f
-			public const int showButton = 2131230879;
 			
 			// aapt resource value: 0x7f080023
 			public const int showCustom = 2131230755;
@@ -4379,20 +4382,20 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f080013
 			public const int transition_transform = 2131230739;
 			
-			// aapt resource value: 0x7f0800d4
-			public const int txtConfirmPwd = 2131230932;
+			// aapt resource value: 0x7f0800d6
+			public const int txtConfirmPwd = 2131230934;
+			
+			// aapt resource value: 0x7f0800d1
+			public const int txtForgetPwdLink = 2131230929;
+			
+			// aapt resource value: 0x7f0800d8
+			public const int txtPhone = 2131230936;
 			
 			// aapt resource value: 0x7f0800cf
-			public const int txtForgetPwdLink = 2131230927;
+			public const int txtPwd = 2131230927;
 			
-			// aapt resource value: 0x7f0800d6
-			public const int txtPhone = 2131230934;
-			
-			// aapt resource value: 0x7f0800cd
-			public const int txtPwd = 2131230925;
-			
-			// aapt resource value: 0x7f0800cc
-			public const int txtUserName = 2131230924;
+			// aapt resource value: 0x7f0800ce
+			public const int txtUserName = 2131230926;
 			
 			// aapt resource value: 0x7f080094
 			public const int txtaccEmail = 2131230868;
@@ -4412,11 +4415,14 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f080090
 			public const int txtaccUserName = 2131230864;
 			
-			// aapt resource value: 0x7f0800d7
-			public const int txtemail = 2131230935;
+			// aapt resource value: 0x7f0800d9
+			public const int txtemail = 2131230937;
+			
+			// aapt resource value: 0x7f0800ca
+			public const int txtpersAddress = 2131230922;
 			
 			// aapt resource value: 0x7f0800c9
-			public const int txtpersAddress = 2131230921;
+			public const int txtpersBirthDate = 2131230921;
 			
 			// aapt resource value: 0x7f0800c6
 			public const int txtpersName = 2131230918;
@@ -4436,8 +4442,8 @@ namespace ETicaretAndroidAPP
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800da
-			public const int visible = 2131230938;
+			// aapt resource value: 0x7f0800dc
+			public const int visible = 2131230940;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

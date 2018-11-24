@@ -346,6 +346,7 @@
       "files": [
         ".signature.p7s",
         "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.dll",
+        "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.dll.mdb",
         "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.pdb",
         "lib/MonoAndroid10/Refractored.PagerSlidingTabStrip.xml",
         "refractored.pagerslidingtabstrip.1.1.6.nupkg.sha512",
