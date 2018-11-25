@@ -206,9 +206,9 @@
     <Compile Include="Migrations\201811181112429_InitialCreate.Designer.cs">
       <DependentUpon>201811181112429_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811201419017_newfields.cs" />
-    <Compile Include="Migrations\201811201419017_newfields.Designer.cs">
-      <DependentUpon>201811201419017_newfields.cs</DependentUpon>
+    <Compile Include="Migrations\201811241130243_new_fields.cs" />
+    <Compile Include="Migrations\201811241130243_new_fields.Designer.cs">
+      <DependentUpon>201811241130243_new_fields.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -344,8 +344,8 @@
     <EmbeddedResource Include="Migrations\201811181112429_InitialCreate.resx">
       <DependentUpon>201811181112429_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811201419017_newfields.resx">
-      <DependentUpon>201811201419017_newfields.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811241130243_new_fields.resx">
+      <DependentUpon>201811241130243_new_fields.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

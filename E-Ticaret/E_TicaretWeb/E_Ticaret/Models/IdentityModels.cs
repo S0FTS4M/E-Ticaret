@@ -19,6 +19,8 @@ namespace E_Ticaret.Models
             return userIdentity;
         }
         public string Addres { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

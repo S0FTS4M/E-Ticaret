@@ -234,4 +234,4 @@ C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\ob
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.pdb
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.InitialCreate.resources
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.csproj.GenerateResource.cache
-C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.newfields.resources
+C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.new_fields.resources

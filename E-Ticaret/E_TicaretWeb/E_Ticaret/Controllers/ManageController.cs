@@ -235,7 +235,24 @@ namespace E_Ticaret.Controllers
                 if (model.Address != null)
                     user.Addres = model.Address;
 
-
+                if (model.Name != null && model.Name.Any(char.IsDigit) == false)
+                {
+                    user.Name = model.Name;
+                }
+                else
+                {
+                    ViewBag.Message = "Name can not have any number";
+                    return View();
+                }
+                if (model.Surname != null && model.Surname.Any(char.IsDigit) == false)
+                {
+                    user.Surname = model.Surname;
+                }
+                else
+                {
+                    ViewBag.Message = "Surname can not have any number";
+                    return View();
+                }
                 UserManager.Update(user);
 
                 // print message
