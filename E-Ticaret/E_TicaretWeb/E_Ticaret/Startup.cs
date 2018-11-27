@@ -1,6 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
+
 [assembly: OwinStartupAttribute(typeof(E_Ticaret.Startup))]
 namespace E_Ticaret
 {
@@ -10,5 +11,7 @@ namespace E_Ticaret
         {
             ConfigureAuth(app);
         }
+
+
     }
 }

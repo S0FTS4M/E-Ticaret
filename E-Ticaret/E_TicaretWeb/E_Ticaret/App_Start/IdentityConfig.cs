@@ -14,12 +14,16 @@ using E_Ticaret.Models;
 
 namespace E_Ticaret
 {
+
+
+
     public class EmailService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
         {
             // E-posta göndermek için e-posta hizmetinizi buraya bağlayın.
             return Task.FromResult(0);
+            
         }
     }
 
