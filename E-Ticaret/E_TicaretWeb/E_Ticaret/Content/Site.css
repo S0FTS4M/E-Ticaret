@@ -75,9 +75,12 @@ main-carousel-inner {
 }
 
 /* images from categories section */
-.navbarimg {
-    height: 10px;
-    width: 30px;
+#navbarimg {
+    display:block;
+    float:right;
+    margin-left:10px;
+    height: auto;
+    width: 100%;
 }
 
 .mainNavDropDown:hover > .dropdown-menu {
@@ -95,9 +98,6 @@ main-carousel-inner {
     box-shadow: 0px 5px 30px black;
 }
 
-.left-nav-link {
-    margin-left: 50px;
-}
 
 
 .img-wrapper {
