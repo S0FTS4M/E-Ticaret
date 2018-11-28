@@ -8,15 +8,27 @@
 <div class="card" style="text-align:center; margin-top:30px;">
     @using (Html.BeginForm("ChangeInfo", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
     {
-        
+
         @Html.AntiForgeryToken()
         <h4>Change information</h4>
         <hr />
-        @Html.ValidationSummary("", new { @class = "text-danger"})
+        @Html.ValidationSummary("", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(m => m.Number, new { @class = "col-md-2 control-label"})
+            @Html.LabelFor(m => m.Number, new { @class = "col-md-2 control-label" })
             <div class="col-md-4">
                 @Html.TextBoxFor(m => m.Number, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Surname, new { @class = "col-md-2 control-label" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(m => m.Surname, new { @class = "form-control" })
             </div>
         </div>
         <div class="form-group">
@@ -30,6 +42,7 @@
                 <input type="submit" value="Submit" class="btn btn-default" />
             </div>
         </div>
+
         <label>@ViewBag.Message</label>
     }
 </div>

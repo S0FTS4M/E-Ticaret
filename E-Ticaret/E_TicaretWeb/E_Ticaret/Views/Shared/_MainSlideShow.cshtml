@@ -1,4 +1,18 @@
-﻿<div id="demo" class="carousel slide" data-ride="carousel">
+﻿
+@model IEnumerable<E_Ticaret.Models.Product>
+@{
+    int index = 0;
+    List<string> url = new List<string>();
+    foreach (E_Ticaret.Models.Product item in Model)
+    {
+        if (item.mainPageUrl != null)
+        {
+            url.Add(item.mainPageUrl);
+        }
+    }
+}
+
+<div id="demo" class="carousel slide" data-ride="carousel">
 
     <!-- Indicators -->
     <ul class="carousel-indicators">
@@ -6,19 +20,40 @@
         <li data-target="#demo" data-slide-to="1"></li>
         <li data-target="#demo" data-slide-to="2"></li>
     </ul>
+    <div class="carousel-inner main-carousel-inner">
+        @foreach (string path in url)
+        {
+            if (index == 0)
+            {
 
-    <!-- The slideshow -->
+                index += 1;
+
+                <div class="carousel-item main-carousel-item active">
+                    <img src="@Url.Content(path)">
+                </div>
+            }
+            else
+            {
+                <div class="carousel-item main-carousel-item">
+                    <img src="@Url.Content(path)">
+                </div>
+            }
+
+        }
+    </div>
+    <!-- The slideshow
     <div class="carousel-inner main-carousel-inner">
         <div class="carousel-item main-carousel-item active">
-            <img src="http://placehold.it/600x200">
+            <img src="@Url.Content(url.ElementAt(0))">
         </div>
         <div class="carousel-item main-carousel-item">
-            <img src="http://placehold.it/600x200">
+            <img src="@Url.Content(url.ElementAt(1))">
         </div>
         <div class="carousel-item main-carousel-item">
-            <img src="http://placehold.it/600x200">
+            <img src="@Url.Content(url.ElementAt(2))">
         </div>
     </div>
+        -->
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
@@ -27,5 +62,17 @@
         <span class="carousel-control-next-icon"></span>
     </a>
 </div>
+<!--
+    <button style="margin-top:30px;">
 
-
+        @Html.ActionLink(
+                    linkText:"Detail",
+                    actionName: "Details",
+                    controllerName:"Products",
+                    routeValues: new
+                    {
+                        id = 3
+                    },
+                    htmlAttributes:null)
+    </button>
+    -->

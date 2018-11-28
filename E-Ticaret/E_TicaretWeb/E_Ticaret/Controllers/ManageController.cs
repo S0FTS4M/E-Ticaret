@@ -235,6 +235,26 @@ namespace E_Ticaret.Controllers
                 if (model.Address != null)
                     user.Addres = model.Address;
 
+                if (model.Name != null)
+                {
+                    if (model.Name.Any(char.IsDigit) == false)
+                        user.Name = model.Name;
+                    else
+                    {
+                        ViewBag.Message = "Name can not have any number";
+                        return View();
+                    }
+                }
+                if (model.Surname != null)
+                {
+                    if (model.Surname.Any(char.IsDigit) == false)
+                        user.Surname = model.Surname;
+                    else
+                    {
+                        ViewBag.Message = "Surname can not have any number";
+                        return View();
+                    }
+                }
 
                 UserManager.Update(user);
 
@@ -355,6 +375,11 @@ namespace E_Ticaret.Controllers
             }
             var result = await UserManager.AddLoginAsync(User.Identity.GetUserId(), loginInfo.Login);
             return result.Succeeded ? RedirectToAction("ManageLogins") : RedirectToAction("ManageLogins", new { Message = ManageMessageId.Error });
+        }
+
+        public ActionResult Shopping_Cart()
+        {
+            return RedirectToAction("Shopping_Cart", "Home");
         }
 
         protected override void Dispose(bool disposing)

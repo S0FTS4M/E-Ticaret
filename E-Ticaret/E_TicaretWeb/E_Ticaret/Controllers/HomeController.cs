@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_Ticaret.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,11 @@ namespace E_Ticaret.Controllers
 {
     public class HomeController : Controller
     {
+
         public ActionResult Index()
         {
-            return View();
+            ApplicationDbContext db = new ApplicationDbContext();       
+            return View(db.Products.ToList());
         }
 
         [Authorize]
@@ -43,6 +46,10 @@ namespace E_Ticaret.Controllers
         public ActionResult Sales()
         {
             return View();
+        }
+        public ActionResult Product()
+        {
+            return RedirectToAction("List", "Products");
         }
     }
 }

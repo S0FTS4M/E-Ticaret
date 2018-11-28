@@ -51,6 +51,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -199,6 +201,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -206,14 +209,29 @@
     <Compile Include="Migrations\201811181112429_InitialCreate.Designer.cs">
       <DependentUpon>201811181112429_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811201419017_newfields.cs" />
-    <Compile Include="Migrations\201811201419017_newfields.Designer.cs">
-      <DependentUpon>201811201419017_newfields.cs</DependentUpon>
+    <Compile Include="Migrations\201811241130243_new_fields.cs" />
+    <Compile Include="Migrations\201811241130243_new_fields.Designer.cs">
+      <DependentUpon>201811241130243_new_fields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811271338063_product.cs" />
+    <Compile Include="Migrations\201811271338063_product.Designer.cs">
+      <DependentUpon>201811271338063_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811271410129_product1.cs" />
+    <Compile Include="Migrations\201811271410129_product1.Designer.cs">
+      <DependentUpon>201811271410129_product1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811271716037_product2.cs" />
+    <Compile Include="Migrations\201811271716037_product2.Designer.cs">
+      <DependentUpon>201811271716037_product2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Database.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -230,6 +248,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\MainSlideImages\mainSlideShow1.png" />
+    <Content Include="Images\MainSlideImages\mainSlideShow2.png" />
+    <Content Include="Images\MainSlideImages\mainSlideShow3.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -325,9 +346,25 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\Sales.cshtml" />
     <Content Include="Views\Manage\ChangeInfo.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
+    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\Carousel_Images\" />
+    <Folder Include="Images\Logos\" />
+    <Folder Include="Images\Shoes\Kids\Athletic\" />
+    <Folder Include="Images\Shoes\Kids\Casual\" />
+    <Folder Include="Images\Shoes\Kids\Winter\" />
+    <Folder Include="Images\Shoes\Men\Athletic\" />
+    <Folder Include="Images\Shoes\Men\Casual\" />
+    <Folder Include="Images\Shoes\Men\Winter\" />
+    <Folder Include="Images\Shoes\Women\Athletic\" />
+    <Folder Include="Images\Shoes\Women\Casual\" />
+    <Folder Include="Images\Shoes\Women\Winter\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -339,13 +376,23 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811181112429_InitialCreate.resx">
       <DependentUpon>201811181112429_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811201419017_newfields.resx">
-      <DependentUpon>201811201419017_newfields.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811241130243_new_fields.resx">
+      <DependentUpon>201811241130243_new_fields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811271338063_product.resx">
+      <DependentUpon>201811271338063_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811271410129_product1.resx">
+      <DependentUpon>201811271410129_product1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811271716037_product2.resx">
+      <DependentUpon>201811271716037_product2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

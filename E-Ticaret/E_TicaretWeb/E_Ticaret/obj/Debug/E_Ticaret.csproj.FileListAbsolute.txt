@@ -227,11 +227,13 @@ C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\bi
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\bin\tr\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\bin\tr\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\bin\tr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.csprojAssemblyReference.cache
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.csproj.CoreCompileInputs.cache
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.csproj.CopyComplete
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.dll
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.pdb
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.InitialCreate.resources
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.csproj.GenerateResource.cache
-C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.newfields.resources
+C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.new_fields.resources
+C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.product.resources
+C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.product1.resources
+C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.product2.resources

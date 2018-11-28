@@ -66,8 +66,15 @@ namespace E_Ticaret.Models
         [Display(Name = "Phone Number")]
         public string Number { get; set; }
 
+        
         [Display(Name="Address")]
         public string Address { get; set; }
+
+        [Display(Name ="Name")]
+        public string Name { get; set; }
+
+        [Display(Name ="Surname")]
+        public string Surname { get; set; }
     }
 
 
