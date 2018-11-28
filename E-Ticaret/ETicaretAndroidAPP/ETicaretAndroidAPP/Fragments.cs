@@ -30,10 +30,10 @@ namespace ETicaretAndroidAPP
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.accountInfo, null);
-            view.FindViewById<TextInputEditText>(Resource.Id.txtaccUserName).Text = CustomerInfo.customerAccount.UserName;
+            view.FindViewById<TextInputEditText>(Resource.Id.txtaccUserName).Text = GeneralInfo.customerAccount.UserName;
 
-            view.FindViewById<TextInputEditText>(Resource.Id.txtaccEmail).Text = CustomerInfo.customerAccount.EMail;
-            view.FindViewById<TextInputEditText>(Resource.Id.txtaccPhone).Text = CustomerInfo.customerAccount.PhoneNumber;
+            view.FindViewById<TextInputEditText>(Resource.Id.txtaccEmail).Text = GeneralInfo.customerAccount.EMail;
+            view.FindViewById<TextInputEditText>(Resource.Id.txtaccPhone).Text = GeneralInfo.customerAccount.PhoneNumber;
 
             return view;
         }
@@ -94,9 +94,9 @@ namespace ETicaretAndroidAPP
             if (position == 0)
             {
                 //fill account info here.
-                root.FindViewById<TextInputEditText>(Resource.Id.txtaccUserName).Text = CustomerInfo.customerAccount.UserName;
-                root.FindViewById<TextInputEditText>(Resource.Id.txtaccEmail).Text = CustomerInfo.customerAccount.EMail;
-                root.FindViewById<TextInputEditText>(Resource.Id.txtaccPhone).Text = CustomerInfo.customerAccount.PhoneNumber;
+                root.FindViewById<TextInputEditText>(Resource.Id.txtaccUserName).Text = GeneralInfo.customerAccount.UserName;
+                root.FindViewById<TextInputEditText>(Resource.Id.txtaccEmail).Text = GeneralInfo.customerAccount.EMail;
+                root.FindViewById<TextInputEditText>(Resource.Id.txtaccPhone).Text = GeneralInfo.customerAccount.PhoneNumber;
 
                 //find button and set click event as UPDATE
                 root.FindViewById<Button>(Resource.Id.btnaccUpdate).Click += btnAccUpdate_Click;
@@ -105,10 +105,10 @@ namespace ETicaretAndroidAPP
             else if (position == 1)
             {
                 //fill personal info here
-                root.FindViewById<TextInputEditText>(Resource.Id.txtpersName).Text = CustomerInfo.customerPersonal.Name;
-                root.FindViewById<TextInputEditText>(Resource.Id.txtpersSurname).Text = CustomerInfo.customerPersonal.Surname;
-                root.FindViewById<EditText>(Resource.Id.txtpersAddress).Text = CustomerInfo.customerPersonal.Address;
-                root.FindViewById<TextInputEditText>(Resource.Id.txtpersBirthDate).Text = CustomerInfo.customerPersonal.BirthDate.ToShortDateString();
+                root.FindViewById<TextInputEditText>(Resource.Id.txtpersName).Text = GeneralInfo.customerPersonal.Name;
+                root.FindViewById<TextInputEditText>(Resource.Id.txtpersSurname).Text = GeneralInfo.customerPersonal.Surname;
+                root.FindViewById<EditText>(Resource.Id.txtpersAddress).Text = GeneralInfo.customerPersonal.Address;
+                root.FindViewById<TextInputEditText>(Resource.Id.txtpersBirthDate).Text = GeneralInfo.customerPersonal.BirthDate.ToShortDateString();
 
                 //find button and set click event as UPDATE
             }
@@ -128,7 +128,7 @@ namespace ETicaretAndroidAPP
             ResetColorsOnAccountInfoTextBoxes(root, txtemail, txtnewPwd, txtoldPwd, txtPhone, txtPwdConfirm);
             //check current password
             string currentPwd = txtoldPwd.Text;
-            if (currentPwd == CustomerInfo.customerAccount.Password)
+            if (currentPwd == GeneralInfo.customerAccount.Password)
             {
                 string newPwd = txtnewPwd.Text;
                 //if user wants to change pwd so he/she needs to give us valid pwd
@@ -139,7 +139,7 @@ namespace ETicaretAndroidAPP
                     if (newPwd == confirmPwd)
                     {
                         //we can Make password Update here
-                        CustomerInfo.customerAccount.Password = newPwd;
+                        GeneralInfo.customerAccount.Password = newPwd;
                     }
                     else
                     {
@@ -158,7 +158,7 @@ namespace ETicaretAndroidAPP
                 string email = txtemail.Text;
                 if (Validator.ValidEmail(email))
                 {
-                    CustomerInfo.customerAccount.EMail = email;
+                    GeneralInfo.customerAccount.EMail = email;
                 }
                 else
                 {
@@ -169,7 +169,7 @@ namespace ETicaretAndroidAPP
                 string phone = root.FindViewById<TextInputEditText>(Resource.Id.txtaccPhone).Text;
                 if (Validator.ValidPhone(phone, 11))
                 {
-                    CustomerInfo.customerAccount.PhoneNumber = phone;
+                    GeneralInfo.customerAccount.PhoneNumber = phone;
                 }
                 else
                 {
@@ -187,7 +187,7 @@ namespace ETicaretAndroidAPP
             if (updateSuccess)
             {
                 SQLiteConnection connection = DataBase.CheckConnection();
-                connection.Update(CustomerInfo.customerAccount);
+                connection.Update(GeneralInfo.customerAccount);
                 //give a message
                 // var runnable = new Java.Lang.Runnable(() =>);
                 Toast.MakeText(((View)root.Parent).Context, "Update Successfull", ToastLength.Short).Show();

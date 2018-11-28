@@ -94,8 +94,8 @@ namespace ETicaretAndroidAPP
 
                     if (foundCustomer != null && foundCustomer.Password != string.Empty && foundCustomer.Password == txtPassword.Text)
                     {   //anasayfaya yönlendirme
-                        CustomerInfo.UserConnected = true;
-                        CustomerInfo.FillDatas(txtUserName.Text);
+                        GeneralInfo.UserConnected = true;
+                        GeneralInfo.FillDatas(txtUserName.Text);
                         StartActivity(typeof(MainActivity));
                         MessageBoxShort("Correct Username and Password");
                     }

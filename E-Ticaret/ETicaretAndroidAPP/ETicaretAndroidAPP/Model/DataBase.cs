@@ -63,7 +63,7 @@ namespace ETicaretAndroidAPP
             product.ProductCount = 3;
             product.ProductCategory = ProductCategory.Man.ToString();
             product.ProductType = ProductType.Sport.ToString();
-            product.ProductImage = Resource.Drawable.ic_man_casual_shoe;
+            product.ProductImage = Resource.Drawable.sportShoe;
             products.Add(product);
 
             product = new Product();
@@ -93,7 +93,7 @@ namespace ETicaretAndroidAPP
             product.ProductCount = 75;
             product.ProductCategory = ProductCategory.Kids.ToString();
             product.ProductType = ProductType.Sport.ToString();
-            product.ProductImage = Resource.Drawable.ic_menu_gallery;
+            product.ProductImage = Resource.Drawable.ic_man_casual_shoe;
             products.Add(product);
 
 
@@ -104,19 +104,90 @@ namespace ETicaretAndroidAPP
             product.ProductCount = 175;
             product.ProductCategory = ProductCategory.Man.ToString();
             product.ProductType = ProductType.Sport.ToString();
-            product.ProductImage = Resource.Drawable.ic_menu_camera;
+            product.ProductImage = Resource.Drawable.sportShoe;
 
             product = new Product();
             product.ProductID = "12235470";
             product.ProductName = "Adidas";
             product.ProductPrice = 300;
             product.ProductCount = 175;
+            product.ProductCategory = ProductCategory.Man.ToString();
+            product.ProductType = ProductType.Casual.ToString();
+            product.ProductImage = Resource.Drawable.ic_man_casual_shoe;
+            products.Add(product);
+            
+
+            product = new Product();
+            product.ProductID = "12235471";
+            product.ProductName = "Adidas";
+            product.ProductPrice = 300;
+            product.ProductCount = 175;
             product.ProductCategory = ProductCategory.Women.ToString();
             product.ProductType = ProductType.Casual.ToString();
-            product.ProductImage = Resource.Drawable.ic_menu_home;
+            product.ProductImage = Resource.Drawable.ic_womenCasual;
+            products.Add(product);
+        
+
+
+            product = new Product();
+            product.ProductID = "12235472";
+            product.ProductName = "Adidas";
+            product.ProductPrice = 300;
+            product.ProductCount = 175;
+            product.ProductCategory = ProductCategory.Women.ToString();
+            product.ProductType = ProductType.Winter.ToString();
+            product.ProductImage = Resource.Drawable.ic_winter_boots;
+            products.Add(product);
+           
+
+
+            product = new Product();
+            product.ProductID = "12235473";
+            product.ProductName = "Adidas";
+            product.ProductPrice = 300;
+            product.ProductCount = 175;
+            product.ProductCategory = ProductCategory.Man.ToString();
+            product.ProductType = ProductType.Casual.ToString();
+            product.ProductImage = Resource.Drawable.ic_man_casual_shoe;
+            products.Add(product);
+          
+
+
+            product = new Product();
+            product.ProductID = "12235474";
+            product.ProductName = "Adidas";
+            product.ProductPrice = 300;
+            product.ProductCount = 175;
+            product.ProductCategory = ProductCategory.Women.ToString();
+            product.ProductType = ProductType.Casual.ToString();
+            product.ProductImage = Resource.Drawable.ic_woman_casual_shoe;
+            products.Add(product);
+      
+
+            product = new Product();
+            product.ProductID = "12235475";
+            product.ProductName = "Adidas";
+            product.ProductPrice = 300;
+            product.ProductCount = 175;
+            product.ProductCategory = ProductCategory.Women.ToString();
+            product.ProductType = ProductType.Casual.ToString();
+            product.ProductImage = Resource.Drawable.ic_womenCasual;
+            products.Add(product);
+      
+
+            product = new Product();
+            product.ProductID = "12235476";
+            product.ProductName = "Adidas";
+            product.ProductPrice = 300;
+            product.ProductCount = 175;
+            product.ProductCategory = ProductCategory.Women.ToString();
+            product.ProductType = ProductType.Casual.ToString();
+            product.ProductImage = Resource.Drawable.ic_womenCasual;
             products.Add(product);
             if (connection.Table<Product>().ToList().Count == 0)
                 connection.InsertAll(products);
+            else
+                connection.UpdateAll(products);
         }
     }
 }

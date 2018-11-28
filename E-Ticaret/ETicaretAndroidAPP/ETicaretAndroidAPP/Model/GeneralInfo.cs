@@ -13,11 +13,12 @@ using SQLite;
 
 namespace ETicaretAndroidAPP.Model
 {
-    static class CustomerInfo
+    static class GeneralInfo
     {
         public static bool UserConnected = false;
         public static CustomerAccount customerAccount = null;
         public static CustomerPersonal customerPersonal = null;
+        public static Product currentProduct;
 
         static public void FillDatas(string username)
         {

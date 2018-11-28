@@ -61,7 +61,7 @@
     <Compile Include="Fragments.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Model\CustomerAccount.cs" />
-    <Compile Include="Model\CustomerInfo.cs" />
+    <Compile Include="Model\GeneralInfo.cs" />
     <Compile Include="Model\CustomerPersonal.cs" />
     <Compile Include="Model\DataBase.cs" />
     <Compile Include="Model\Enums.cs" />
@@ -69,6 +69,7 @@
     <Compile Include="Model\StringLiterals.cs" />
     <Compile Include="Model\Validator.cs" />
     <Compile Include="nav_header_main_Activity.cs" />
+    <Compile Include="ProductShowActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignInActivity.cs" />
@@ -221,6 +222,20 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\personalInfo.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\product_show.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-v21\shoppingCartAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-v21\itemsBackgroundGray.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

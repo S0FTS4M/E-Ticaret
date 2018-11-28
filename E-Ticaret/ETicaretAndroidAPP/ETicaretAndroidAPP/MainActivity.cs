@@ -33,7 +33,7 @@ namespace ETicaretAndroidAPP
 
             //FOR TESTING PURPOSES
             DataBase.CreateItems();
-            CustomerInfo.FillDatas("softsam");
+            GeneralInfo.FillDatas("softsam");
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
@@ -52,10 +52,10 @@ namespace ETicaretAndroidAPP
             var header = navigationView.GetHeaderView(0);
             TextView lblName = header.FindViewById<TextView>(Resource.Id.lblUserName);
             TextView lblemail = header.FindViewById<TextView>(Resource.Id.lblUserEmail);
-            if (CustomerInfo.UserConnected)
+            if (GeneralInfo.UserConnected)
             {
-                lblName.Text = CustomerInfo.customerAccount.UserName;
-                lblemail.Text = CustomerInfo.customerAccount.EMail;
+                lblName.Text = GeneralInfo.customerAccount.UserName;
+                lblemail.Text = GeneralInfo.customerAccount.EMail;
                 Toast.MakeText(this, "User connected...", ToastLength.Short);
             }
             else
@@ -66,12 +66,14 @@ namespace ETicaretAndroidAPP
             }
 
             navigationView.SetNavigationItemSelectedListener(this);
-            CoordinatorLayout appBarMain = FindViewById<CoordinatorLayout>(Resource.Id.appBarMain); ;
-            GridLayout gridLayout = appBarMain.FindViewById<RelativeLayout>(Resource.Id.contentMain).FindViewById<GridLayout>(Resource.Id.gridContentInc);
+            CoordinatorLayout appBarMain = FindViewById<CoordinatorLayout>(Resource.Id.appBarMain);
+            RelativeLayout contentMainLayout = appBarMain.FindViewById<RelativeLayout>(Resource.Id.contentMain);
+            ScrollView scrollViewContent = contentMainLayout.FindViewById<ScrollView>(Resource.Id.gridContentInc);
+            GridLayout gridLayout = scrollViewContent.FindViewById<GridLayout>(Resource.Id.gridContent);
             LinearLayout _template = gridLayout.FindViewById<LinearLayout>(Resource.Id.basicCart);
             mainLayout = gridLayout;
             template = _template;
-
+            
             connection = DataBase.CheckConnection();
             var products = connection.Table<Product>();
             CreateItems(products);
@@ -146,7 +148,8 @@ namespace ETicaretAndroidAPP
             SQLiteConnection connection = DataBase.CheckConnection();
             var products = connection.Table<Product>();
             Product foundProduct = products.Where((x) => x.ProductID == productID).First();
-            Toast.MakeText(this, foundProduct.ProductName + " : " + foundProduct.ProductCategory + " : " + foundProduct.ProductType, ToastLength.Long).Show();
+            GeneralInfo.currentProduct = foundProduct;
+            StartActivity(typeof(ProductShowActivity));
         }
 
 
@@ -241,7 +244,7 @@ namespace ETicaretAndroidAPP
             else if (id == Resource.Id.nav_account)
             {
                 //sign in if user didnt sign in already
-                if (CustomerInfo.UserConnected == false)
+                if (GeneralInfo.UserConnected == false)
                 {
                     //ask to user if he/she wants to sign in
                     Snackbar.Make(FindViewById<DrawerLayout>(Resource.Id.drawer_layout), "You didnt Sign in! Would you like to sign in?", Snackbar.LengthLong)
@@ -251,7 +254,7 @@ namespace ETicaretAndroidAPP
                 else
                 {
                     //go to account page
-                    Toast.MakeText(this, CustomerInfo.customerAccount.UserName + " has logged in!", ToastLength.Short);
+                    Toast.MakeText(this, GeneralInfo.customerAccount.UserName + " has logged in!", ToastLength.Short);
                     //LinearLayout accountLayout = (LinearLayout)LayoutInflater.Inflate(Resource.Layout.account, null);
                     StartActivity(typeof(AccountActivity));
                 }
