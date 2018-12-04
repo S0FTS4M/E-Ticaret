@@ -17,6 +17,7 @@ namespace E_Ticaret.Controllers
         // GET: Products
         public ActionResult Index()
         {
+
             return View(db.Products.ToList());
         }
 
@@ -30,13 +31,17 @@ namespace E_Ticaret.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Product product = db.Products.Find(id);
+            
             if (product == null)
             {
                 return HttpNotFound();
             }
             return View(product);
         }
-
+        public ActionResult Category()
+        {
+            return View();
+        }
 
         // GET: Products/Create
         public ActionResult Create()

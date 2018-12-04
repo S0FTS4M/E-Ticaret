@@ -80,7 +80,7 @@ main-carousel-inner {
     float:right;
     margin-left:10px;
     height: auto;
-    width: 100%;
+    width: 90%;
 }
 
 .mainNavDropDown:hover > .dropdown-menu {
@@ -88,11 +88,11 @@ main-carousel-inner {
 }
 
 .mainNavDropDown .dropdown-menu {
-    background-image: url("http://placehold.it/120x80");
+    background-image: url("http://placehold.it/180x80");
     background-repeat: no-repeat;
     background-position: right;
-    top: 30px !important;
-    width: 900px !important;
+    top: 60px !important;
+    width: 800px !important;
     height: 300px;
     left: 0px !important;
     box-shadow: 0px 5px 30px black;

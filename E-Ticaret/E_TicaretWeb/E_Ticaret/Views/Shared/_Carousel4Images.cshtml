@@ -22,7 +22,13 @@
                                 {
       
                                     <div class="col-md-3">
-                                        <a href="#">
+                                        <a href=@Url.Action(
+                                                            actionName: "Details",
+                                                            controllerName:"Products",
+                                                            routeValues: new
+                                                            {
+                                                                id = list[j].Id
+                                                            })>
                                             @if (i != 4)
                                             {
                                                 <img src=@Url.Content(list[j].Image) alt="sales shoe" />
@@ -48,7 +54,13 @@
                                 if (list[j].Category.Contains("sales"))
                                 {
                                     <div class="col-md-3">
-                                        <a href="#">
+                                        <a href=@Url.Action(
+                                                            actionName: "Details",
+                                                            controllerName:"Products",
+                                                            routeValues: new
+                                                            {
+                                                                id = list[j].Id
+                                                            })>
                                             @if (i != 0)
                                             {
                                                 <img src=@Url.Content(list[j].Image) alt="sales shoe" />

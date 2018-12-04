@@ -22,6 +22,33 @@ namespace E_Ticaret.Controllers
 
             return View();
         }
+        public ActionResult CategoryShow(string categoryName)
+        {
+            if (categoryName == null)
+                return View();
+            string[] categories = categoryName.Split(',');
+            ApplicationDbContext db = new ApplicationDbContext();
+            var list = db.Products.ToList();
+            List<Product> pd = new List<Product>();
+            foreach (var item in list)
+            {
+                int c = 0;
+                string[] pdCategory = item.Category.Split(',');
+                for (int i = 0; i < categories.Length; i++)
+                {
+                    if (Array.IndexOf(pdCategory,categories[i]) != -1)
+                    {
+                        c++;
+                    }
+                }
+                if (c == categories.Length)
+                    pd.Add(item);
+            }
+
+           
+            return View(pd);
+        }
+
 
         public ActionResult Contact()
         {
