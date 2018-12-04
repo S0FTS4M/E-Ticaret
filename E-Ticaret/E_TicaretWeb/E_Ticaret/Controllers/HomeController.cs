@@ -66,10 +66,6 @@ namespace E_Ticaret.Controllers
             return View();
         }
 
-        public ActionResult ViewProduct()
-        {
-            return View();
-        }
         public ActionResult Sales()
         {
             return View();

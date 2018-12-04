@@ -225,10 +225,13 @@
     <Compile Include="Migrations\201811271716037_product2.Designer.cs">
       <DependentUpon>201811271716037_product2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812041542206_CustomerAccount.cs" />
+    <Compile Include="Migrations\201812041542206_CustomerAccount.Designer.cs">
+      <DependentUpon>201812041542206_CustomerAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Database.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
@@ -344,7 +347,6 @@
     <Content Include="Views\Shared\_MainSlideShow.cshtml" />
     <Content Include="Views\Home\Purchase.cshtml" />
     <Content Include="Views\Home\Shopping_Cart.cshtml" />
-    <Content Include="Views\Home\ViewProduct.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -401,6 +403,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811271716037_product2.resx">
       <DependentUpon>201811271716037_product2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812041542206_CustomerAccount.resx">
+      <DependentUpon>201812041542206_CustomerAccount.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
