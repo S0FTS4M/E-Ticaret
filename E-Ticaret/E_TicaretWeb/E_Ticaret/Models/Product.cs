@@ -34,5 +34,6 @@ namespace E_Ticaret.Models
 
         [StringLength(255)]
         public string mainPageUrl { get; set; }
+
     }
 }

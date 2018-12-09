@@ -9,10 +9,10 @@ namespace E_Ticaret.Controllers
 {
     public class HomeController : Controller
     {
-
+        ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
-            ApplicationDbContext db = new ApplicationDbContext();       
+       
             return View(db.Products.ToList());
         }
 
@@ -27,7 +27,7 @@ namespace E_Ticaret.Controllers
             if (categoryName == null)
                 return View();
             string[] categories = categoryName.Split(',');
-            ApplicationDbContext db = new ApplicationDbContext();
+          
             var list = db.Products.ToList();
             List<Product> pd = new List<Product>();
             foreach (var item in list)
@@ -63,12 +63,23 @@ namespace E_Ticaret.Controllers
 
         public ActionResult Shopping_Cart()
         {
-            return View();
+            return RedirectToAction("Index", "ShoppingCart");
         }
 
         public ActionResult Sales()
         {
-            return View();
+            var list = db.Products.ToList();
+            List<Product> pd = new List<Product>();
+            foreach (var item in list)
+            {
+                string[] categories = item.Category.Split(',');
+                for (int i = 0; i < categories.Length; i++)
+                {
+                    if (categories[i] == "sales")
+                        pd.Add(item);
+                }
+            }
+            return View(pd);
         }
         public ActionResult Product()
         {
