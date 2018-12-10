@@ -239,3 +239,5 @@ C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\ob
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.product2.resources
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.csprojAssemblyReference.cache
 C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.CustomerAccount.resources
+C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.product_comment.resources
+C:\Users\po288\OneDrive\Masaüstü\E-Ticaret\E-Ticaret\E_TicaretWeb\E_Ticaret\obj\Debug\E_Ticaret.Migrations.commentList.resources

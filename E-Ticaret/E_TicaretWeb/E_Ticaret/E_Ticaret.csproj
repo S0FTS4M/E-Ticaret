@@ -231,8 +231,17 @@
     <Compile Include="Migrations\201812041542206_CustomerAccount.Designer.cs">
       <DependentUpon>201812041542206_CustomerAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812091857299_product_comment.cs" />
+    <Compile Include="Migrations\201812091857299_product_comment.Designer.cs">
+      <DependentUpon>201812091857299_product_comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812092005135_commentList.cs" />
+    <Compile Include="Migrations\201812092005135_commentList.Designer.cs">
+      <DependentUpon>201812092005135_commentList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -411,6 +420,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812041542206_CustomerAccount.resx">
       <DependentUpon>201812041542206_CustomerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812091857299_product_comment.resx">
+      <DependentUpon>201812091857299_product_comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812092005135_commentList.resx">
+      <DependentUpon>201812092005135_commentList.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
