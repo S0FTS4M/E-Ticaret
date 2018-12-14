@@ -1,83 +1,105 @@
-﻿@model E_Ticaret.Models.Product
+﻿
+@model E_Ticaret.Models.Product
 
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    int _quantity = 1;
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+<div class="container">
+    <div class="card">
+        <div class="row">
+            <aside class="col-sm-5 border-right">
+                <article class="gallery-wrap">
+                    <div class="img-big-wrap">
+                        <div> <a href="#"><img src=@Url.Content(Model.Image)></a></div>
+                    </div> <!-- slider-product.// -->
+                    <!--
+                    <div class="img-small-wrap">
+                        <div class="item-gallery"> <img src="https://s9.postimg.org/tupxkvfj3/image.jpg"> </div>
+                        <div class="item-gallery"> <img src="https://s9.postimg.org/tupxkvfj3/image.jpg"> </div>
+                        <div class="item-gallery"> <img src="https://s9.postimg.org/tupxkvfj3/image.jpg"> </div>
+                        <div class="item-gallery"> <img src="https://s9.postimg.org/tupxkvfj3/image.jpg"> </div>
+                    </div>-->
+                    <!-- slider-nav.// -->
+                </article> <!-- gallery-wrap .end// -->
+            </aside>
+            <aside class="col-sm-7">
+                <article class="card-body p-5">
+                    <h3 class="title mb-3">@Html.DisplayFor(m => Model.Name)</h3>
+                    <p class="price-detail-wrap">
+                        <span class="price h3 text-warning">
+                            <span class="currency">US $</span><span class="num">@Model.Price</span>
+                        </span>
+                    </p> <!-- price-detail-wrap .// -->
+                    <dl class="item-property">
+                        <dt>Description</dt>
+                        <dd>
+                            <p>
+                                @Model.Description
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="param param-feature">
+                        <dt>Model#</dt>
+                        <dd>@Html.DisplayFor(m => Model.Name)</dd>
+                    </dl>  <!-- item-property-hor .// -->
+                    <dl class="param param-feature">
+                        <dt>Amount</dt>
+                        <dd>@Html.DisplayFor(m => Model.Amount)</dd>
+                    </dl>  <!-- item-property-hor .// -->
+                    <hr>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Amount)
-        </dt>
+                    <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
+                    @Html.ActionLink(linkText:"Add to Cart",
+                                    actionName:"OrderNow",
+                                    controllerName:"ShoppingCart",
+                                    routeValues: new {id = Model.Id, quantity=_quantity},
+                                    htmlAttributes: new {@class="btn btn-lg btn-outline-primary text-uppercase"}
+                                    )
+                    <!--   <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>-->
+                </article> <!-- card-body.// -->
+            </aside> <!-- col.// -->
+        </div> <!-- row.// -->
+    </div> <!-- card.// -->
+    <br />
+    <h5>Comments</h5>
+    <div class="card">
 
-        <dd>
-            @Html.DisplayFor(model => model.Amount)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.mainPageUrl)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.mainPageUrl)
-        </dd>
-
-    </dl>
+        @foreach (E_Ticaret.Models.Comment comment in Model.comment)
+        {
+            <div class="row">
+                <div class="col-sm-10">
+                    <p>@comment.customerUserName</p>
+                    <p>@comment.commentText</p>
+                    <br />
+                </div>
+                <div class="col-sm-2">
+                @if (comment.customerUserName == User.Identity.Name)
+                {
+                    @Html.ActionLink(linkText: "Delete Comment",
+                                     actionName: "DeleteComment",
+                                     controllerName: "Products",
+                                     routeValues: new { commId = comment.commentId, productId = comment.productId},
+                                     htmlAttributes: new { @class = "btn btn-outline-primary" }
+                     )
+                }
+                </div>
+            </div>
+        }
+        @using (Html.BeginForm("AddComment", "Products", new { productId = Model.Id, userName = User.Identity.Name }))
+        {
+            <div class="row">
+                <div class="col-sm-12">
+                    <textarea class="form-control" name="userComment" style="width:100%;"></textarea>
+                    <input type="submit" class="btn btn-lg btn-outline-primary text-uppercase" />
+                </div>
+            </div>
+        }
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<!--container.//-->
+    

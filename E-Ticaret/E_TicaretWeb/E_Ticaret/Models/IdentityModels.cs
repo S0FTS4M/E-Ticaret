@@ -29,8 +29,14 @@ namespace E_Ticaret.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        public DbSet<Product> Products { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<ApplicationUser>().ToTable("CustomerAccount");
+        }
 
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Comment> Comments { get; set; }
 
         public static ApplicationDbContext Create()
         {

@@ -9,10 +9,10 @@ namespace E_Ticaret.Controllers
 {
     public class HomeController : Controller
     {
-
+        ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
-            ApplicationDbContext db = new ApplicationDbContext();       
+       
             return View(db.Products.ToList());
         }
 
@@ -22,6 +22,42 @@ namespace E_Ticaret.Controllers
 
             return View();
         }
+
+
+
+        public ActionResult CategoryShow(string categoryName)
+        {
+            if (categoryName == null)
+                return View();
+            
+            // we split the categories
+            string[] categories = categoryName.Split(',');
+          
+            // get the product list from database
+            var list = db.Products.ToList();
+            List<Product> pd = new List<Product>();
+            foreach (var item in list)
+            {
+                int c = 0;
+                // get categories of every product
+                string[] pdCategory = item.Category.Split(',');
+                for (int i = 0; i < categories.Length; i++)
+                {
+                   // if category name is inside of the product category increasing "c"
+                    if (Array.IndexOf(pdCategory,categories[i]) != -1)
+                    {
+                        c++;
+                    }
+                }
+                // if the length is equal, it means the product is in specific category
+                if (c == categories.Length)
+                    pd.Add(item);
+            }
+
+           
+            return View(pd);
+        }
+
 
         public ActionResult Contact()
         {
@@ -36,16 +72,23 @@ namespace E_Ticaret.Controllers
 
         public ActionResult Shopping_Cart()
         {
-            return View();
+            return RedirectToAction("Index", "ShoppingCart");
         }
 
-        public ActionResult ViewProduct()
-        {
-            return View();
-        }
         public ActionResult Sales()
         {
-            return View();
+            var list = db.Products.ToList();
+            List<Product> pd = new List<Product>();
+            foreach (var item in list)
+            {
+                string[] categories = item.Category.Split(',');
+                for (int i = 0; i < categories.Length; i++)
+                {
+                    if (categories[i] == "sales")
+                        pd.Add(item);
+                }
+            }
+            return View(pd);
         }
         public ActionResult Product()
         {

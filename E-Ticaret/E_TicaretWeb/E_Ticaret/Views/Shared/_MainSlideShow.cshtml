@@ -27,33 +27,24 @@
             {
 
                 index += 1;
-
-                <div class="carousel-item main-carousel-item active">
+                
+                <div class="carousel-item main-carousel-item table-responsive-md active">
                     <img src="@Url.Content(path)">
                 </div>
             }
             else
             {
-                <div class="carousel-item main-carousel-item">
+                <div class="carousel-item main-carousel-item table-responsive-md">
                     <img src="@Url.Content(path)">
                 </div>
             }
 
         }
+        @{ 
+            index = 0;
+        }
     </div>
-    <!-- The slideshow
-    <div class="carousel-inner main-carousel-inner">
-        <div class="carousel-item main-carousel-item active">
-            <img src="@Url.Content(url.ElementAt(0))">
-        </div>
-        <div class="carousel-item main-carousel-item">
-            <img src="@Url.Content(url.ElementAt(1))">
-        </div>
-        <div class="carousel-item main-carousel-item">
-            <img src="@Url.Content(url.ElementAt(2))">
-        </div>
-    </div>
-        -->
+
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
@@ -62,17 +53,3 @@
         <span class="carousel-control-next-icon"></span>
     </a>
 </div>
-<!--
-    <button style="margin-top:30px;">
-
-        @Html.ActionLink(
-                    linkText:"Detail",
-                    actionName: "Details",
-                    controllerName:"Products",
-                    routeValues: new
-                    {
-                        id = 3
-                    },
-                    htmlAttributes:null)
-    </button>
-    -->

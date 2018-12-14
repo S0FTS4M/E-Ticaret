@@ -199,6 +199,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Item.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -225,10 +227,23 @@
     <Compile Include="Migrations\201811271716037_product2.Designer.cs">
       <DependentUpon>201811271716037_product2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812041542206_CustomerAccount.cs" />
+    <Compile Include="Migrations\201812041542206_CustomerAccount.Designer.cs">
+      <DependentUpon>201812041542206_CustomerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812091857299_product_comment.cs" />
+    <Compile Include="Migrations\201812091857299_product_comment.Designer.cs">
+      <DependentUpon>201812091857299_product_comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812092005135_commentList.cs" />
+    <Compile Include="Migrations\201812092005135_commentList.Designer.cs">
+      <DependentUpon>201812092005135_commentList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Database.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
@@ -248,9 +263,19 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Logos\kids.png" />
+    <Content Include="Images\Logos\men.png" />
+    <Content Include="Images\Logos\women.png" />
     <Content Include="Images\MainSlideImages\mainSlideShow1.png" />
     <Content Include="Images\MainSlideImages\mainSlideShow2.png" />
     <Content Include="Images\MainSlideImages\mainSlideShow3.png" />
+    <Content Include="Images\Shoes\Men\Athletic\men_athletic1.jpg" />
+    <Content Include="Images\Shoes\Men\Athletic\men_athletic2.jpg" />
+    <Content Include="Images\Shoes\Men\Athletic\men_athletic3.jpg" />
+    <Content Include="Images\Shoes\Men\Casual\men_casual1.jpg" />
+    <Content Include="Images\Shoes\Women\Athletic\women_athletic1.jpg" />
+    <Content Include="Images\Shoes\Women\Athletic\women_athletic2.jpg" />
+    <Content Include="Images\Shoes\Women\Athletic\women_athletic3.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -333,8 +358,6 @@
     <Content Include="Views\Shared\_MainNavBar.cshtml" />
     <Content Include="Views\Shared\_MainSlideShow.cshtml" />
     <Content Include="Views\Home\Purchase.cshtml" />
-    <Content Include="Views\Home\Shopping_Cart.cshtml" />
-    <Content Include="Views\Home\ViewProduct.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -351,20 +374,21 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Home\CategoryShow.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.cshtml" />
+    <Content Include="Views\ShoppingCart\Cart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\Carousel_Images\" />
-    <Folder Include="Images\Logos\" />
     <Folder Include="Images\Shoes\Kids\Athletic\" />
     <Folder Include="Images\Shoes\Kids\Casual\" />
     <Folder Include="Images\Shoes\Kids\Winter\" />
-    <Folder Include="Images\Shoes\Men\Athletic\" />
-    <Folder Include="Images\Shoes\Men\Casual\" />
     <Folder Include="Images\Shoes\Men\Winter\" />
-    <Folder Include="Images\Shoes\Women\Athletic\" />
+    <Folder Include="Images\Shoes\Sales\" />
     <Folder Include="Images\Shoes\Women\Casual\" />
     <Folder Include="Images\Shoes\Women\Winter\" />
+    <Folder Include="Views\Comment\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -393,6 +417,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811271716037_product2.resx">
       <DependentUpon>201811271716037_product2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812041542206_CustomerAccount.resx">
+      <DependentUpon>201812041542206_CustomerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812091857299_product_comment.resx">
+      <DependentUpon>201812091857299_product_comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812092005135_commentList.resx">
+      <DependentUpon>201812092005135_commentList.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

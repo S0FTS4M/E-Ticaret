@@ -25,9 +25,13 @@
     <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <li class="nav-item">
-                @Html.ActionLink("Cart","Shopping_Cart","Home", new {@class="nav-link menu-item" })
+                @Html.ActionLink(linkText:"Cart",
+                                actionName:"Index",
+                                controllerName:"ShoppingCart",
+                                routeValues: null,
+                                htmlAttributes: new {@class= "nav-link menu-item" }
+                )
             </li>
         </ul>
     </div>
 </nav>
-
