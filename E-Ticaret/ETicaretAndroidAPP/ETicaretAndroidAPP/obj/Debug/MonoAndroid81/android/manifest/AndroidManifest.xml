@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="ETicaretAndroidAPP.ETicaretAndroidAPP">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="ETicaretAndroidAPP.ETicaretAndroidAPP" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -12,7 +12,7 @@
       </intent-filter>
     </activity>
     <activity android:label="nav_header_main_Activity" android:name="md5a9cad8945bf3787714d7ad485cb8c951.nav_header_main_Activity" />
-    <activity android:label="ProductShowActivity" android:name="md5a9cad8945bf3787714d7ad485cb8c951.ProductShowActivity" />
+    <activity android:label="ProductShowActivity" android:theme="@style/AppTheme.NoActionBar" android:name="md5a9cad8945bf3787714d7ad485cb8c951.ProductShowActivity" />
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md5a9cad8945bf3787714d7ad485cb8c951.SignInActivity" />
     <activity android:label="SignUp" android:theme="@style/AppTheme" android:name="md5a9cad8945bf3787714d7ad485cb8c951.SignUpActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="ETicaretAndroidAPP.ETicaretAndroidAPP.mono.MonoRuntimeProvider.__mono_init__" />

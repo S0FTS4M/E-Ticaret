@@ -9,18 +9,26 @@ using AOS = Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+
 using SQLite;
+
+
 using ETicaretAndroidAPP.Model;
 using Android.Support.V4.Content;
+using System.Threading.Tasks;
+
 
 namespace ETicaretAndroidAPP
 {
-    static public class DataBase
+    static public class DataBase 
     {
+      
         static private SQLiteConnection connection;
         static private string sqlPath = Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
         "ormdemo.db3");
+
+        
         static public SQLiteConnection CheckConnection()
         {
             if (connection == null)
@@ -32,6 +40,7 @@ namespace ETicaretAndroidAPP
                 connection.CreateTable<CustomerPersonal>();
                 connection.CreateTable<Product>();
             }
+          
             return connection;
         }
         static public void CreateItems()

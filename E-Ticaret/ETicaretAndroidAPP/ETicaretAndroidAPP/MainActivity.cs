@@ -16,7 +16,10 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using ETicaretAndroidAPP.Model;
+
 using SQLite;
+
+using Java.Lang;
 
 namespace ETicaretAndroidAPP
 {
@@ -26,15 +29,26 @@ namespace ETicaretAndroidAPP
         GridLayout mainLayout;
         LinearLayout template;
         SQLiteConnection connection;
-        protected override void OnCreate(Bundle savedInstanceState)
+        
+       
+        protected override  void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
+            //Make firebaseoptions
 
+            SetMainPage();
+            
+
+        }
+         void SetMainPage()
+        {
             //FOR TESTING PURPOSES
-            DataBase.CreateItems();
-            GeneralInfo.FillDatas("softsam");
-
+            new Thread(() =>
+            {
+                DataBase.CreateItems();
+                GeneralInfo.FillDatas("softsam");
+            }).Start();
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
@@ -73,11 +87,57 @@ namespace ETicaretAndroidAPP
             LinearLayout _template = gridLayout.FindViewById<LinearLayout>(Resource.Id.basicCart);
             mainLayout = gridLayout;
             template = _template;
-            
+
             connection = DataBase.CheckConnection();
             var products = connection.Table<Product>();
+            
             CreateItems(products);
         }
+        #region firebase
+        // void rundb()
+        // {
+        //     FirebaseOptions firebaseOptions = new FirebaseOptions.Builder().SetApiKey(" AIzaSyBQev9ULBFWqD31zfTr8ovFSGlURNDM2S4 ").SetDatabaseUrl("https://eticaret-feebb.firebaseio.com/").SetApplicationId("eticaret-feebb").Build();
+
+        //     FirebaseApp firebaseApp = FirebaseApp.InitializeApp(this, firebaseOptions);
+
+
+        //     FirebaseDatabase firebaseDatabase = FirebaseDatabase.GetInstance(firebaseApp);
+
+        //     DatabaseReference databaseReference = firebaseDatabase.Reference.Database.Reference;
+
+
+        //     databaseReference.AddChildEventListener(this);
+        //     databaseReference.AddValueEventListener(this);
+
+
+
+        //     databaseReference.Child("Person").SetValue(new Person() { name = "mali", age = 20 }).AddOnCompleteListener(this).AddOnFailureListener(this);
+        // }
+        //async Task RunAsycn()
+        // {
+        //     FirebaseOptions firebaseOptions = new FirebaseOptions.Builder().SetApiKey(" AIzaSyBQev9ULBFWqD31zfTr8ovFSGlURNDM2S4 ").SetDatabaseUrl("https://eticaret-feebb.firebaseio.com/").SetApplicationId("eticaret-feebb").Build();
+
+        //     FirebaseApp firebaseApp = FirebaseApp.InitializeApp(this, firebaseOptions);
+
+
+        //     FirebaseDatabase firebaseDatabase = FirebaseDatabase.GetInstance(firebaseApp);
+
+        //     DatabaseReference databaseReference = firebaseDatabase.Reference.Database.Reference;
+
+
+        //     databaseReference.AddChildEventListener(this);
+        //     databaseReference.AddValueEventListener(this);
+
+
+        //     // databaseReference.Push().Child("Person").SetValue(new Person() { name = "mali", age = 20 }).AddOnCompleteListener(this).AddOnFailureListener(this);
+        //     await databaseReference.Child("Person").SetValueAsync(new Person() { name = "mali", age = 20 });
+        //    //databaseReference.NotifyAll();
+
+        // }
+        #endregion
+
+       
+
         void CreateItems(TableQuery<Product> products)
         {
             //clear all views on the grid layout so I can create what I want to create
@@ -138,18 +198,18 @@ namespace ETicaretAndroidAPP
 
 
         }
-        public int DpToPixel(Context context, float dp)
-        {
-            return (int)(dp * context.Resources.DisplayMetrics.Density);
-        }
+
         private void Button_Click(object sender, EventArgs e)
         {
+
             string productID = ((Button)sender).Tag.ToString();
             SQLiteConnection connection = DataBase.CheckConnection();
             var products = connection.Table<Product>();
             Product foundProduct = products.Where((x) => x.ProductID == productID).First();
             GeneralInfo.currentProduct = foundProduct;
+            
             StartActivity(typeof(ProductShowActivity));
+            
         }
 
 
@@ -269,6 +329,8 @@ namespace ETicaretAndroidAPP
             drawer.CloseDrawer(GravityCompat.Start);
             return true;
         }
+
+
     }
 }
 

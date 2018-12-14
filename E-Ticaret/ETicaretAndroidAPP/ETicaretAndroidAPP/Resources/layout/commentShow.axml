@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/itemsBackgroundGray"
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+            android:layout_marginBottom="5dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/linearCommentLayout"
+			>
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearUserLayout">
+		<TextView
+			android:text="user992"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/lblCommentUserName" />
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+		<TextView
+			android:layout_margin="10dp"
+			android:maxHeight="80dp"
+			android:inputType="textMultiLine"
+			android:background="@drawable/itemsBackgroundGray"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product.....This product is the best so you should buy this product....."
+			android:id="@+id/txtUserComment" />
+			</ScrollView>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:gravity="right"
+			android:layout_marginRight="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="26.5dp"
+			android:id="@+id/linearLayout2">
+			<Button
+				android:background="@drawable/thumbsup"
+				android:drawableTint="@color/white"
+				android:layout_marginTop="10dp"
+				android:backgroundTint="@color/greenforshopcart"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="40.5dp"
+				android:layout_height="20.5dp"
+				android:textColor="@color/white"
+				android:id="@+id/btnCommentThumbsUP"/>
+			<TextView
+				android:text="333"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/lblCommentPlus" />
+			<Button
+				android:background="@drawable/thumbsdown"
+				android:drawableTint="@color/white"
+				android:layout_marginTop="10dp"
+				android:backgroundTint="@color/redfornotvalid"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="40.5dp"
+				android:layout_height="20.5dp"
+				android:textColor="@color/white"
+				android:id="@+id/btnCommentThumbsUP"/>
+			<TextView
+				android:text="555"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/lblCommentNegative" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

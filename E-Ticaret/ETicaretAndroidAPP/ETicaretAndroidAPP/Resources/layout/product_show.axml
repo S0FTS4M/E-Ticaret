@@ -162,66 +162,64 @@
 		</LinearLayout>
 	</LinearLayout>
 	<TextView
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:text="Comments"
-	android:textSize="24dp"
-	android:textStyle="bold"
-	android:gravity="center_horizontal"
-	android:layout_marginVertical="5dp"/>
-	<ScrollView
-		android:minWidth="25px"
-		android:minHeight="25px"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:id="@+id/scrollViewComments" >
+		android:layout_height="wrap_content"
+		android:text="Comments"
+		android:textSize="30dp"
+		android:textStyle="bold"
+		android:gravity="center_horizontal"
+		
+		android:layout_marginTop="35dp"
+		/>
+	
 		<LinearLayout
-			android:background="@drawable/itemsBackgroundGray"
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:padding="2dp"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="2dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/linearVertComments">
+	  
+		<include layout="@layout/commentshow"/>
+
+		<LinearLayout
 			android:orientation="horizontal"
 			android:minWidth="25px"
 			android:minHeight="25px"
 			android:layout_width="match_parent"
+			android:gravity="center_horizontal"
 			android:layout_height="wrap_content"
-			android:id="@+id/linearCommentLayout"
-			>
-			<LinearLayout
-				android:orientation="vertical"
-				android:minWidth="25px"
-				android:minHeight="25px"
-				android:layout_width="78.0dp"
-				android:layout_height="match_parent"
-				android:id="@+id/linearUserLayout">
-				<ImageView
-					android:src="@drawable/ic_account"
-					android:gravity="center"
-					android:layout_marginTop="10dp"
-					android:layout_width="68.5dp"
-					android:layout_height="65.5dp"
-					android:id="@+id/imgCommentUserImage"
-					android:tint="@android:color/holo_blue_light" />
-				<TextView
-					android:text="user992"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:id="@+id/lblCommentUserName" />
-			</LinearLayout>
-			<LinearLayout
-				android:orientation="vertical"
-				android:minWidth="25px"
-				android:minHeight="25px"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:id="@+id/linearUserLayout">
-				<EditText
-					android:layout_margin="10dp"
-					android:inputType="textMultiLine"
-					android:background="@drawable/itemsBackgroundGray"
-					android:layout_width="287.5dp"
-					android:layout_height="57.5dp"
-					android:id="@+id/editText1" />
-			</LinearLayout>
+			android:id="@+id/linearLayout2">
+			<Button
+				android:text="Next"
+				android:layout_width="150.5dp"
+				android:layout_height="60.5dp"
+				android:textColor="@color/white"
+				android:backgroundTint="@color/blueforui"
+				android:id="@+id/btnNext"
+				android:textAllCaps="false" />
+			<Button
+				android:text="Previous"
+				android:layout_width="150.0dp"
+				android:layout_height="60.5dp"
+				android:textColor="@color/white"
+				android:backgroundTint="@color/blueforui"
+				android:id="@+id/btnPrev"
+				android:textAllCaps="false" />
+
 		</LinearLayout>
-	
-	</ScrollView>
-	
+			<Button
+				android:text="MakeComment"
+				android:layout_width="150.0dp"
+				android:layout_height="60.5dp"
+			android:layout_gravity="center_horizontal"
+				android:textColor="@color/white"
+				android:backgroundTint="@color/blueforui"
+				android:id="@+id/btnMakeComment"
+				android:textAllCaps="false" />
+	</LinearLayout>
+		
 </LinearLayout>
