@@ -6,8 +6,7 @@ import firebase from '@firebase/app';
 import '@firebase/database';
 import {HomeScreen} from './screens/HomeScreen';
 import {ProductsScreen} from './screens/ProductScreen';
-import {SignUpScreen} from './screens/SignUpScreen';
-import SignInScreen from './screens/LoginSignUpScreen' ;
+import SignInUPScreen from './screens/LoginSignUpScreen' ;
 import {AccountScreen} from './screens/AccountScreen';
 import {SearchScreen} from './screens/SearchScreen';
 import { YellowBox } from 'react-native';
@@ -33,12 +32,13 @@ const SearchStack = createStackNavigator({
   
 const ProductsStack = createStackNavigator({
   Products:ProductsScreen,
+  
 });
 const AccountsStack = createStackNavigator({
   
-  SignIn:{screen:SignInScreen,navigationOptions:{tabBarVisible: false}},
+  SignIn:{screen:SignInUPScreen,navigationOptions:{tabBarVisible: false}},
   Account:AccountScreen,
-  SignUp:SignUpScreen,
+
 
   
 });

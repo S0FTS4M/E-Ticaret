@@ -1,60 +1,47 @@
 import React,{Component} from 'react';
-import {StyleSheet,Text,View,ToastAndroid,ScrollView} from 'react-native'
+import {StyleSheet,Text,View,ToastAndroid,ScrollView,TouchableOpacity} from 'react-native'
 //import Button from '../components/MyButton'
-import {Card,Button} from 'react-native-elements'
+import firebase from '@firebase/app';
+import '@firebase/database'
+import {Card,Button, Icon,Header} from 'react-native-elements'
+import {
+  DotIndicator,
+} from 'react-native-indicators';
 
-const products=[]
+
+
+
+var products=[]
  export class HomeScreen extends Component {
 
+  
   constructor(props)
   {
-    super(props);
-    products.push({
-      name:"Nike",
-      uri:"https://images-na.ssl-images-amazon.com/images/I/61eTOL24pEL._UX395_.jpg",
-      detail:"Erkek spor ayakkabısı"
-    });
-    
-    products.push({
-      name:"ONEMIX",
-      uri:"https://ae01.alicdn.com/kf/HTB1mlmEKXXXXXbSXFXXq6xXFXXXB/ONEMIX-Brand-Top-Quality-Women-Running-Shoes-with-Mesh-Cushion-Women-Sport-Shoes-Girls-Outdoor-Sneakers.jpg",
-      detail:"Kadın spor ayakkabısı"
-    });
 
-    products.push({
-      name:"TWD Sports",
-      uri:"https://rukminim1.flixcart.com/image/612/612/jezzukw0/shoe/x/a/t/wndr-13-8-asian-grey-green-original-imaenr72gssfxrbj.jpeg?q=70",
-      detail:"Erkek spor ayakkabısı"
-    });
-    
-    products.push({
-      name:"Ayakkabı",
-      uri:"https://images-na.ssl-images-amazon.com/images/I/61eTOL24pEL._UX395_.jpg",
-      detail:"Erkek spor ayakkabısı"
-    });
-    
-    products.push({
-      name:"ADZA",
-      uri:"https://rukminim1.flixcart.com/image/612/612/jfzpuvk0/shoe/c/y/a/ax-002-6-adza-grey-original-imaf4c5khcx8df5y.jpeg?q=70",
-      detail:"Erkek spor ayakkabısı"
-    });
-    
-    
-    products.push({
-      name:"FASHION",
-      uri:"https://d1vs5fqeka2glf.cloudfront.net/07/e3/07cf246d7e8d1a444c8ccdd1c962b8e3.jpg",
-      detail:"kadın spor ayakkabısı"
-    });
-    
-    products.push({
-      name:"FASHION",
-      uri:"https://images-na.ssl-images-amazon.com/images/I/91XnZi1tlXL._UY395_.jpg",
-      detail:"Çocuk spor ayakkabısı"
+    super(props);
+    this.state={
+      productsLoaded:false,
+      category:"",
+      subCategory:"",
+    }
+    this.getProducts=this.getProducts.bind(this);
+    this.getCategoriziedProducts=this.getCategoriziedProducts.bind(this);
+    this.componentDidMount=this.componentDidMount.bind(this);
+   firebase.database().ref("Products").once('value',this.getProducts);
+  }
+  componentDidMount() {
+    this.props.navigation.addListener('willFocus', (playload)=>{
+      if(playload&&playload.action.params&&playload.action.params.category){
+     this.setState({category:playload.action.params.category,subCategory:playload.action.params.subCategory,productsLoaded:false});
+    //call filler function here  
+    firebase.database().ref("Products").once('value',this.getCategoriziedProducts);
+    }
     });
   }
+  
     static navigationOptions = {
       title: 'Home',
-      
+      header:null,
       headerStyle: {
         backgroundColor: '#f4511e',
       },
@@ -63,11 +50,40 @@ const products=[]
         fontWeight: 'bold',
       },
     };
-    cardItem(name ,imageURL,detail)
+    getProducts(p)
     {
-     return (<Card key={name}
-              title={name}
-              image={{uri:imageURL}}><Text style={{marginBottom: 10}}>{detail}</Text><Button
+      products=[];
+      var queryResult=Object.values(p.val());
+      queryResult.forEach(element => {
+        products.push({
+          product:element
+        });
+      });
+      this.setState({productsLoaded:true});
+    }
+    getCategoriziedProducts(p)
+    {
+      
+      var queryResult=Object.values(p.val());
+      products=[];
+      queryResult.forEach(element => {
+        if(element.Category==this.state.category && element.SubCategory==this.state.subCategory){
+        products.push({
+          product:element
+        });
+      }
+      });
+      this.setState({productsLoaded:true});
+    }
+    cardItem(item)
+    {
+     
+      return (<Card key={item.ID}
+              title={item.name}
+              image={{uri:item.Image}}>
+              <Text style={{marginBottom: 10}}>{item.Desc}
+              </Text>
+              <Button
                  icon={{name: 'search',color:'white'}}
                  iconRight={true}
                 buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
@@ -79,12 +95,35 @@ const products=[]
         ToastAndroid.show("Hello",ToastAndroid.SHORT);
     }
     render() {
+      const category=this.state.category;
+      const subCategory=this.state.subCategory;
+      if(category&&subCategory){
+      console.log(category);
+      console.log(subCategory);
+      }
+      
       return (
+
+        !this.state.productsLoaded?
+          (
+            <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+             
+               <DotIndicator count={6} color="tomato"/>
+             
+            </View>
+          )
+          :
         <ScrollView style={{ flex: 1}}>
+       <Header
+       backgroundColor="tomato"
+        centerComponent={<Text style={{color:"white",fontSize:32}}>Home</Text>}
+        rightComponent={<TouchableOpacity  onPress={()=>firebase.database().ref("Products").once('value',this.getProducts)}><Icon name="replay" size={26} color="white"/></TouchableOpacity>}
+          />
           {
-            products.map((item)=>this.cardItem(item.name,item.uri,item.detail))
+            
+            products.map((item)=>this.cardItem(item.product))
           }
-         
+      
         </ScrollView>
       );
     }

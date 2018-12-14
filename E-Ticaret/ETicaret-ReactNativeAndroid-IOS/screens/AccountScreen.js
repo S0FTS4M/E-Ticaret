@@ -10,6 +10,17 @@ import '@firebase/database'
 import { FirebaseError } from '@firebase/util';
 const userValues=[];
 const userAccountTable="UserAccount/";
+import {
+    BallIndicator,
+  } from 'react-native-indicators';
+/*  BallIndicator,
+  BarIndicator,
+  MaterialIndicator,
+  PacmanIndicator,
+  PulseIndicator,
+  SkypeIndicator,
+  UIActivityIndicator,
+  WaveIndicator, */
 
 export class AccountScreen extends Component{
     static navigationOptions = {
@@ -29,6 +40,7 @@ constructor(props){
         username:"",
         email:"",
         phone:"",
+        userLoaded:false,
     }
  
     this.getUserInfo=this.getUserInfo.bind(this);
@@ -68,7 +80,7 @@ UserSignedOut()
 
         } 
         });
-        this.setState({username:infos[0],email:infos[1],phone:infos[2]});
+        this.setState({username:infos[0],email:infos[1],phone:infos[2],userLoaded:true});
     }
 
 
@@ -107,6 +119,14 @@ getUserInfo()
     render(){
     
         return(
+            !this.state.userLoaded?(
+            <View>
+                <BallIndicator color="tomato"/>
+                <Text>Gathering Data...</Text>
+                </View>
+
+            ) :
+
     <ScrollView style={styles.container}>
         <View style={{alignContent:'center',alignItems:'center'}}>
             <Ionicons name="md-contact" color="tomato" size={100}/>
