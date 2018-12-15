@@ -9,6 +9,7 @@ import {ProductsScreen} from './screens/ProductScreen';
 import SignInUPScreen from './screens/LoginSignUpScreen' ;
 import {AccountScreen} from './screens/AccountScreen';
 import {SearchScreen} from './screens/SearchScreen';
+import {ProductShowScreen} from './screens/ProductShowScreen'
 import { YellowBox } from 'react-native';
 import _ from 'lodash';
 
@@ -23,7 +24,7 @@ console.warn = message => {
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
- 
+  ProductShow:ProductShowScreen,
 });
 const SearchStack = createStackNavigator({
   Search: SearchScreen,
@@ -34,6 +35,7 @@ const ProductsStack = createStackNavigator({
   Products:ProductsScreen,
   
 });
+
 const AccountsStack = createStackNavigator({
   
   SignIn:{screen:SignInUPScreen,navigationOptions:{tabBarVisible: false}},
@@ -85,8 +87,8 @@ export default class App extends React.Component {
       storageBucket: "eticaretreact.appspot.com",
       messagingSenderId: "905886557078"
     };
-    
-    firebase.initializeApp(config);
+   
+      firebase.initializeApp(config);
 
 
   }

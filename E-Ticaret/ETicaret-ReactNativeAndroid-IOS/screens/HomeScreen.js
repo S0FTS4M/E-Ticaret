@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {StyleSheet,Text,View,ToastAndroid,ScrollView,TouchableOpacity} from 'react-native'
+import {StyleSheet,Text,View,ToastAndroid,ScrollView,TouchableOpacity,Image} from 'react-native'
 //import Button from '../components/MyButton'
 import firebase from '@firebase/app';
 import '@firebase/database'
@@ -26,6 +26,8 @@ var products=[]
     }
     this.getProducts=this.getProducts.bind(this);
     this.getCategoriziedProducts=this.getCategoriziedProducts.bind(this);
+    this.cardItem=this.cardItem.bind(this);
+    this.pricingCardItem=this.pricingCardItem.bind(this);
     this.componentDidMount=this.componentDidMount.bind(this);
    firebase.database().ref("Products").once('value',this.getProducts);
   }
@@ -90,7 +92,7 @@ var products=[]
        
         <PricingCard key={item.ID||item.Id}
           color='#A72DE9'
-
+          onButtonPress={()=>this.props.navigation.navigate('ProductShow',{productID:item.ID||item.Id})}
           title={titleDisc}
           price={priceWithDiscount}
           info={[item.Name, item.Desc, item.Category + " " + item.SubCategory]}
@@ -99,18 +101,35 @@ var products=[]
 
       );
     }
+    
     cardItem(item)
     {
      
       return (<Card key={item.ID||item.Id}
-              title={item.name}
-              image={{uri:item.Image}}>
+              title={item.Name}
+
+              image={{uri:item.Image}}
+              imageProps={{resizeMode:"center",borderRadius:20}}
+              >
               
               <Text style={{marginBottom: 10}}>{item.Desc}
               </Text>
+              {item.Discount > 0 && <Text
+                  style={{
+                    flex: 1,
+                    fontSize: 26,
+                    color: 'green',
+                    fontFamily: 'bold',
+                    textAlign: 'right',
+                  }}
+                  
+                >
+                  {item.Discount + "%"}
+                </Text>}
               <Button
                  icon={{name: 'search',color:'white'}}
                  iconRight={true}
+                 onPress={()=>this.props.navigation.navigate('ProductShow',{productID:item.ID||item.Id})}
                 buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                 title='VIEW NOW' /></Card>);
     }
@@ -140,6 +159,8 @@ var products=[]
           :
         <ScrollView style={{ flex: 1}}>
        <Header
+       barStyle="dark-content"
+
        backgroundColor="tomato"
        leftComponent={{ icon: 'home', color: '#fff' }}
         centerComponent={<Text style={{color:"white",fontSize:32}}>Home</Text>}
