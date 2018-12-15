@@ -3,7 +3,7 @@ import {StyleSheet,Text,View,ToastAndroid,ScrollView,TouchableOpacity} from 'rea
 //import Button from '../components/MyButton'
 import firebase from '@firebase/app';
 import '@firebase/database'
-import {Card,Button, Icon,Header} from 'react-native-elements'
+import {Card,Button, Icon,Header,PricingCard} from 'react-native-elements'
 import {
   DotIndicator,
 } from 'react-native-indicators';
@@ -53,19 +53,23 @@ var products=[]
     getProducts(p)
     {
       products=[];
+      if(p&&p.val()){
       var queryResult=Object.values(p.val());
       queryResult.forEach(element => {
         products.push({
           product:element
         });
       });
-      this.setState({productsLoaded:true});
+      
+    }
+    this.setState({productsLoaded:true});
     }
     getCategoriziedProducts(p)
     {
-      
-      var queryResult=Object.values(p.val());
       products=[];
+      if(p&&p.val()){
+      var queryResult=Object.values(p.val());
+      
       queryResult.forEach(element => {
         if(element.Category==this.state.category && element.SubCategory==this.state.subCategory){
         products.push({
@@ -73,14 +77,35 @@ var products=[]
         });
       }
       });
-      this.setState({productsLoaded:true});
+      
+    }
+    this.setState({productsLoaded:true});
+    }
+    pricingCardItem(item)
+    {
+      
+      titleDisc=item.Discount + " % Discount";
+      priceWithDiscount=(item.Price - ((item.Price * item.Discount) / 100) ) + "$";
+      return (
+       
+        <PricingCard key={item.ID||item.Id}
+          color='#A72DE9'
+
+          title={titleDisc}
+          price={priceWithDiscount}
+          info={[item.Name, item.Desc, item.Category + " " + item.SubCategory]}
+          button={{ title: 'VIEW NOW', icon: 'flight-takeoff' }}
+/>
+
+      );
     }
     cardItem(item)
     {
      
-      return (<Card key={item.ID}
+      return (<Card key={item.ID||item.Id}
               title={item.name}
               image={{uri:item.Image}}>
+              
               <Text style={{marginBottom: 10}}>{item.Desc}
               </Text>
               <Button
@@ -116,12 +141,13 @@ var products=[]
         <ScrollView style={{ flex: 1}}>
        <Header
        backgroundColor="tomato"
+       leftComponent={{ icon: 'home', color: '#fff' }}
         centerComponent={<Text style={{color:"white",fontSize:32}}>Home</Text>}
         rightComponent={<TouchableOpacity  onPress={()=>firebase.database().ref("Products").once('value',this.getProducts)}><Icon name="replay" size={26} color="white"/></TouchableOpacity>}
           />
           {
             
-            products.map((item)=>this.cardItem(item.product))
+            products.map((item)=>item.product.Discount >= 45? this.pricingCardItem(item.product):this.cardItem(item.product))
           }
       
         </ScrollView>

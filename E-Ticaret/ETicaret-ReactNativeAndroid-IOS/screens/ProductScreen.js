@@ -15,6 +15,12 @@ const sport="car-sports";
 const kid="human-child"
 const listviewItems = [
   {
+    title:'ADD TO DATABASE',
+    subtitle:'_dev_',
+    icon: "plus-circle",
+    active : true
+  },
+  {
     title:'MALE',
     subtitle:'',
     icon: "",
@@ -134,10 +140,11 @@ export class ProductsScreen extends React.Component {
       if(firebase.auth().currentUser){
       console.log("getFromDB");
       firebase.database().ref(userAccountTable).once('value',(x)=>{
+        if(x&&x.val()){
         var result=Object.values(x.val());
         this.setState({val:result});
         console.log(result);
-
+        }
         
       });
     }
@@ -160,6 +167,7 @@ export class ProductsScreen extends React.Component {
       Category:"Man",
       Price:300,
       SubCategory:"Sport",
+      Discount:50,
 
     });
     //2
@@ -172,7 +180,8 @@ export class ProductsScreen extends React.Component {
       Category:"Woman",
       Price:60,
       SubCategory:"Sport",
-      
+      Discount:0,
+
     });
     //3
     firebase.database().ref("Products").push({
@@ -184,6 +193,7 @@ export class ProductsScreen extends React.Component {
       Category:"Man",
       Price:90,
       SubCategory:"Sport",
+      Discount:0,
     });
     //4
     firebase.database().ref("Products").push({
@@ -195,6 +205,7 @@ export class ProductsScreen extends React.Component {
       Category:"Man",
       Price:200,
       SubCategory:"Sport",
+      Discount:20,
     });
     //5
     firebase.database().ref("Products").push({
@@ -206,6 +217,7 @@ export class ProductsScreen extends React.Component {
       Category:"Woman",
       Price:250,
       SubCategory:"Sport",
+      Discount:45,
     });
     firebase.database().ref("Products").push({
       ID:i++,
@@ -216,6 +228,7 @@ export class ProductsScreen extends React.Component {
       Category:"Kid",
       Price:100,
       SubCategory:"Sport",
+      Discount:5,
     });
     firebase.database().ref("Products").push({
       ID:i++,
@@ -226,6 +239,7 @@ export class ProductsScreen extends React.Component {
       Category:"Man",
       Price:100,
       SubCategory:"Casual",
+      Discount:0,
     });
     firebase.database().ref("Products").push({
       ID:i++,
@@ -236,6 +250,7 @@ export class ProductsScreen extends React.Component {
       Category:"Man",
       Price:700,
       SubCategory:"Casual",
+      Discount:25,
     });
     
     firebase.database().ref("Products").push({
@@ -247,6 +262,7 @@ export class ProductsScreen extends React.Component {
       Category:"Woman",
       Price:100,
       SubCategory:"Casual",
+      Discount:10,
     });
  firebase.database().ref("Products").push({
       ID:i++,
@@ -257,6 +273,7 @@ export class ProductsScreen extends React.Component {
       Category:"Woman",
       Price:200,
       SubCategory:"Casual",
+      Discount:0,
     });
 
  firebase.database().ref("Products").push({
@@ -268,6 +285,7 @@ export class ProductsScreen extends React.Component {
       Category:"Woman",
       Price:180,
       SubCategory:"Casual",
+      Discount:0,
     });
 firebase.database().ref("Products").push({
       ID:i++,
@@ -278,9 +296,8 @@ firebase.database().ref("Products").push({
       Category:"Kid",
       Price:200,
       SubCategory:"Winter",
+      Discount:0,
     });
-
- 
 
 firebase.database().ref("Products").push({
       ID:i++,
@@ -291,6 +308,7 @@ firebase.database().ref("Products").push({
       Category:"Woman",
       Price:600,
       SubCategory:"Winter",
+      Discount:10,
     });
 firebase.database().ref("Products").push({
       ID:i++,
@@ -301,6 +319,7 @@ firebase.database().ref("Products").push({
       Category:"Man",
       Price:780,
       SubCategory:"Winter",
+      Discount:45,
     });
   }
   
@@ -318,7 +337,7 @@ firebase.database().ref("Products").push({
       bottomDivider={!item.active}
       containerStyle={{backgroundColor:'#eee'}}
       
-      onPress={(e)=>{item.active?this.props.navigation.navigate('Home',{category:item.category,subCategory:item.subCategory}):console.log("bu aktif değil")}}
+      onPress={(e)=>{item.active?(item.subtitle!='_dev_'?this.props.navigation.navigate('Home',{category:item.category,subCategory:item.subCategory}):this.GetFromDataBase()):console.log("bu aktif değil")}}
       title={item.title}
       titleStyle={!item.active?{fontSize:25}:{fontSize:16}}
       //subtitle={item.active?item.subtitle:null}
