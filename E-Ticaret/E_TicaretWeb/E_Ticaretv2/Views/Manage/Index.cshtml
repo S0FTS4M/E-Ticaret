@@ -1,0 +1,37 @@
+﻿@model E_Ticaretv2.ViewModels.IndexViewModel
+@{
+    ViewBag.Title = "Account";
+}
+
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div class="card" style="align-items:center;">
+    <h2>@ViewBag.Title.</h2>
+
+    <div>
+        <hr />
+
+        <dl class="dl-horizontal">
+            <dt>Change account informations:</dt>
+            <dd>
+                [
+                @Html.ActionLink("Change Information", "ChangeInfo")
+                ]
+            </dd>
+            <dt>Password:</dt>
+            <dd>
+                [
+               
+                    @Html.ActionLink("Change Password", "ChangePassword")
+              
+                ]
+            </dd>
+            <dt>Sign out</dt>
+            <dd>
+                <a href="@Url.Action("Logout","Account")"> Sign Out </a>
+            </dd>
+           
+        </dl>
+
+    </div>
+</div>
