@@ -1,0 +1,57 @@
+﻿@{
+    var pd = ViewBag.products;
+    ViewBag.Title = "CategoryShow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="carousel-inner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2" id="column-left">
+
+            </div>
+            <div class="col-md-10">
+                @foreach (var item in pd)
+                {
+                    <div class="row">
+                        <div class="col-md-12 justify-content-center">
+                            <div class="product-list-active">
+                                <div class="row">
+                                    <div class="col-sm-4">
+
+                                        <a href=@Url.Action(
+                                                            actionName: "Details",
+                                                            controllerName:"Product",
+                                                            routeValues: new
+                                                            {
+                                                                id = item.Id
+                                                            })>
+                                            <img style="width:100%;" src=@Url.Content(item.Image) />
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="name">
+                                            <span>Brand : @item.Name</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price">Price : @item.Price</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="decs">
+                                            Description
+                                            <br />
+                                            <p>@item.Desc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
