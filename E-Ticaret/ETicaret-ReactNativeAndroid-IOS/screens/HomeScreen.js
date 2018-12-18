@@ -160,9 +160,9 @@ var products=[]
         <ScrollView style={{ flex: 1}}>
        <Header
        barStyle="dark-content"
-
+      statusBarProps={{backgroundColor:"white"}}
        backgroundColor="tomato"
-       leftComponent={{ icon: 'home', color: '#fff' }}
+       leftComponent={{ icon: 'home', color: '#fff',onPress:function(){firebase.database().ref("Products").once('value',this.getProducts)}}}
         centerComponent={<Text style={{color:"white",fontSize:32}}>Home</Text>}
         rightComponent={<TouchableOpacity  onPress={()=>firebase.database().ref("Products").once('value',this.getProducts)}><Icon name="replay" size={26} color="white"/></TouchableOpacity>}
           />

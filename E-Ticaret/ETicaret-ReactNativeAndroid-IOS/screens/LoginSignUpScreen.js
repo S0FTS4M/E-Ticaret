@@ -15,7 +15,7 @@ import firebase from '@firebase/app';
 import '@firebase/database'
 import '@firebase/auth'
 import { Input, Button } from 'react-native-elements';
-
+import {AccountScreen} from '../screens/AccountScreen';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import SimpleIcon from 'react-native-vector-icons/SimpleLineIcons';
 
@@ -51,6 +51,7 @@ export default class LoginScreen2 extends Component {
     this.state = {
       email: 'sml.ozclk@gmail.com',
       password: 'softsam',
+      isUserSignedOut:firebase.auth().currentUser?false:true,
       fontLoaded: false,
       selectedCategory: 0,
       isLoading: false,
@@ -63,6 +64,7 @@ export default class LoginScreen2 extends Component {
     this.selectCategory = this.selectCategory.bind(this);
     this.login = this.login.bind(this);
     this.signUp = this.signUp.bind(this);
+    
   }
   UserSignedIn()
   {
@@ -71,7 +73,7 @@ export default class LoginScreen2 extends Component {
     {
       console.log("user auth state changed inside if");
       ToastAndroid.show("Sign In Successfull!",ToastAndroid.SHORT);
-      this.props.navigation.navigate('Account');
+      this.setState({isUserSignedOut:false});
     }
     
   }
@@ -137,8 +139,13 @@ export default class LoginScreen2 extends Component {
     
     firebase.auth().createUserWithEmailAndPassword(email,password).then((val)=>{console.log(val.user.email)}).catch(function(err){console.log(err.code);console.log(err.message); });
     firebase.database().ref(userAccountTable).push({
-        email,
-        password,
+        EMail:email,
+        Name:"",
+
+        Pwd:password,
+        Role:"user",
+        Surname:"",
+        UserName:email
     }).then((data)=>{
         //success callback
         console.log('data ' , data)
@@ -162,6 +169,9 @@ export default class LoginScreen2 extends Component {
     const isLoginPage = selectedCategory === 0;
     const isSignUpPage = selectedCategory === 1;
     return (
+    !this.state.isUserSignedOut?
+    (<AccountScreen onSignOutPressed={()=>this.setState({isUserSignedOut:true})}/>)
+    :(
       <View style={styles.container}>
         <ImageBackground source={BG_IMAGE} style={styles.bgImage}>
           {this.state.fontLoaded ? (
@@ -335,7 +345,7 @@ export default class LoginScreen2 extends Component {
           )}
         </ImageBackground>
       </View>
-    );
+    ));
   }
 }
 

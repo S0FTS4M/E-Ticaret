@@ -7,7 +7,6 @@ import '@firebase/database';
 import {HomeScreen} from './screens/HomeScreen';
 import {ProductsScreen} from './screens/ProductScreen';
 import SignInUPScreen from './screens/LoginSignUpScreen' ;
-import {AccountScreen} from './screens/AccountScreen';
 import {SearchScreen} from './screens/SearchScreen';
 import {ProductShowScreen} from './screens/ProductShowScreen'
 import { YellowBox } from 'react-native';
@@ -24,8 +23,12 @@ console.warn = message => {
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
-  ProductShow:ProductShowScreen,
-});
+  ProductShow:{screen:ProductShowScreen,
+    navigationOptions: ({ navigation }) => ({
+      tabBarVisible: true,
+     
+    })
+}});
 const SearchStack = createStackNavigator({
   Search: SearchScreen,
  
@@ -38,8 +41,8 @@ const ProductsStack = createStackNavigator({
 
 const AccountsStack = createStackNavigator({
   
-  SignIn:{screen:SignInUPScreen,navigationOptions:{tabBarVisible: false}},
-  Account:AccountScreen,
+  SignIn:SignInUPScreen,
+ // Account:AccountScreen,
 
 
   

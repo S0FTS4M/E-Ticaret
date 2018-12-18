@@ -3,11 +3,11 @@ import {StyleSheet,Text,View,ScrollView,TouchableOpacity} from 'react-native'
 import Ionicons from '../node_modules/react-native-vector-icons/Ionicons'
 import TextBox from '../components/TextBox'
 import MyButton from '../components/MyButton'
-import {Button} from 'react-native-elements'
+import {Button,Input} from 'react-native-elements'
 
 import firebase from '@firebase/app';
 import '@firebase/database'
-import { FirebaseError } from '@firebase/util';
+
 const userValues=[];
 const userAccountTable="UserAccount/";
 import {
@@ -21,7 +21,8 @@ import {
   SkypeIndicator,
   UIActivityIndicator,
   WaveIndicator, */
-
+//login signup ve account aynı sayfada bulunacak ben bir state değişkeni ile giriş yapıp yapmadığını kontrol edeceğim giriş yapmışsa
+//account yapmamışsa login görünecek... üzerine düşün
 export class AccountScreen extends Component{
     static navigationOptions = {
         title: 'Account',
@@ -37,10 +38,13 @@ constructor(props){
     super(props);
  
     this.state={
-        username:"",
         email:"",
-        phone:"",
+        name:"",
+        role:"",
+        surname:"",
+        password:"",
         userLoaded:false,
+        userSignedOut:false
     }
  
     this.getUserInfo=this.getUserInfo.bind(this);
@@ -59,8 +63,11 @@ componentDidMount()
 UserSignedOut()
 {
       //if user logged out we need to go to sign in page
-      if(!firebase.auth().currentUser)
-        this.props.navigation.navigate("SignIn");
+    //   if(!firebase.auth().currentUser)
+    //     this.props.navigation.navigate("SignIn");
+    console.log("sign out");
+    //this.props.onSignOutPressed();
+    this.setState({userSignOut:true});
 
 }
 
@@ -70,17 +77,17 @@ UserSignedOut()
         infos=[];
         console.log("finduserinfo");
         result.forEach(element => {
-        if(element.email === firebase.auth().currentUser.email)
+        if(element.EMail === firebase.auth().currentUser.email)
         {
-            console.log("set state for:");
-            console.log(element.userName);
-            infos.push(element.userName);
-            infos.push(element.email);
-            infos.push(element.phone);
+       
+            infos.push(element.Name);
+            infos.push(element.EMail);
+            infos.push(element.Role);
+            infos.push(element.Surname);
 
         } 
         });
-        this.setState({username:infos[0],email:infos[1],phone:infos[2],userLoaded:true});
+        this.setState({name:infos[0],email:infos[1],role:infos[2],surname:infos[3],userLoaded:true});
     }
 
 
@@ -117,7 +124,13 @@ getUserInfo()
       
 
     render(){
+    const{
+        email,
+        name,
+        role,
+        surname,
     
+    }=this.state;
         return(
             !this.state.userLoaded?(
             <View>
@@ -131,11 +144,112 @@ getUserInfo()
         <View style={{alignContent:'center',alignItems:'center'}}>
             <Ionicons name="md-contact" color="tomato" size={100}/>
         </View>
-        <TextBox testID="0" text={this.state.username} placeholder="User Name" ></TextBox>
-        <TextBox testID="1"  secureTextEntry={true} placeholder="Password" ></TextBox>
-        <TextBox testID="2" secureTextEntry={true} placeholder="Password Confirm" ></TextBox>
-        <TextBox testID="3" text={this.state.email} keyboardType="email-address" placeholder="e-Mail" ></TextBox>
-        <TextBox testID="4" text={this.state.phone} keyboardType="phone-pad" placeholder="Phone"></TextBox>
+        <Input  value={email}
+                    keyboardAppearance="light"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    
+                    returnKeyType={ 'next'}
+                    blurOnSubmit={true}
+                    containerStyle={{
+                      marginTop: 16,
+                      marginLeft:15,
+                      borderBottomColor: 'rgba(0, 0, 0, 0.38)',
+                    }}
+                    inputStyle={{ marginLeft: 10 }}
+                    placeholder={'Email'}
+                    ref={input => (this.emailInput = input)}
+                    // onSubmitEditing={() =>
+                    //   isSignUpPage
+                    //     ? this.confirmationInput.focus()
+                    //     : this.login()
+                    // }
+                    onChangeText={email => this.setState({ email })}
+                  />
+                   <Input value={name}
+                    keyboardAppearance="light"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    
+                    returnKeyType={ 'next'}
+                    blurOnSubmit={true}
+                    containerStyle={{
+                      marginTop: 16,
+                      marginLeft:15,
+                      borderBottomColor: 'rgba(0, 0, 0, 0.38)',
+                    }}
+                    inputStyle={{ marginLeft: 10 }}
+                    placeholder={'Name'}
+                    ref={input => (this.nameInput = input)}
+                    // onSubmitEditing={() =>
+                    //   isSignUpPage
+                    //     ? this.confirmationInput.focus()
+                    //     : this.login()
+                    // }
+                    onChangeText={name => this.setState({ name })}
+                  />
+                   <Input value={surname}
+                    keyboardAppearance="light"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    
+                    returnKeyType={ 'next'}
+                    blurOnSubmit={true}
+                    containerStyle={{
+                      marginTop: 16,
+                      marginLeft:15,
+                      borderBottomColor: 'rgba(0, 0, 0, 0.38)',
+                    }}
+                    inputStyle={{ marginLeft: 10 }}
+                    placeholder={'Surname'}
+                    ref={input => (this.surnameInput = input)}
+                    // onSubmitEditing={() =>
+                    //   isSignUpPage
+                    //     ? this.confirmationInput.focus()
+                    //     : this.login()
+                    // }
+                    onChangeText={surname => this.setState({ surname })}
+                  />
+                    <Input value={role}
+                    keyboardAppearance="light"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    
+                    returnKeyType={ 'next'}
+                    blurOnSubmit={true}
+                    containerStyle={{
+                      marginTop: 16,
+                      marginLeft:15,
+                      borderBottomColor: 'rgba(0, 0, 0, 0.38)',
+                    }}
+                    inputStyle={{ marginLeft: 10 }}
+                    placeholder={'Role'}
+                    ref={input => (this.roleInput = input)}
+                    // onSubmitEditing={() =>
+                    //   isSignUpPage
+                    //     ? this.confirmationInput.focus()
+                    //     : this.login()
+                    // }
+                    onChangeText={role => this.setState({ role })}
+                  />
+                  <Input keyboardAppearance="light"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    secureTextEntry={true}
+                    returnKeyType={'next' }
+                    blurOnSubmit={true}
+                    containerStyle={{
+                      marginTop: 16,
+                      marginLeft:15,
+                      borderBottomColor: 'rgba(0, 0, 0, 0.38)',
+                    }}
+                    inputStyle={{ marginLeft: 10 }}
+                    placeholder={'Password'}
+                    ref={input => (this.passwordInput = input)}
+                  
+                    onChangeText={password => this.setState({ password })}
+                 
+                  />
         <View style={{alignContent:'center',alignItems:'center'}}>
         
             
@@ -190,7 +304,7 @@ getUserInfo()
                   color: 'white',
                   textAlign: 'center',
                 }}
-                onPress={this.signOut}
+                onPress={()=>{this.signOut();this.props.onSignOutPressed();}}
                 activeOpacity={0.5}
               />
         </View>

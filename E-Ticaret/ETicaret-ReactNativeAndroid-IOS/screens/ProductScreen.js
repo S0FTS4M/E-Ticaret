@@ -127,7 +127,7 @@ export class ProductsScreen extends React.Component {
   static navigationOptions = {
     title: 'Products',
     headerStyle: {
-      backgroundColor: '#f4511e',
+      backgroundColor: 'tomato',
     },
     headerTintColor: '#fff',
     headerTitleStyle: {
