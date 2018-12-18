@@ -1,0 +1,60 @@
+﻿
+@model E_Ticaretv2.ViewModels.CommentViewModel
+@{
+    ViewBag.Title = "ListComment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<E_Ticaretv2.Models.Comment> commenets = ViewBag.comments;
+    List<string> keys = ViewBag.keys;
+}
+
+<h2>ListComments</h2>
+<label>@ViewBag.Message</label>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CommentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerUserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommentText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LikeCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DislikeCount)
+        </th>
+    </tr>
+
+@for(int i=0;i<commenets.Count;i++) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => commenets[i].CommentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => commenets[i].CustomerUserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => commenets[i].ProductId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => commenets[i].CommentText)
+        </td>
+        <th>
+            @Html.DisplayFor(modelItem => commenets[i].LikeCount)
+        </th>
+        <th>
+            @Html.DisplayFor(modelItem => commenets[i].DislikeCount)
+        </th>
+        <td>
+            @Html.ActionLink("Delete Comment", "DeleteComment", new {commentKey = keys[i] })
+        </td>
+    </tr>
+}
+
+</table>
