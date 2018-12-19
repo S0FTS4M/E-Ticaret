@@ -45,4 +45,17 @@ namespace E_Ticaretv2.ViewModels
 
     }
 
+    public class ChangePasswordModel
+    {
+        [Required]
+        public string OldPassword { get; set; }
+
+        [Required]
+        public string NewPassword { get; set; }
+
+        [Required]
+        [Compare("NewPassword",ErrorMessage ="New passwords are not equal")]
+        public string NewPassword2 { get; set; }
+    }
+
 }

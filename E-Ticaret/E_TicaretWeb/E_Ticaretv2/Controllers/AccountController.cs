@@ -17,6 +17,19 @@ namespace E_Ticaretv2.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        async Task<FirebaseObject<CustomerAccount>> getUserFromFirebase(string email)
+        {
+
+            var acc = await CustomAuth.firebase.Child("UserAccount").OnceAsync<CustomerAccount>();
+            foreach (var item in acc)
+            {
+                if (item.Object.EMail == email)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
 
         public ActionResult Index()
         {
@@ -28,6 +41,7 @@ namespace E_Ticaretv2.Controllers
         {
             if (User.Identity.IsAuthenticated)
             {
+                
                 return RedirectToAction("Index","Manage");
             }
             else
@@ -58,6 +72,13 @@ namespace E_Ticaretv2.Controllers
                 {
                     FormsAuthentication.SetAuthCookie(auth.User.Email, false);
                     CustomAuth.UserAuth = auth;
+                    // to get roles for user, we get the logged in user informations
+                    FirebaseObject<CustomerAccount> acc = await getUserFromFirebase(auth.User.Email);
+                    CustomAuth.loggedInAccount = new CustomerAccount
+                    {
+                        EMail = auth.User.Email,
+                        Role = acc.Object.Role,
+                    };
                     return RedirectToAction("Index", "Manage");
                 }
  
@@ -72,6 +93,7 @@ namespace E_Ticaretv2.Controllers
         {
             FormsAuthentication.SignOut();
             CustomAuth.UserAuth = null;
+            CustomAuth.loggedInAccount = null;
             return RedirectToAction("Login","Account");
         }
 
@@ -108,7 +130,7 @@ namespace E_Ticaretv2.Controllers
                         Name = "",
                         Surname="",
                         UserName=model.Email,
-                   
+                        Role = "",
                     };
                     await firebase.Child("UserAccount").PostAsync(userModel);
                     return RedirectToAction("Login", "Account");

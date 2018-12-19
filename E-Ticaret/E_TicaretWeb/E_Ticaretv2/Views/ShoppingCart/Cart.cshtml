@@ -44,26 +44,26 @@
                             <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
                                 <h6><strong>@item.Quantity <span class="text-muted">x</span></strong></h6>
                             </div>
-
+                            <!--
                             <div class="col-4 col-sm-4 col-md-4">
                                 <div class="quantity">
                                     <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
                                            size="4">
                                 </div>
                             </div>
-
+                                -->
                             <div class="col-2 col-sm-2 col-md-2 text-right">
-                                @Html.ActionLink(linkText:" ",
+                                @Html.ActionLink(linkText:"Remove Product",
                                   actionName:"Delete",
                                   controllerName:"ShoppingCart",
                                   routeValues: new {id = item.Pd.Id},
                                   htmlAttributes: new {@class= "btn btn-outline-danger btn-xs" }
                                   )
                                 <!--
-                                <button type="button" class="btn btn-outline-danger btn-xs">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                </button>
-                                    -->
+        <button type="button" class="btn btn-outline-danger btn-xs">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+        </button>
+            -->
                             </div>
                         </div>
                     </div>
@@ -72,11 +72,13 @@
             }
 
             <!-- END PRODUCT -->
-            <div class="pull-right">
-                <a href="" class="btn btn-outline-secondary pull-right">
-                    Update shopping cart
-                </a>
-            </div>
+            <!--
+    <div class="pull-right">
+        <a href="" class="btn btn-outline-secondary pull-right">
+            Update shopping cart
+        </a>
+    </div>
+        -->
         </div>
         <div class="card-footer">
 

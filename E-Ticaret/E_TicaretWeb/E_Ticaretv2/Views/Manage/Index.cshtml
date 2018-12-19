@@ -7,31 +7,80 @@
 <p class="text-success">@ViewBag.StatusMessage</p>
 <div class="card" style="align-items:center;">
     <h2>@ViewBag.Title.</h2>
+    @if (Model.Role != null && Model.Role.Contains("admin") ==true)
+    {
+        <div>
+            <hr />
 
-    <div>
-        <hr />
+            <dl class="dl-horizontal">
+                <dt>Add Product</dt>
+                <dd>
+                    [
+                    @Html.ActionLink("Add Product", "AddProduct", "Manage")
+                    ]
+                </dd>
+                <dt>Add Product</dt>
+                <dd>
+                    [
+                    @Html.ActionLink("List Comment", "ListComment", "Manage")
+                    ]
+                </dd>
+                <dt>List Product</dt>
+                <dd>
+                    [
+                    @Html.ActionLink("List Product", "ListProduct", "Manage")
+                    ]
+                </dd>
+                <dt>Change account informations:</dt>
+                <dd>
+                    [
+                    @Html.ActionLink("Change Information", "ChangeInfo")
+                    ]
+                </dd>
+                <dt>Password:</dt>
+                <dd>
+                    [
 
-        <dl class="dl-horizontal">
-            <dt>Change account informations:</dt>
-            <dd>
-                [
-                @Html.ActionLink("Change Information", "ChangeInfo")
-                ]
-            </dd>
-            <dt>Password:</dt>
-            <dd>
-                [
-               
                     @Html.ActionLink("Change Password", "ChangePassword")
-              
-                ]
-            </dd>
-            <dt>Sign out</dt>
-            <dd>
-                <a href="@Url.Action("Logout","Account")"> Sign Out </a>
-            </dd>
-           
-        </dl>
 
-    </div>
+                    ]
+                </dd>
+                <dt>Sign out</dt>
+                <dd>
+                    <a href="@Url.Action("Logout", "Account")"> Sign Out </a>
+                </dd>
+
+            </dl>
+
+        </div>
+    }
+    else
+    {
+        <div>
+            <hr />
+
+            <dl class="dl-horizontal">
+                <dt>Change account informations:</dt>
+                <dd>
+                    [
+                    @Html.ActionLink("Change Information", "ChangeInfo")
+                    ]
+                </dd>
+                <dt>Password:</dt>
+                <dd>
+                    [
+
+                    @Html.ActionLink("Change Password", "ChangePassword")
+
+                    ]
+                </dd>
+                <dt>Sign out</dt>
+                <dd>
+                    <a href="@Url.Action("Logout", "Account")"> Sign Out </a>
+                </dd>
+
+            </dl>
+
+        </div>
+    }
 </div>
