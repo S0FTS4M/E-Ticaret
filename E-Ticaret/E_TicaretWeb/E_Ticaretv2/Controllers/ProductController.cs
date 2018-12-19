@@ -120,6 +120,8 @@ namespace E_Ticaretv2.Controllers
             product.comment = await getProductsCommentFromFirebase(id);
             return View(product);
         }
+
+
         public ActionResult Category()
         {
             return View();

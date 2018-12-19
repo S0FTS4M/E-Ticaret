@@ -1,6 +1,7 @@
 ﻿using E_Ticaretv2.Models;
 
 using E_Ticaretv2.ViewModels;
+using Firebase.Auth;
 using Firebase.Database;
 using Firebase.Database.Query;
 using System;
@@ -158,6 +159,13 @@ namespace E_Ticaretv2.Controllers
                 try
                 {
                     await CustomAuth.firebase.Child("UserAccount").Child(item.Key).PutAsync(acc);
+                    var authProvider = new FirebaseAuthProvider(new FirebaseConfig("AIzaSyBffXQCMpQYkqD1P6WKymTUd2LkfccU2TU"));
+                    var auth = new FirebaseAuthLink(authProvider, CustomAuth.UserAuth);
+                    await authProvider.DeleteUserAsync(auth.FirebaseToken);
+                    await authProvider.CreateUserWithEmailAndPasswordAsync(CustomAuth.UserAuth.User.Email,model.NewPassword);
+
+                    
+
                     ViewBag.Message = "Password changed";
                 }
                 catch (Exception)

@@ -59,8 +59,10 @@ namespace E_Ticaretv2.Controllers
             FirebaseClient firebase = CustomAuth.firebase;
             if (string.IsNullOrEmpty(account.Email)==false || string.IsNullOrEmpty(account.Password) == false) 
             {
+
                 var authProvider = new FirebaseAuthProvider(new FirebaseConfig("AIzaSyBffXQCMpQYkqD1P6WKymTUd2LkfccU2TU"));
                 var auth = new FirebaseAuthLink(authProvider, CustomAuth.UserAuth);
+                
                 try
                 {
                     auth = await authProvider.SignInWithEmailAndPasswordAsync(account.Email, account.Password);
@@ -116,6 +118,12 @@ namespace E_Ticaretv2.Controllers
         {
             if (ModelState.IsValid)
             {
+                FirebaseObject<CustomerAccount> user = await getUserFromFirebase(model.Email);
+                if (user != null)
+                {
+                    ViewBag.Error = "This e mail address is used";
+                    return View();
+                }
                 var firebase = CustomAuth.firebase;
                 FirebaseAuth firebaseAuth = new FirebaseAuth();
                 var authProvider = new FirebaseAuthProvider(new FirebaseConfig("AIzaSyBffXQCMpQYkqD1P6WKymTUd2LkfccU2TU"));

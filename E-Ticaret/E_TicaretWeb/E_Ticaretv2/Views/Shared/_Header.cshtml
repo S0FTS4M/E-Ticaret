@@ -16,21 +16,23 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
         <span class="navbar-toggler-icon"></span>
     </button>
+    @using (Html.BeginForm("Search","Home",FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
     <div class="input-group">
-        <input type="text" class="form-control">
-        <span class="input-group-btn">
-            <button class="btn btn-success" type="button">Go!</button>
-        </span>
+        @Html.TextBox("SearchProductName")
+
+
     </div>
+    }
     <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <li class="nav-item">
-                @Html.ActionLink(linkText:"Cart",
-                                actionName:"Index",
-                                controllerName:"ShoppingCart",
-                                routeValues: null,
-                                htmlAttributes: new {@class= "nav-link menu-item" }
-                )
+                @Html.ActionLink(linkText: "Cart",
+                     actionName: "Index",
+                     controllerName: "ShoppingCart",
+                     routeValues: null,
+                     htmlAttributes: new { @class = "nav-link menu-item" }
+     )
             </li>
         </ul>
     </div>

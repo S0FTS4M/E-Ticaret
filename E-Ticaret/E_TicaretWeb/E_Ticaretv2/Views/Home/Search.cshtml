@@ -1,20 +1,19 @@
-﻿@{
+﻿
+@{
     var pd = ViewBag.products;
-    ViewBag.Title = "CategoryShow";
+    ViewBag.Title = "Search";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <h4>@ViewBag.Message</h4>
 <div class="carousel-inner">
     <div class="container">
         <div class="row">
             <div class="col-md-2" id="column-left">
                 <ul>
-                    <li>@Html.ActionLink("Sport Shoes", "CategoryShow", new { categoryName = "none", subCategory = "sport" }) </li>
-                    <li>@Html.ActionLink("Casual Shoes", "CategoryShow", new { categoryName = "none", subCategory = "casual" }) </li>
-                    <li>@Html.ActionLink("Winter Boots", "CategoryShow", new { categoryName = "none", subCategory = "winter" }) </li>
-                    <li>@Html.ActionLink("Kids Shoes", "CategoryShow", new { categoryName = "none", subCategory = "kids" }) </li>
-                    <li>@Html.ActionLink("Men Shoes", "CategoryShow", new { categoryName = "none", subCategory = "man" }) </li>
-                    <li>@Html.ActionLink("Women Shoes", "CategoryShow", new { categoryName = "none", subCategory = "woman" }) </li>
+                    <li>
+                      
+                    </li>
                 </ul>
             </div>
             <div class="col-md-10">
@@ -61,4 +60,5 @@
         </div>
     </div>
 </div>
+
 

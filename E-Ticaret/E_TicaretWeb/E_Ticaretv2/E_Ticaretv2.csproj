@@ -296,6 +296,8 @@
     <Content Include="Views\Manage\ListProduct.cshtml" />
     <Content Include="Views\Manage\ListComment.cshtml" />
     <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Home\GeneralCategoryShow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
