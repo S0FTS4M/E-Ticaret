@@ -113,13 +113,14 @@ export default class LoginScreen2 extends Component {
         isPasswordValid: password.length >= 3 || this.passwordInput.shake(),
       });
     }, 1500);
-    if(firebase.auth().currentUser)
-    {
-      console.log("UserSigIn Called");
-      ToastAndroid.show("Signing in");
-      firebase.auth().signOut().catch((err)=>console.log(err.message));
-    }
-    firebase.auth().signInWithEmailAndPassword("sml.ozclk@gmail.com","softsam").catch((err)=>console.log(err.message));
+    // if(firebase.auth().currentUser)
+    // {
+    //   console.log("UserSigIn Called");
+    //   ToastAndroid.show("Signing in");
+    //   firebase.auth().signOut().catch((err)=>console.log(err.message));
+    // }
+    if(!firebase.auth().currentUser)
+       firebase.auth().signInWithEmailAndPassword(this.state.email,this.state.password).catch((err)=>console.log(err.message+this.state.password));
   }
 
   signUp() {

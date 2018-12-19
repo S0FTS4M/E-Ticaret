@@ -8,10 +8,12 @@ import { Comment } from "../components/Comment";
 import "react-native-nested-scroll-view";
 import TextBox from "../components/TextBox";
 import { Button } from "react-native-elements";
+import Icon from 'react-native-vector-icons/FontAwesome'
+
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
-const IMAGE_SIZE = SCREEN_WIDTH - 80;
+const IMAGE_SIZE = 150;
 var comments=[];
 export class ProductShowScreen extends Component{
     constructor(props){
@@ -22,11 +24,35 @@ export class ProductShowScreen extends Component{
             product:undefined,
             comment:"",
             commentMade:false,
+            productIsInCart:false,
  
         }
         this.getProduct=this.getProduct.bind(this);
         this.getComments=this.getComments.bind(this);
         this.makeComment=this.makeComment.bind(this);
+        this.addProductToCart=this.addProductToCart.bind(this);
+        this.removeProductFromCart=this.removeProductFromCart.bind(this);
+        if(firebase.auth().currentUser)
+        {
+          firebase.database().ref("Cart").once("value",(snap)=>{
+            var vals=Object.values(snap.toJSON());
+            vals.forEach((element)=>{
+             if(element.EMail == firebase.auth().currentUser.email)
+             {
+               var arr=element.Products.split(",");
+               if(arr.includes(this.state.productID+""))
+               {
+                 this.setState({productIsInCart:true});
+                
+               }
+             }
+           
+              
+            });
+
+
+          });
+        }
     }
     static navigationOptions = {
         title: "",
@@ -40,6 +66,110 @@ export class ProductShowScreen extends Component{
           fontWeight: 'bold',
         },
       };
+      addProductToCart()
+      {
+        if(!firebase.auth().currentUser)
+        {
+            this.alertMessage('You need to sign in before doing it!');
+        }
+        else{
+          firebase.database().ref("Cart").once('value',(snap)=>{
+            obj = snap.toJSON();
+            currentUser=firebase.auth().currentUser.email;
+            if(obj){
+            keys=Object.keys(obj);
+            vals=Object.values(obj);
+            //console.log(keys);
+            //console.log(vals);
+            i=0;
+            
+           let userFound=false;
+            vals.forEach((v)=>{
+              //console.log(i);
+              if(v.EMail==currentUser)
+              {
+                userFound=true;
+                console.log("user found:" + currentUser);
+                products="";
+                currentKey=keys[i];
+                firebase.database().ref("Cart/"+currentKey).once("value",(s)=>{
+                  value=Object.values(s.val());
+                  //console.log(value[1]);
+                
+                  if(value){
+                    products=value[1];
+                    
+                    console.log("value found for update");
+                    products=products +"" + this.state.productID + ",";
+                    //console.log(currentKey);
+                    firebase.database().ref("Cart/"+currentKey).update({Products:products});
+                
+                    console.log(userFound);
+                    //console.log("value found and its ok");
+                    }
+                    else{
+                      console.log("value is undefined:"+value);
+                    }
+                
+                
+                });
+               // console.log(products);
+              
+              }
+              i++;
+            });
+            if(userFound==false)
+            {
+              //console.log("user found is false ?");
+              products="";
+              // console.log("nothing found so create another one");
+              products+=this.state.productID + ",";
+              firebase.database().ref("Cart").push({EMail:currentUser,Products:products});
+            }
+          }
+          else{
+            products="";
+            products+=this.state.productID + ",";
+            firebase.database().ref("Cart").push({EMail:currentUser,Products:products});
+          }
+            
+          });
+          this.setState({productIsInCart:true});
+        }
+        
+      }
+      removeProductFromCart()
+      {
+        //find user and loop over all products and update 
+        firebase.database().ref("Cart").once("value",(snap)=>{
+          var vals=Object.values(snap.toJSON());
+          var keys=Object.keys(snap.toJSON());
+          j=0;
+          vals.forEach((x)=>{
+            currentKey=keys[j];
+            if(firebase.auth().currentUser.email==x.EMail)
+            {
+              var newList="";
+              var arr=x.Products.split(",");
+              for(let i=0;i< arr.length;i++)
+              {
+                if(arr[i]==this.state.productID){
+                 console.log("found done");
+                  continue;
+                }
+                if(arr[i].trim()!=="")
+                newList+=arr[i]+",";
+              }
+              firebase.database().ref("Cart/"+currentKey).update({Products:newList});
+            }
+            j++;
+          });
+
+
+
+        });
+        this.setState({productIsInCart:false});
+      }
       getProduct(p)
       {
         productID=this.state.productID;
@@ -104,22 +234,26 @@ export class ProductShowScreen extends Component{
             }
           );
           firebase.database().ref("Comments").once('value',this.getComments);
-          
+          this.CommentInput.clear();
          this.setState({commentMade:!this.state.commentMade});
         }
         else
         {
-          Alert.alert(
-            'Sign In',
-            'If you want to make comments you need to sign in',
-            [
-              
-              {text: 'OK', style: 'cancel'},
-             
-            ],
-            { cancelable: false }
-          )
+          this.alertMessage('If you want to make comments you need to sign in');
         }
+      }
+      alertMessage(message)
+      {
+        Alert.alert(
+          'Sign In',
+          message,
+          [
+            
+            {text: 'OK', style: 'cancel'},
+           
+          ],
+          { cancelable: false }
+        )
       }
       commentLiked(id)
       {
@@ -269,6 +403,22 @@ export class ProductShowScreen extends Component{
                 >
                  Type:  {this.state.product.SubCategory}
                 </Text>
+                <Button
+                  title={ this.state.productIsInCart==false?"Add to Cart":"Remove"}
+                  titleStyle={{ fontWeight: 'bold', fontSize: 18 }}
+                  buttonStyle={{
+                    backgroundColor:this.state.productIsInCart?"#B83B62":"#5A66D1",
+                    borderWidth: 0,
+                    borderColor: 'transparent',
+                    borderRadius: 0,
+                  }}
+                  containerStyle={{ marginVertical: 10, height: 60, width: 200, }}
+                  icon={this.state.productIsInCart==false?<Icon name="arrow-right" size={15} color="white" />:<Icon name="minus" size={15} color="white" />}
+                  iconRight
+                  iconContainerStyle={{ marginLeft: 15 }}
+                  onPress={this.state.productIsInCart==false?this.addProductToCart:this.removeProductFromCart}
+                  ref={button=>this.AddtoCartButton=button}
+            />
               </View>
               
               <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
@@ -277,7 +427,9 @@ export class ProductShowScreen extends Component{
               <View style={{flex:1,flexDirection:"row"}}>
               <TextBox onChangeText={comment=>this.setState({comment})} ref={input=>this.CommentInput=input} placeholder="Make Comment" textboxStyle={{flex:1,width:SCREEN_WIDTH - 100,borderWidth:2,borderRadius:8,borderColor:"#0084ff" ,marginHorizontal:5}}/>
               
-              <Button clear buttonStyle={{backgroundColor:"#0084ff",flex:1,borderWidth:0,width:50,height:50,borderRadius:25,borderColor:"transparent" }} icon={{name:"send",color:"#0084ff"}} title="" onPress={()=>{this.makeComment();this.CommentInput.clear()}}></Button>
+              <Button clear buttonStyle={
+                {backgroundColor:"#0084ff",flex:1,borderWidth:0,width:50,height:50,borderRadius:25,borderColor:"transparent" }}
+               icon={{name:"send",color:"#0084ff"}} title="" onPress={()=>{this.makeComment();}}></Button>
               </View>
               </View>
               <ScrollView nestedScrollEnabled={true}  style={{height:400}}>

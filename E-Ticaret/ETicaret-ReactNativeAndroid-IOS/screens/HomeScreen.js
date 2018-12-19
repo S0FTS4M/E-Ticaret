@@ -161,10 +161,11 @@ var products=[]
        <Header
        barStyle="dark-content"
       statusBarProps={{backgroundColor:"white"}}
+      
        backgroundColor="tomato"
-       leftComponent={{ icon: 'home', color: '#fff',onPress:function(){firebase.database().ref("Products").once('value',this.getProducts)}}}
+       leftComponent={<TouchableOpacity  onPress={()=>firebase.database().ref("Products").once('value',this.getProducts)}><Icon name="home" size={26} color="white"/></TouchableOpacity>}
         centerComponent={<Text style={{color:"white",fontSize:32}}>Home</Text>}
-        rightComponent={<TouchableOpacity  onPress={()=>firebase.database().ref("Products").once('value',this.getProducts)}><Icon name="replay" size={26} color="white"/></TouchableOpacity>}
+        rightComponent={<TouchableOpacity  onPress={()=>{this.props.navigation.navigate("Cart");}}><Icon name="shopping-cart" size={26} color="white"/></TouchableOpacity>}
           />
           {
             

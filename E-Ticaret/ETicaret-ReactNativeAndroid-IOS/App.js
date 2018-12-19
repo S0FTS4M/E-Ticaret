@@ -9,6 +9,7 @@ import {ProductsScreen} from './screens/ProductScreen';
 import SignInUPScreen from './screens/LoginSignUpScreen' ;
 import {SearchScreen} from './screens/SearchScreen';
 import {ProductShowScreen} from './screens/ProductShowScreen'
+import { CartScreen } from "./screens/CartScreen";
 import { YellowBox } from 'react-native';
 import _ from 'lodash';
 
@@ -23,11 +24,13 @@ console.warn = message => {
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
+  Cart:CartScreen,
   ProductShow:{screen:ProductShowScreen,
     navigationOptions: ({ navigation }) => ({
       tabBarVisible: true,
      
-    })
+    }),
+
 }});
 const SearchStack = createStackNavigator({
   Search: SearchScreen,
