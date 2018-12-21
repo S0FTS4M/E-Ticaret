@@ -36,54 +36,91 @@ namespace E_Ticaretv2.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> CategoryShow(string categoryName, string subCategory)
+        public async Task<ActionResult> CategoryShow(string categoryName, string subCategory,string sortBy)
         {
+            List<Product> pdForCategory = new List<Product>();
+            List<Product> products = new List<Product>();
+
             if (categoryName == null)
                 return View();
             categoryName = categoryName.ToLower();
-            List<Product> products = await getProductFromFirebase();
-            List<Product> pdForCategory = new List<Product>();
+            products = await getProductFromFirebase();
+
 
             // if it's none, we know that we will look general category, like sport,casual...
             if (categoryName == "none")
             {
                 subCategory = subCategory.ToLower();
                 pdForCategory = products.FindAll(x => x.SubCategory.ToLower() == subCategory || x.Category.ToLower() == subCategory);
+                ViewBag.Category = "none";
+                ViewBag.SubCategory = subCategory;
             }
-            // if we have just category name
+            // if we have category name and sub category name
             else if (subCategory != null)
             {
                 subCategory = subCategory.ToLower();
                 pdForCategory = products.FindAll(x => x.SubCategory.ToLower() == subCategory && x.Category.ToLower() == categoryName);
+
+                ViewBag.SubCategory = subCategory;
+                ViewBag.Category = categoryName;
+
             }
-            // if we have category name and sub category name
+            // if we have just category name
             else
             {
+                // if it's sales, then we will find if product has discount or not
                 if (categoryName.ToLower() == "sales")
                 {
                     pdForCategory = products.FindAll(x => x.Discount != 0);
                 }
+                // if it's not then we will find product by categoryname
                 else
                 {
                     pdForCategory = products.FindAll(x => x.Category.ToLower() == categoryName.ToLower());
+
+                }
+                ViewBag.Category = categoryName;
+            }
+            if (sortBy != null)
+            {
+                if (sortBy == "highFirst")
+                {
+                    pdForCategory = pdForCategory.OrderBy(x => x.Price).Reverse().ToList();
+                }
+                else
+                {
+                    pdForCategory = pdForCategory.OrderBy(x => x.Price).ToList();
                 }
             }
             ViewBag.products = pdForCategory;
             return View();
         }
 
-
-        public async Task<ActionResult> Search(string SearchProductName)
+        // THINK if the name has to be exactly the same as product name or just containing is enough ??
+        public async Task<ActionResult> Search(string SearchProductName, string sortBy)
         {
             List<Product> products = await getProductFromFirebase();
-            ViewBag.products = products.Where(x => x.Name.ToLower() == SearchProductName.ToLower());
-            if (ViewBag.products == null)
+            products = products.Where(x => x.Name.ToLower() == SearchProductName.ToLower()).ToList();
+            if (products == null)
             {
                 ViewBag.products = null;
                 ViewBag.Message = "Could not find the product";
                 return View();
             }
+            if (sortBy!=null)
+            {
+                if (sortBy == "highFirst")
+                {
+                    products = products.OrderBy(x => x.Price).Reverse().ToList();
+                }
+                else
+                {
+                    products = products.OrderBy(x => x.Price).ToList();
+                }
+            }
             ViewBag.Message = "Found Product";
+            ViewBag.products = products;
+            ViewBag.Name = SearchProductName;
             return View();
         }
 
