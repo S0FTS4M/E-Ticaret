@@ -81,7 +81,7 @@ main-carousel-inner {
     float: right;
     margin-left: 10px;
     height: auto;
-    width: 90%;
+    width: 80%;
 }
 
 .mainNavDropDown:hover > .dropdown-menu {
@@ -93,8 +93,8 @@ main-carousel-inner {
     background-repeat: no-repeat;
     background-position: right;
     top: 60px !important;
-    width: 800px !important;
-    height: 300px;
+    width: 300%; !important;
+    height: 200%;
     left: 0px !important;
     box-shadow: 0px 5px 30px black;
 }
@@ -109,10 +109,10 @@ main-carousel-inner {
 
 .img-overlay {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 20px;
+    bottom: 20px;
+    left: 50px;
+    right: 50px;
     text-align: left;
 }
 

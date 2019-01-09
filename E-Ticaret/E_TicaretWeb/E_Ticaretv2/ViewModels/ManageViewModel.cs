@@ -44,7 +44,6 @@ namespace E_Ticaretv2.ViewModels
         public int Amount { get; set; }
 
         [Required]
-        [Url(ErrorMessage ="You should enter correct URL address")]
         [Display(Name="Product Image URL")]
         public string Image { get; set; }
 

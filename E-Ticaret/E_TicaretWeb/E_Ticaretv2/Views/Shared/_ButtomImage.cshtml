@@ -1,7 +1,14 @@
-﻿<div class="img-wrapper container">
-    <img class="img-responsive" src="http://placehold.it/1100x300">
+﻿@using E_Ticaretv2.Models
+@{ 
+    List<Product> products = ViewBag.products;
+    Product p = products.Find(x => x.mainPageUrl != null);
+}
+
+<div class="img-wrapper container">
+    <img class="img-responsive" src=@p.mainPageUrl style="width:85%;display:block;margin:auto;">
     <div class="img-overlay">
-        <button class="btn btn-md btn-success">Button</button>
+        @Html.ActionLink("Details", "Details","Product", new {id=p.Id },new {@class="btn btn-md btn-success" })
+
     </div>
 </div>
 
