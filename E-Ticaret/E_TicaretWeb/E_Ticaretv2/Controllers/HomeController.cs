@@ -139,6 +139,10 @@ namespace E_Ticaretv2.Controllers
         {
             return RedirectToAction("Index", "ShoppingCart");
         }
+        public ActionResult About()
+        {
+            return View();
+        }
 
         public async Task<ActionResult> Sales()
         {
